@@ -1,0 +1,13 @@
+{
+  "name": "poco-and-co-shopify",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node --check prototype/app.js && node --check scripts/serve.mjs && node scripts/check.mjs"
+  }
+}

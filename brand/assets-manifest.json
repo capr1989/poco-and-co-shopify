@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/capr1989/poco-and-co-brand",
+  "commit": "d9ca06d7885960afd54e9c6c8ab80e8d165212ff",
+  "concept": "A",
+  "favicon": "Fondo #192C46 verificado en guía y tokens",
+  "files": [
+    {
+      "source": "concepts/concept-a/logo-horizontal.svg",
+      "target": "prototype/assets/logo-horizontal.svg",
+      "sha256": "4e5aae50c75d617aea6053b9f39ca8c8004732d4718adf2c6d01cd991755af89"
+    },
+    {
+      "source": "concepts/concept-a/favicon.svg",
+      "target": "prototype/assets/favicon.svg",
+      "sha256": "dc59567e02cf5997d6f4e9ed0aede5b988ee9dadb6fb1199c85422140ea1d91f"
+    },
+    {
+      "source": "design-tokens/concept-a.json",
+      "target": "prototype/assets/concept-a.json",
+      "sha256": "35b16d6ed097557c1f7f427f1b3542c8382dc7674f0d345d56e55b89bc9023a1"
+    },
+    {
+      "source": "assets/fonts/manrope/Manrope[wght].ttf",
+      "target": "prototype/assets/Manrope.ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "source": "assets/fonts/manrope/OFL.txt",
+      "target": "prototype/assets/OFL-Manrope.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    }
+  ]
+}

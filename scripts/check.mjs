@@ -1,0 +1,4 @@
+import {readFile} from 'node:fs/promises';import {gzipSync} from 'node:zlib';import {createHash} from 'node:crypto';
+const manifest=JSON.parse(await readFile('brand/assets-manifest.json','utf8'));for(const f of manifest.files){const d=await readFile(f.target);if(createHash('sha256').update(d).digest('hex')!==f.sha256)throw Error('Asset alterado: '+f.target);}
+for(const [f,limit] of Object.entries({'prototype/app.js':20480,'prototype/styles.css':15360})){const d=await readFile(f),size=gzipSync(d).length;console.log(f+': '+d.length+' bytes raw, '+size+' gzip, límite '+limit);if(size>limit)throw Error('Presupuesto excedido');}
+const html=await readFile('prototype/index.html','utf8');for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)){if(m[1]==='./')continue;await readFile('prototype/'+m[1]);}console.log('Integridad de marca, referencias HTML y presupuesto estático: OK. No acredita CWV ni usabilidad.');

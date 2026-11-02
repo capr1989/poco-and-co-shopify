@@ -1,0 +1,2 @@
+Fuente local leída sin modificar: ../Poco and co. Revisar git status y commit antes de copiar. Copiar solo los archivos aprobados del manifiesto, recalcular SHA-256 y documentar diferencias locales. No recrear logos. Conservar OFL.
+Manrope TTF original local con font-display:swap; evaluar WOFF2 con cobertura española y licencia conservada para producción. No Google Fonts remoto. Los assets finales se incorporarán al tema, nunca GitHub como CDN. Favicon corregido #192C46 según guía y tokens.

@@ -1,0 +1,16 @@
+services:
+  prototype:
+    build: .
+    environment:
+      CONTAINER: "1"
+    user: "1000:1000"
+    working_dir: /workspace
+    ports: ["127.0.0.1:8080:8080"]
+    volumes: [".:/workspace:ro"]
+    read_only: true
+    tmpfs: ["/tmp:size=64m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    cpus: 2
+    mem_limit: 512m
+    pids_limit: 100
