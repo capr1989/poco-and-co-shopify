@@ -1,0 +1,51 @@
+TAP version 13
+# 192C46/F1F4F2: 12.73:1
+# FFFFFF/2855D9: 6.19:1
+# 192C46/B8CEC7: 8.52:1
+# FFFFFF/192C46: 14.09:1
+# Subtest: brand text and action color pairs meet WCAG AA normal text contrast
+ok 1 - brand text and action color pairs meet WCAG AA normal text contrast
+  ---
+  duration_ms: 1.047721
+  type: 'test'
+  ...
+# Fixture renderer is LiquidJS, not Shopify Liquid or a live cart API.
+# Subtest: missing, unverified, expired or incomplete delivery never publishes a promise
+ok 2 - missing, unverified, expired or incomplete delivery never publishes a promise
+  ---
+  duration_ms: 22.424161
+  type: 'test'
+  ...
+# Subtest: verified delivery text is HTML escaped
+ok 3 - verified delivery text is HTML escaped
+  ---
+  duration_ms: 6.305008
+  type: 'test'
+  ...
+# Subtest: different windows in the same supply group still warn
+ok 4 - different windows in the same supply group still warn
+  ---
+  duration_ms: 6.897808
+  type: 'test'
+  ...
+# Subtest: different supply groups warn and equal windows do not
+ok 5 - different supply groups warn and equal windows do not
+  ---
+  duration_ms: 17.428026
+  type: 'test'
+  ...
+# Subtest: removing the external item removes mixed warning; unknown delivery stays explicit
+ok 6 - removing the external item removes mixed warning; unknown delivery stays explicit
+  ---
+  duration_ms: 9.262037
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 171.587258

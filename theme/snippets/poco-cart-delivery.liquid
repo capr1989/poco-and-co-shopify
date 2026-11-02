@@ -1,0 +1,33 @@
+{% doc %}
+  Warns about different or unverified product-level delivery windows.
+  @param {object} cart - The native Shopify cart.
+{% enddoc %}
+{%- liquid
+  assign first_message = ''
+  assign first_group = ''
+  assign mixed = false
+  assign unverified = false
+  assign now_epoch = 'now' | date: '%s' | plus: 0
+  for item in cart.items
+    assign delivery = item.product.metafields.custom
+    assign valid_until = delivery.delivery_valid_until.value | date: '%s' | plus: 0
+    if delivery.delivery_verified.value == true and delivery.delivery_message.value != blank and delivery.delivery_group.value != blank and valid_until > now_epoch
+      if first_message == ''
+        assign first_message = delivery.delivery_message.value
+        assign first_group = delivery.delivery_group.value
+      elsif first_message != delivery.delivery_message.value or first_group != delivery.delivery_group.value
+        assign mixed = true
+      endif
+    else
+      assign unverified = true
+    endif
+  endfor
+-%}
+{%- if cart.item_count > 0 -%}
+  {%- if mixed or unverified -%}
+    <p class="poco-delivery-notice" role="status">
+      {%- if mixed -%}{{ 'poco.delivery.mixed' | t }}{%- endif -%}
+      {%- if unverified -%} {{ 'poco.delivery.pending' | t }}{%- endif -%}
+    </p>
+  {%- endif -%}
+{%- endif -%}

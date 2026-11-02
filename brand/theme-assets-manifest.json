@@ -1,0 +1,24 @@
+{
+  "sourceManifest": "brand/assets-manifest.json",
+  "concept": "A",
+  "commit": "d9ca06d7885960afd54e9c6c8ab80e8d165212ff",
+  "files": [
+    {
+      "source": "prototype/assets/logo-horizontal.svg",
+      "target": "theme/assets/poco-logo-horizontal.svg"
+    },
+    {
+      "source": "prototype/assets/favicon.svg",
+      "target": "theme/assets/poco-favicon.svg"
+    }
+  ],
+  "font": {
+    "source": "Shopify font library",
+    "handles": [
+      "manrope_n5",
+      "manrope_n7"
+    ],
+    "reference": "https://shopify.dev/docs/storefronts/themes/architecture/settings/fonts",
+    "note": "Native delivery and downloaded font size require live verification."
+  }
+}

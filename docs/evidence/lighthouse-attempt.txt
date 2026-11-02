@@ -1,0 +1,16 @@
+time="2026-11-02T16:23:18-05:00" level=warning msg="Found orphan containers (pocoandcoshopify-prototype-1) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+ Container pocoandcoshopify-tools-run-3ee2a6877b3c Creating 
+ Container pocoandcoshopify-tools-run-3ee2a6877b3c Created 
+Runtime error encountered: The CHROME_PATH environment variable must be set to a Chrome/Chromium executable no older than Chrome stable.
+Error
+    at new LauncherError (file:///opt/tools/node_modules/chrome-launcher/dist/utils.js:28:22)
+    at new ChromePathNotSetError (file:///opt/tools/node_modules/chrome-launcher/dist/utils.js:34:9)
+    at Module.linux (file:///opt/tools/node_modules/chrome-launcher/dist/chrome-finder.js:124:15)
+    at Launcher.getFirstInstallation (file:///opt/tools/node_modules/chrome-launcher/dist/chrome-launcher.js:134:43)
+    at Launcher.launch (file:///opt/tools/node_modules/chrome-launcher/dist/chrome-launcher.js:207:43)
+    at Module.launch (file:///opt/tools/node_modules/chrome-launcher/dist/chrome-launcher.js:32:20)
+    at getDebuggableChrome (file:///opt/tools/node_modules/lighthouse/cli/run.js:85:25)
+    at runLighthouse (file:///opt/tools/node_modules/lighthouse/cli/run.js:204:30)
+    at begin (file:///opt/tools/node_modules/lighthouse/cli/bin.js:134:10)
+    at async file:///opt/tools/node_modules/lighthouse/cli/index.js:10:1
+

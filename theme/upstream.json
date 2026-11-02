@@ -1,0 +1,10 @@
+{
+  "base": {
+    "repository": "https://github.com/Shopify/dawn",
+    "ref": "v16.1.1",
+    "commit": "e9ac9c0f0b289da643164f4080380bd11ed27519",
+    "version": "16.1.1"
+  },
+  "status": "local candidate, no Shopify connection or final theme approval",
+  "license": "LICENSE.md"
+}

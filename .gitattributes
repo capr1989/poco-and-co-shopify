@@ -1,2 +1,5 @@
 * text=auto eol=lf
 prototype/assets/** -text
+
+theme/assets/poco*.svg -text
+theme/assets/OFL-Manrope.txt -text

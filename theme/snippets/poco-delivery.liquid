@@ -1,0 +1,16 @@
+{% doc %}
+  Renders verified product-level delivery information shared by all variants.
+  @param {product} product - The product whose delivery information is shown.
+{% enddoc %}
+{%- liquid
+  assign delivery = product.metafields.custom
+  assign now_epoch = 'now' | date: '%s' | plus: 0
+  assign valid_until = delivery.delivery_valid_until.value | date: '%s' | plus: 0
+-%}
+<div class="poco-delivery">
+  {%- if delivery.delivery_verified.value == true and delivery.delivery_message.value != blank and delivery.delivery_group.value != blank and valid_until > now_epoch -%}
+    {{ delivery.delivery_message.value | escape | newline_to_br }}
+  {%- else -%}
+    {{ 'poco.delivery.unverified' | t }}
+  {%- endif -%}
+</div>

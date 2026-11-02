@@ -1,0 +1,23 @@
+name: poco-shopify-tools
+services:
+  tools:
+    image: poco-shopify-tools:phase2
+    build:
+      context: .
+      dockerfile: tools/Dockerfile
+    user: "1000:1000"
+    working_dir: /workspace
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    tmpfs: ["/tmp:size=128m,mode=1777"]
+    volumes: [".:/workspace:ro"]
+    environment:
+      SHOPIFY_CLI_NO_ANALYTICS: "1"
+      SHOPIFY_CLI_NO_ANALYTICS_STORE: "1"
+      HOME: /tmp
+    cpus: 2
+    mem_limit: 1g
+    pids_limit: 150
+    command: ["shopify", "theme", "check", "--path", "theme", "--json", "--no-input"]

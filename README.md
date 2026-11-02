@@ -14,4 +14,8 @@ Se respeta la ruta Windows solicitada; si el montaje afecta al rendimiento de de
 ## Continuidad
 brief-original.md conserva el encargo. docs/requirements.md y performance.md integran los objetivos de velocidad; architecture.md describe Shopify Basic; theme-comparison.md mantiene ambos temas finalistas; backlog.md registra estados.
 Prototipo de ocho productos ficticios, búsqueda, filtros, variantes y carrito mixto. Sin pedidos, pagos ni datos personales; carrito en memoria.
-Repositorio privado: https://github.com/capr1989/poco-and-co-shopify . No se ha elegido tema. T001/T002 siguen PENDIENTES 0 %.
+Repositorio: https://github.com/capr1989/poco-and-co-shopify . Su visibilidad actual es pública (verificada en Fase 2); no se cambió desde este trabajo. No se ha elegido tema definitivo. T001/T002 siguen PENDIENTES 0 %.
+
+## Fase 2 preparada en rama local
+Rama phase2/theme-evaluation. Candidato técnico provisional Dawn 16.1.1 en theme/, sin conexión Shopify. Prototipo conservado. Comparación con Horizon 4.3.0 por commit en docs/theme-comparison.md; plan concreto en docs/shopify-implementation-plan.md; comandos de herramientas en docs/tooling.md. Los cambios de esta fase no se han subido al remoto público.
+Theme Check válido con advertencias y seis tests locales aprobados. Sin métricas Lighthouse/PSI ni validación de storefront Shopify.

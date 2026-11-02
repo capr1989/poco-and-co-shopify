@@ -1,0 +1,3 @@
+Shopify skill validate.mjs --api liquid --theme-path theme --files (17 changed paths) --artifact-id poco-phase2-theme --revision 1
+Exit 1 before validation: Cannot find package '@shopify/theme-check-common' imported from bundled _validate_theme.mjs. Expected alongside validate.mjs.
+No Windows package installation attempted. Independent Shopify CLI 5.0.0 Theme Check executed inside container; see original/candidate JSON reports. This skill validation did not run successfully.

@@ -1,0 +1,17 @@
+{
+  "examined": "2026-11-02",
+  "themes": {
+    "dawn": {
+      "repository": "https://github.com/Shopify/dawn",
+      "ref": "v16.1.1",
+      "commit": "e9ac9c0f0b289da643164f4080380bd11ed27519",
+      "version": "16.1.1"
+    },
+    "horizon": {
+      "repository": "https://github.com/Shopify/horizon",
+      "ref": "main (snapshot; no releases or tags)",
+      "commit": "dfad90d87be2408de52636315069fc998da28c9e",
+      "version": "4.3.0"
+    }
+  }
+}

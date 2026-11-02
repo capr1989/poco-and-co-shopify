@@ -6,3 +6,6 @@ Imagen Node descargada y construida; digest registrado en environment-report.md.
 Docker/WSL no son aislamiento absoluto; el montaje permite acceso al proyecto y red no es sandbox. Código no confiable: VM restringida. No ejecutar scripts remotos sin revisar.
 Secretos fuera de Git, logs e imágenes; no montar credenciales del host. Sin credenciales productivas.
 Recuperación: docker compose down conserva archivos; reconstruir sin borrar datos/volúmenes automáticamente.
+
+Fase 2: imagen de herramientas separada con npm ci --ignore-scripts, versiones exactas y lock. Runtime estático sin red en Compose, uid1000, filesystem/proyecto solo lectura, sin capacidades ni puertos. Theme Check con documentación actualizada se ejecutó aparte con red saliente a documentación pública; sin tienda ni credenciales. npm audit consulta registro sin montar proyecto. No se desactivó sandbox, seccomp o no-new-privileges para Chrome.
+GitHub muestra actualmente el repositorio público, confirmado mediante conector y API pública. No se modifica visibilidad ni se publica esta rama; cambios de fase permanecen locales.

@@ -1,0 +1,283 @@
+{
+  "kind": "static-source-inventory",
+  "note": "LF-normalized source inventory; NOT initial HTTP transfer, Lighthouse, CWV or proof of speed.",
+  "themes": {
+    "dawn": {
+      "embeddedCssBytes": 0,
+      "embeddedCssGzipSumBytes": 0,
+      "version": "16.1.1",
+      "sections": 48,
+      "blocks": 0,
+      "snippets": 39,
+      "groups": {
+        ".js": {
+          "files": 36,
+          "rawBytes": 229446,
+          "gzipSumBytes": 61609,
+          "largest": [
+            {
+              "file": "assets/global.js",
+              "bytes": 51395,
+              "gzip": 12380
+            },
+            {
+              "file": "assets/cart.js",
+              "bytes": 20125,
+              "gzip": 4976
+            },
+            {
+              "file": "assets/product-info.js",
+              "bytes": 17468,
+              "gzip": 4136
+            },
+            {
+              "file": "assets/quick-order-list.js",
+              "bytes": 17427,
+              "gzip": 4126
+            },
+            {
+              "file": "assets/facets.js",
+              "bytes": 17076,
+              "gzip": 4119
+            },
+            {
+              "file": "assets/predictive-search.js",
+              "bytes": 9599,
+              "gzip": 2696
+            },
+            {
+              "file": "assets/localization-form.js",
+              "bytes": 7863,
+              "gzip": 1797
+            },
+            {
+              "file": "assets/product-form.js",
+              "bytes": 7552,
+              "gzip": 2004
+            }
+          ]
+        },
+        ".css": {
+          "files": 65,
+          "rawBytes": 370693,
+          "gzipSumBytes": 82600,
+          "largest": [
+            {
+              "file": "assets/base.css",
+              "bytes": 81445,
+              "gzip": 13593
+            },
+            {
+              "file": "assets/section-main-product.css",
+              "bytes": 32327,
+              "gzip": 5830
+            },
+            {
+              "file": "assets/component-facets.css",
+              "bytes": 25694,
+              "gzip": 4757
+            },
+            {
+              "file": "assets/component-card.css",
+              "bytes": 14067,
+              "gzip": 2810
+            },
+            {
+              "file": "assets/component-cart-items.css",
+              "bytes": 13089,
+              "gzip": 2846
+            },
+            {
+              "file": "assets/mask-blobs.css",
+              "bytes": 12089,
+              "gzip": 5069
+            },
+            {
+              "file": "assets/quick-order-list.css",
+              "bytes": 12054,
+              "gzip": 2401
+            },
+            {
+              "file": "assets/component-image-with-text.css",
+              "bytes": 11542,
+              "gzip": 1887
+            }
+          ]
+        },
+        ".liquid": {
+          "files": 88,
+          "rawBytes": 928615,
+          "gzipSumBytes": 161450,
+          "largest": [
+            {
+              "file": "sections/main-product.liquid",
+              "bytes": 101531,
+              "gzip": 9395
+            },
+            {
+              "file": "sections/featured-product.liquid",
+              "bytes": 65544,
+              "gzip": 6899
+            },
+            {
+              "file": "snippets/facets.liquid",
+              "bytes": 48744,
+              "gzip": 6130
+            },
+            {
+              "file": "snippets/card-product.liquid",
+              "bytes": 36297,
+              "gzip": 5297
+            },
+            {
+              "file": "snippets/cart-drawer.liquid",
+              "bytes": 30337,
+              "gzip": 4749
+            },
+            {
+              "file": "sections/main-cart-items.liquid",
+              "bytes": 25426,
+              "gzip": 4083
+            },
+            {
+              "file": "sections/header.liquid",
+              "bytes": 23966,
+              "gzip": 4982
+            },
+            {
+              "file": "layout/theme.liquid",
+              "bytes": 22743,
+              "gzip": 4467
+            }
+          ]
+        }
+      }
+    },
+    "horizon": {
+      "embeddedCssBytes": 510474,
+      "embeddedCssGzipSumBytes": 128783,
+      "version": "4.3.0",
+      "sections": 42,
+      "blocks": 95,
+      "snippets": 144,
+      "groups": {
+        ".js": {
+          "files": 81,
+          "rawBytes": 766580,
+          "gzipSumBytes": 214380,
+          "largest": [
+            {
+              "file": "assets/qr-code-generator.js",
+              "bytes": 45556,
+              "gzip": 10706
+            },
+            {
+              "file": "assets/product-form.js",
+              "bytes": 40425,
+              "gzip": 9257
+            },
+            {
+              "file": "assets/facets.js",
+              "bytes": 33158,
+              "gzip": 7589
+            },
+            {
+              "file": "assets/utilities.js",
+              "bytes": 30384,
+              "gzip": 9294
+            },
+            {
+              "file": "assets/slideshow.js",
+              "bytes": 28910,
+              "gzip": 7464
+            },
+            {
+              "file": "assets/morph.js",
+              "bytes": 28261,
+              "gzip": 8322
+            },
+            {
+              "file": "assets/quick-order-list.js",
+              "bytes": 26036,
+              "gzip": 6401
+            },
+            {
+              "file": "assets/popover-polyfill.js",
+              "bytes": 25893,
+              "gzip": 5657
+            }
+          ]
+        },
+        ".css": {
+          "files": 3,
+          "rawBytes": 50315,
+          "gzipSumBytes": 11585,
+          "largest": [
+            {
+              "file": "assets/base.css",
+              "bytes": 45911,
+              "gzip": 10118
+            },
+            {
+              "file": "assets/template-giftcard.css",
+              "bytes": 3116,
+              "gzip": 918
+            },
+            {
+              "file": "assets/overflow-list.css",
+              "bytes": 1288,
+              "gzip": 549
+            }
+          ]
+        },
+        ".liquid": {
+          "files": 282,
+          "rawBytes": 2163713,
+          "gzipSumBytes": 491585,
+          "largest": [
+            {
+              "file": "snippets/icon.liquid",
+              "bytes": 133281,
+              "gzip": 55203
+            },
+            {
+              "file": "snippets/header-drawer.liquid",
+              "bytes": 61464,
+              "gzip": 8919
+            },
+            {
+              "file": "sections/header.liquid",
+              "bytes": 57315,
+              "gzip": 10399
+            },
+            {
+              "file": "sections/section.liquid",
+              "bytes": 54216,
+              "gzip": 4622
+            },
+            {
+              "file": "sections/hero.liquid",
+              "bytes": 45242,
+              "gzip": 6950
+            },
+            {
+              "file": "blocks/filters.liquid",
+              "bytes": 43432,
+              "gzip": 7498
+            },
+            {
+              "file": "snippets/product-media-gallery-content.liquid",
+              "bytes": 38931,
+              "gzip": 7962
+            },
+            {
+              "file": "sections/quick-order-list.liquid",
+              "bytes": 38094,
+              "gzip": 6313
+            }
+          ]
+        }
+      }
+    }
+  }
+}

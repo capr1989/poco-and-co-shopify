@@ -1,0 +1,41 @@
+TAP version 13
+# Fixture renderer is LiquidJS, not Shopify Liquid or a live cart API.
+# Subtest: missing, unverified, expired or incomplete delivery never publishes a promise
+ok 1 - missing, unverified, expired or incomplete delivery never publishes a promise
+  ---
+  duration_ms: 24.611579
+  type: 'test'
+  ...
+# Subtest: verified delivery text is HTML escaped
+ok 2 - verified delivery text is HTML escaped
+  ---
+  duration_ms: 4.355815
+  type: 'test'
+  ...
+# Subtest: different windows in the same supply group still warn
+ok 3 - different windows in the same supply group still warn
+  ---
+  duration_ms: 6.67678
+  type: 'test'
+  ...
+# Subtest: different supply groups warn and equal windows do not
+ok 4 - different supply groups warn and equal windows do not
+  ---
+  duration_ms: 8.379722
+  type: 'test'
+  ...
+# Subtest: removing the external item removes mixed warning; unknown delivery stays explicit
+ok 5 - removing the external item removes mixed warning; unknown delivery stays explicit
+  ---
+  duration_ms: 9.351579
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 147.650048

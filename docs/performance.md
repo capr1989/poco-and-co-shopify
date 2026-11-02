@@ -34,3 +34,9 @@ Tras lanzamiento autorizado: informes Shopify y CrUX/PSI cuando disponibles, p75
 Fuentes oficiales consultadas:
 - https://shopify.dev/docs/storefronts/themes/best-practices/performance
 - https://web.dev/articles/vitals
+
+## Evidencia de Fase 2
+No se cambian los objetivos ni presupuestos de la fase inicial. El inventario LF de fuente de los temas está en evidence/theme-static-audit.json y no equivale a transferencia inicial. Horizon tiene CSS dentro de Liquid; no comparar únicamente archivos .css.
+Tema candidato: cero JS propio añadido, CSS propio 686 bytes fuente / 334 gzip. Fuente final configurada mediante biblioteca Shopify Manrope n5/n7: bytes reales aún sin medir. La TTF original de 164700 bytes sigue solo en prototipo y continúa excediendo presupuesto inicial; no se ha reemplazado el prototipo.
+Lighthouse instalado 13.5.0: intento de ejecución bloqueado sin Chrome; no hay score, LCP, INP o CLS medidos. Playwright/axe sin navegador instalado. PSI imposible sobre localhost desde sus servidores; no se publica ni abre túnel. Comparación justa Dawn/Horizon pendiente de tienda autorizada. Sin datos CrUX/RUM.
+Theme Check y pruebas de entrega/contraste no son pruebas de Core Web Vitals. Presupuestos se revisarán por ruta, incluyendo scripts de plataforma y fuentes reales, tras configurar ocho productos equivalentes en Shopify.
