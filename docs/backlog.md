@@ -61,10 +61,10 @@ Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado p
 
 | ID | Trabajo | Estado | Evidencia / dependencia |
 |---|---|---|---|
-| F4-01 | Confirmar conexión QA y roles de temas | Pendiente de reautenticación MCP | No escribir en tienda previa; docs/phase4-visual-ux.md |
-| F4-02 | Ocho productos/nueve variantes/imágenes/stock ficticio | Autorizado, pendiente | Fixtures existentes; sin pedidos ni pagos |
-| F4-03 | Cinco definiciones de entrega y valores | Autorizado, pendiente | Merchant-owned custom; comprobar lectura |
-| F4-04 | Seis departamentos, menú, filtros y colección destacada | Autorizado, pendiente | Dawn no publicado; filtros según capacidad disponible |
-| F4-05 | QA visual móvil/escritorio y funciones | Pendiente de catálogo y acceso | Capturas/pruebas reales; no inventar métricas |
+| F4-01 | Confirmar conexión QA y roles de temas | Verificado | QA, contraseña activa, Dawn unpublished; 507 hashes Horizon intactos |
+| F4-02 | Ocho productos/nueve variantes/imágenes/stock ficticio | Configurado y verificado por Admin | Online Store QA; tracking/DENY, 42 unidades ficticias; sin pedidos/pagos |
+| F4-03 | Cinco definiciones de entrega y valores | Creados y leídos | custom; valores simulados, escenarios vigente/pendiente/vencido |
+| F4-04 | Seis departamentos, menú, filtros y colección destacada | Colecciones/menú/portada configurados; filtros runtime pendientes | Tres JSON aceptados; Theme Check 0 errores/9 advertencias |
+| F4-05 | QA visual móvil/escritorio y funciones | Pendiente de acceso a vista previa protegida | Usuario debe entrar sin compartir contraseña; no hay pruebas funcionales/capturas/CWV |
 
 T001/T002 permanecen pendientes al 0 %.

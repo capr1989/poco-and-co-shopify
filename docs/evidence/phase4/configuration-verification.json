@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-03",
+  "apiVersion": "2026-10",
+  "method": "Shopify MCP Admin GraphQL readback, not storefront interaction",
+  "passwordEnabled": true,
+  "products": [
+    {
+      "fixture": "test-organizador",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 6,
+      "expectedStock": 6,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-soporte-movil",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 8,
+      "expectedStock": 8,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-collar",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 8,
+      "expectedStock": 8,
+      "variantCount": 2,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-bolsa-viaje",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 5,
+      "expectedStock": 5,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-dispensador",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 0,
+      "expectedStock": 0,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-soporte-auto",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 7,
+      "expectedStock": 7,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-bandeja",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 5,
+      "expectedStock": 5,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    },
+    {
+      "fixture": "test-estuche",
+      "active": true,
+      "onlineStore": true,
+      "oneImage": true,
+      "stock": 3,
+      "expectedStock": 3,
+      "variantCount": 1,
+      "denyAndTracked": true,
+      "metafieldsMatch": true,
+      "pricesAndSkusMatch": true
+    }
+  ],
+  "definitionsCount": 5,
+  "collections": [
+    {
+      "handle": "poco-demo-hogar",
+      "products": 2,
+      "publishedOnlineStore": true
+    },
+    {
+      "handle": "poco-demo-tecnologia",
+      "products": 2,
+      "publishedOnlineStore": true
+    },
+    {
+      "handle": "poco-demo-joyeria",
+      "products": 1,
+      "publishedOnlineStore": true
+    },
+    {
+      "handle": "poco-demo-viajes",
+      "products": 1,
+      "publishedOnlineStore": true
+    },
+    {
+      "handle": "poco-demo-mascotas",
+      "products": 1,
+      "publishedOnlineStore": true
+    },
+    {
+      "handle": "poco-demo-automovil",
+      "products": 1,
+      "publishedOnlineStore": true
+    },
+    {
+      "handle": "poco-demo-destacados",
+      "products": 8,
+      "publishedOnlineStore": true
+    }
+  ],
+  "themes": [
+    {
+      "name": "Horizon",
+      "role": "MAIN",
+      "files": 507,
+      "changed": [],
+      "removed": [],
+      "updatedAtUnchanged": true
+    },
+    {
+      "name": "Poco Co QA - Dawn 16.1.1",
+      "role": "UNPUBLISHED",
+      "files": 354,
+      "changed": [
+        "sections/footer-group.json",
+        "sections/header-group.json",
+        "templates/index.json"
+      ],
+      "removed": [],
+      "updatedAtUnchanged": false
+    }
+  ],
+  "themeCheck": {
+    "errors": 0,
+    "warnings": 9
+  },
+  "browser": {
+    "passwordGateObserved": true,
+    "storefrontAccess": false,
+    "adminEditor": "Blank loading view; no changes through UI",
+    "mobileScreenshots": false,
+    "desktopScreenshots": false
+  },
+  "runtimeTests": {
+    "search": "pending",
+    "filters": "theme enabled; storefront availability unverified",
+    "variants": "Admin verified; UI pending",
+    "cart": "pending"
+  },
+  "performance": {
+    "lighthouse": null,
+    "pageSpeedInsights": null,
+    "fieldCWV": null
+  }
+}

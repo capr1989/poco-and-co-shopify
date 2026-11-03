@@ -24,3 +24,38 @@ La conexión MCP estaba seleccionada en otra tienda. Se invocó switch_shop y se
 Guardar respuestas originales, IDs y enlaces operativos en work/ excluido de Git; publicar solo evidencia sanitizada. Documentar cada prueba ejecutada y pendiente. Confirmar Dawn unpublished, Horizon live y protección conservada. Push de la rama Fase 4, sin merge a main. El diseño queda sujeto a revisión del usuario.
 
 Estado actual: pendiente de reautenticación MCP en la tienda QA; no hay productos cargados ni capturas nuevas.
+
+## Configuración ejecutada — 2026-11-03
+
+La reconexión MCP confirmó exclusivamente la dev store QA autorizada (Basic App Development). Preflight real: contraseña habilitada, Dawn unpublished, Horizon MAIN, catálogo vacío y ninguna definición custom. Se crearon los ocho productos/nueve variantes, ocho imágenes PNG ficticias, cinco definiciones merchant-owned y sus valores; siete colecciones (seis departamentos y destacados), y el menú propio poco-demo-menu.
+
+Los ocho productos quedaron ACTIVE y disponibles únicamente en Online Store para navegar la demo bajo contraseña. Tracking activo, política DENY y stock ficticio 42 unidades en total: se conservó el dispensador agotado y los escenarios de entrega pendiente/vencida. Las fechas del fixture se conservaron como simulaciones, no como verificaciones comerciales. No se crearon pedidos ni se configuraron pagos.
+
+Lectura Admin posterior: cada producto tiene una imagen, precios/SKUs/stock y metacampos esperados; collar con dos variantes. Las seis colecciones tienen 2/2/1/1/1/1 productos; destacados tiene ocho. Crear disponibilidad en Online Store no publica Dawn. El catálogo es compartido por los temas de la dev store; no es posible aislarlo por tema.
+
+Se enviaron exclusivamente templates/index.json, sections/header-group.json y sections/footer-group.json a Dawn mediante themeFilesUpsert; Shopify aceptó los tres sin userErrors. Portada con texto, seis departamentos y colección destacada, todo con secciones nativas; menú propio asignado solo a Dawn; pie con aviso demo y sin suscripción a emails ni iconos de pagos. Sin JS personalizado, apps nuevas ni cambios de branding. Theme Check Docker posterior a edición: valid true, 0 errores/9 advertencias. Evidencia: evidence/phase4/theme-check.json.
+
+Se paginaron todos los archivos de ambos temas antes y después. Horizon: 507 archivos, checksumMd5 idénticos, mismo role MAIN y updatedAt. Dawn: 354 archivos, role UNPUBLISHED, solo los tres JSON autorizados con hashes distintos, sin archivos eliminados. Contraseña habilitada después. Evidencia sanitizada: evidence/phase4/configuration-verification.json. Estado operativo/IDs/respuestas en work/phase4-*.private.json fuera de Git.
+
+## Pruebas realizadas y pendientes
+
+| Prueba | Resultado real |
+|---|---|
+| Dominio, contraseña, roles y archivos de temas | Verificados por Admin API; protección también observada en Chrome |
+| Catálogo, imágenes, variantes, precios, stock y entrega | Lectura Admin posterior y aserciones comparadas con fixtures aprobadas |
+| Seis departamentos y destacados | Membresía/publicación verificadas por Admin; presentación visual pendiente |
+| Sintaxis/configuración del tema | Theme Check 0 errores/9 advertencias; servidor aceptó los tres JSON |
+| Portada/producto visibles en Dawn | Pendiente de entrar en vista previa protegida |
+| Búsqueda, filtros, cambio de variantes y carrito | Pendientes de interacción real; configuración no demuestra funcionamiento |
+| Móvil/escritorio/capturas/accesibilidad | Pendientes de acceso; no hay capturas válidas del storefront |
+| Lighthouse/PSI/CWV | No medidos; no afirmar optimización ni inventar puntuaciones |
+
+Los filtros y la ordenación están habilitados en las plantillas nativas de colección/búsqueda, pero todavía no se observó qué filtros ofrece Shopify en el storefront. No se instaló Search & Discovery ni otra app. Si hace falta configuración adicional, evaluar primero las capacidades disponibles y el alcance autorizado.
+
+Chrome abrió la vista previa y mostró la contraseña. Se solicitó al usuario entrar sin compartirla ni desactivarla. El editor autenticado mostró una vista de carga vacía; no se realizaron cambios por navegador. Estas son limitaciones de acceso, no pruebas de un defecto del tema.
+
+## Revisión visual propuesta, aún sin aprobar
+
+Evaluar en 390 px y escritorio: logo y búsqueda visibles, jerarquía de portada, tamaño de tarjetas, menú de departamentos, precios y estados de variantes/agotado, foco y áreas táctiles. Las ilustraciones rotuladas y títulos [PRUEBA FICTICIA] se conservan para identificar la demo; las fotos comerciales reales son una etapa futura. Revisar idioma de los controles nativos y legibilidad de títulos largos; no declarar problemas visuales confirmados sin observar la página.
+
+Diseño definitivo pendiente de evaluación del usuario. T001/T002 siguen pendientes al 0 %. No publicación, pagos, pedidos, dominios ni eliminación de contraseña.

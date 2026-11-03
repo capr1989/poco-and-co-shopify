@@ -1,5 +1,5 @@
 {
-  "status": "UNPUBLISHED_THEME_REPAIR_COMPLETED_RUNTIME_PENDING",
+  "status": "PHASE4_DEMO_CONFIGURED_RUNTIME_PENDING",
   "selected_for_writes": null,
   "create_store": false,
   "authenticate_cli": true,
@@ -7,7 +7,7 @@
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "Explicit two-file repair completed successfully. No continuing write authorization. No catalog/Admin/password changes; runtime pending.",
+  "note": "Phase 4 explicitly authorized only QA demo catalog, delivery definitions, collections, own menu, native filters and Dawn featured collection. Configuration completed; runtime preview access pending. Never publish Dawn or remove password; no orders/payments/paid services.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -48,5 +48,22 @@
       "templates/product.json"
     ],
     "repair_authorization_consumed": true
+  },
+  "phase4": {
+    "password_enabled": true,
+    "orders": false,
+    "branch": "phase4/visual-ux-validation",
+    "private_state": "work/phase4-state.private.json",
+    "theme_publish": false,
+    "catalog_configured": true,
+    "theme_role": "UNPUBLISHED",
+    "theme_files_changed": [
+      "templates/index.json",
+      "sections/header-group.json",
+      "sections/footer-group.json"
+    ],
+    "scope": "QA_ONLY",
+    "payments": false,
+    "runtime_tested": false
   }
 }

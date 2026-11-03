@@ -8,10 +8,10 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "poco-demo-destacados",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -24,12 +24,123 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 44,
+        "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "intro": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ideas prácticas para tu día a día, en un solo lugar.</p><p>Catálogo ficticio para evaluar el diseño. No se realizan ventas reales.</p>"
+          }
+        },
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "text_size": "small",
+            "text_style": "caption-with-letter-spacing",
+            "caption": "POCO & CO. · DEMOSTRACIÓN PRIVADA"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading_size": "h1",
+            "heading": "Pequeños hallazgos. Grandes favoritos."
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/poco-demo-destacados",
+            "button_label": "Explorar productos",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "settings": {
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "color_scheme": "scheme-1",
+        "content_alignment": "center",
+        "desktop_content_position": "center",
+        "full_width": true
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "text",
+        "button"
+      ]
+    },
+    "departments": {
+      "type": "collection-list",
+      "blocks": {
+        "hogar": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "poco-demo-hogar"
+          }
+        },
+        "viajes": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "poco-demo-viajes"
+          }
+        },
+        "mascotas": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "poco-demo-mascotas"
+          }
+        },
+        "tecnologia": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "poco-demo-tecnologia"
+          }
+        },
+        "automovil": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "poco-demo-automovil"
+          }
+        },
+        "joyeria": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "poco-demo-joyeria"
+          }
+        }
+      },
+      "settings": {
+        "title": "Explora por departamento",
+        "show_view_all": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "square",
+        "columns_mobile": "2",
+        "columns_desktop": 6,
+        "heading_size": "h2",
+        "padding_bottom": 28,
+        "swipe_on_mobile": false,
+        "padding_top": 36
+      },
+      "block_order": [
+        "hogar",
+        "tecnologia",
+        "joyeria",
+        "viajes",
+        "mascotas",
+        "automovil"
+      ]
     }
   },
   "order": [
+    "intro",
+    "departments",
     "featured_collection"
   ]
 }
