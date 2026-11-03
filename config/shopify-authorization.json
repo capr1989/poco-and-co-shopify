@@ -1,5 +1,5 @@
 {
-  "status": "NEW_THEME_UNPUBLISHED_PARTIAL_UPLOAD_WAITING_FOR_REPAIR_APPROVAL",
+  "status": "UNPUBLISHED_THEME_REPAIR_COMPLETED_RUNTIME_PENDING",
   "selected_for_writes": null,
   "create_store": false,
   "authenticate_cli": true,
@@ -7,7 +7,7 @@
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "The one authorized --unpublished creation created a distinct unpublished theme. Server rejected the custom block label length and dependent product template. Local label fix prepared and validated; updating that now-existing theme requires explicit new approval under the user condition. No catalog/Admin/password changes.",
+  "note": "Explicit two-file repair completed successfully. No continuing write authorization. No catalog/Admin/password changes; runtime pending.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -39,13 +39,14 @@
       "catalog writes",
       "admin configuration changes"
     ],
-    "status": "COMPLETED_PARTIALLY_SERVER_REJECTED_TWO_FILES",
+    "status": "REPAIRED_SUCCESSFULLY_AFTER_EXPLICIT_APPROVAL",
     "authorization_consumed": true,
     "new_theme_record": "work/theme-upload-verification.private.json (excluded from public Git)",
     "repair_authorized": false,
     "repair_files": [
       "sections/main-product.liquid",
       "templates/product.json"
-    ]
+    ],
+    "repair_authorization_consumed": true
   }
 }

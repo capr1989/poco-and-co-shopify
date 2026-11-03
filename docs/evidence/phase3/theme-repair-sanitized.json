@@ -1,0 +1,20 @@
+{
+  "private_records": "work/theme-repair-*.private.json",
+  "theme_check_errors": 0,
+  "nodelete": true,
+  "status": "SUCCESS",
+  "theme_check_warnings": 9,
+  "admin_settings_changed": false,
+  "issues": [],
+  "dawn_version": "16.1.1",
+  "published_theme_metadata_unchanged": true,
+  "published_file_hashes_compared": false,
+  "catalog_uploaded": false,
+  "role": "UNPUBLISHED",
+  "source_commit": "54ea5fa72feee83d0563d2af25aaa8d81224d9f7",
+  "runtime_tested": false,
+  "files": [
+    "sections/main-product.liquid",
+    "templates/product.json"
+  ]
+}

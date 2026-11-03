@@ -23,3 +23,11 @@ shopify theme list --store <DOMINIO_QA_AUTORIZADO> --json
 Antes: comprobar que el ID sigue siendo unpublished y que el publicado conserva su ID. Si cambia el rol, detenerse. Después: verificar resultado completo y unpublished, sin publicar.
 
 No se cargaron productos, clientes, pedidos ni datos comerciales; no se cambiaron configuraciones Admin, contraseña, pagos, dominios ni planes. No se probó navegación ni carrito en Shopify. No hay métricas Lighthouse/PSI/CWV nuevas. T001/T002 pendientes al 0 %. Detenerse antes de catálogo o cambios Admin.
+
+## Reparación autorizada y completada — 2026-11-03
+
+Tras autorización explícita, se comprobó el borrador unpublished y Horizon live. Se ejecutó exactamente la reparación limitada a sections/main-product.liquid y templates/product.json con --nodelete, desde el commit 54ea5fa72feee83d0563d2af25aaa8d81224d9f7, dentro de Docker. Shopify devolvió status success, changed true e issues vacío: ambos archivos del alcance autorizado aceptados, sin nuevos rechazos.
+
+El listado posterior confirma Dawn unpublished y el mismo objeto de metadatos de Horizon live. No se compararon hashes del tema publicado. Theme Check posterior: valid true, 0 errores y 9 advertencias. Evidencia pública: evidence/phase3/theme-repair-sanitized.json y theme-check-after-repair.json; respuestas originales privadas en work/theme-repair-*.private.json.
+
+La reparación remota está completa; la sección anterior se conserva como historial de la aprobación requerida. No se cargaron productos ni se modificaron configuraciones Admin. Navegación, búsqueda, filtros, carrito y métricas reales siguen pendientes. T001/T002 al 0 %. No hay autorización para catálogo ni publicación.
