@@ -36,3 +36,7 @@ El validador complementario de la skill no pudo correr por dependencia @shopify/
 Presupuesto: product-form.js añade 679 bytes gzip (2013 → 2692) en el candidato. Cero dependencias y cero consultas extra en éxito normal. La reconciliación dispara dos GET directos solo ante 422; el suscriptor nativo cartUpdate puede generar consultas adicionales de reglas de cantidad. No se ha medido latencia ni Core Web Vitals del candidato. Tras aprobación: aplicar exclusivamente los cinco archivos revisados al Dawn no publicado, repetir stock3/solicitud4, verificar cantidad real inmediata, mensaje español y comportamiento con red limitada; preservar Horizon, contraseña y ausencia de pedidos.
 
 T001/T002 pendientes al 0 %.
+
+## Resultado posterior a autorización
+
+Los cinco archivos revisados fueron aceptados, pero la prueba real del contador falló. Español adicional está publicado y asociado; inglés sigue principal. Ver [resultado real](phase4-p1-deployment-results.md). Este documento conserva la propuesta original, no certifica éxito runtime.

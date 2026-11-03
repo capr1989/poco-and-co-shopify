@@ -1,5 +1,5 @@
 {
-  "status": "PHASE4_FOUR_FILE_UX_UPLOAD_COMPLETE_P1_LOCAL_ONLY",
+  "status": "P1_REVIEWED_PATCH_DEPLOYED_RUNTIME_FAILURE_ES_ADDITIONAL_READY",
   "selected_for_writes": null,
   "create_store": false,
   "authenticate_cli": true,
@@ -7,7 +7,7 @@
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "Explicit four-file UX authorization consumed. No further theme upload or locale writes authorized. Shop sign-in unchanged; Google OAuth postponed.",
+  "note": "Reviewed five-file P1 upload consumed; accepted but stock-counter runtime failed. Spanish additional published and assigned; English remains primary. Additional endpoint correction/reversion decision and default-language confirmation pending.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -78,9 +78,17 @@
       "authorization_consumed": true
     },
     "p1": {
-      "theme_upload_authorized": false,
-      "locale_writes_authorized": false,
-      "status": "LOCAL_PROPOSAL_READY"
+      "reviewed_five_file_upload_authorized": true,
+      "reviewed_five_file_upload_consumed": true,
+      "reviewed_five_file_upload_accepted": true,
+      "runtime_stock_counter_passed": false,
+      "additional_endpoint_correction_authorized": false,
+      "spanish_additional_authorized": true,
+      "spanish_published": true,
+      "spanish_primary": false,
+      "primary_change_authorized": false,
+      "english_primary": true,
+      "backup_location": "work/p1-deployment-before.private.json; work/p1-translations-export.private.json; work/p1-market-translations-export.private.json"
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "file": "assets/product-form.js",
+      "remoteMd5": "b8319769b942012bbb04c87376775047",
+      "sourceEqualsCandidate": true,
+      "acceptedContentMatches": true
+    },
+    {
+      "file": "layout/theme.liquid",
+      "remoteMd5": "3f72fedbe1fd02ffffa7c34dfab05dc6",
+      "sourceEqualsCandidate": true,
+      "acceptedContentMatches": true
+    },
+    {
+      "file": "locales/en.default.json",
+      "remoteMd5": "daa56f0349878fe926f2b50077052391",
+      "sourceEqualsCandidate": true,
+      "acceptedContentMatches": true
+    },
+    {
+      "file": "locales/es.json",
+      "remoteMd5": "716eb44ddc250f506a9d59913e1a60fe",
+      "sourceEqualsCandidate": true,
+      "acceptedContentMatches": true
+    },
+    {
+      "file": "templates/product.json",
+      "remoteMd5": "b7351a2a599778b3e2ae8a593c36e2eb",
+      "sourceEqualsCandidate": true,
+      "acceptedContentMatches": true
+    }
+  ],
+  "horizonTimestampUnchanged": true,
+  "horizonFiveFileHashesUnchanged": true
+}

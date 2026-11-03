@@ -1,0 +1,8 @@
+{
+  "status": "LOCAL_ONLY_AWAITING_ADDITIONAL_APPROVAL",
+  "file": "assets/product-form.js",
+  "sourceSha256": "f5c7139765aa39338673179d483dfedf909b83902a61cd4926b16c219a3ee116",
+  "candidateSha256": "c5b0bc814930402c4429d4e6c7d83a32457a5a1d2f2d96dae27db3bdca0d2917",
+  "change": "GET cart.js to cart.json, same native page cart; no POST change",
+  "runtimeVerified": false
+}

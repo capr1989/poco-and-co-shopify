@@ -1,0 +1,13 @@
+diff --git a/theme/assets/product-form.js b/theme/assets/product-form.js
+index 5183be8..f79b9a4 100644
+--- a/theme/assets/product-form.js
++++ b/theme/assets/product-form.js
+@@ -128,7 +128,7 @@ if (!customElements.get('product-form')) {
+       async reconcilePageCartError(variantId, serverMessage) {
+         try {
+           const [cartResponse, sectionResponse] = await Promise.all([
+-            fetch(`${routes.cart_url}.js`, { headers: { Accept: 'application/json' } }),
++            fetch(`${routes.cart_url}.json`, { headers: { Accept: 'application/json' } }),
+             fetch(`${routes.cart_url}?sections=cart-icon-bubble`, { headers: { Accept: 'application/json' } }),
+           ]);
+           if (!cartResponse.ok || !sectionResponse.ok) throw new Error('Cart refresh failed');

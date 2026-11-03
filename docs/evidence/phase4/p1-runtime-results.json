@@ -1,0 +1,58 @@
+{
+  "partialEnglish": {
+    "badge": "Cart\n1\n1 item",
+    "error": "Only 3 items were added to your cart due to availability. We could not confirm your cart. Open it to check the quantities.",
+    "errorRole": "alert",
+    "path": "/products/poco-demo-estuche"
+  },
+  "partialMobileSpanish": {
+    "badge": "Carrito",
+    "documentWidth": 375,
+    "error": "Debido a la disponibilidad, solo se añadieron 3 artículos al carrito. No pudimos confirmar el carrito. Ábrelo para revisar las cantidades.",
+    "errorRole": "alert",
+    "path": "/es/products/poco-demo-estuche",
+    "width": 390
+  },
+  "mobile": [
+    {
+      "button": 48,
+      "documentWidth": 305,
+      "input": 48,
+      "lang": "es",
+      "width": 320
+    },
+    {
+      "button": 48,
+      "documentWidth": 345,
+      "input": 48,
+      "lang": "es",
+      "width": 360
+    },
+    {
+      "button": 48,
+      "documentWidth": 375,
+      "input": 48,
+      "lang": "es",
+      "width": 390
+    }
+  ],
+  "normalAddition": {
+    "dorado4": true,
+    "plateado1": true,
+    "nativeRedirect": true
+  },
+  "soldOut": {
+    "buttonDisabled": true,
+    "noAttemptedOrder": true
+  },
+  "searchSpanish": {
+    "query": "collar",
+    "results": 1
+  },
+  "networkFailureTests": "automated mocks only; no real network outage injected",
+  "cartRestoration": {
+    "chrome": "original organizer quantity 1 retained",
+    "iab": "empty as initially"
+  },
+  "status": "COUNTER_RUNTIME_FAILED_ENDPOINT_CORRECTION_AWAITING_APPROVAL"
+}

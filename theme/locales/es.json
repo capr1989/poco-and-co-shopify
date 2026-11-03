@@ -548,6 +548,10 @@
       "unverified": "Consulta las condiciones de entrega antes de comprar.",
       "mixed": "Estos productos tienen condiciones de entrega diferentes. Revisa la información de cada artículo.",
       "pending": "La entrega de uno o más artículos requiere confirmación."
+    },
+    "cart": {
+      "variant_quantity": "Carrito actualizado. Ahora tienes [quantity] unidades de esta variante en el carrito. Revisa la cantidad antes de continuar.",
+      "refresh_error": "No pudimos confirmar el carrito. Ábrelo para revisar las cantidades."
     }
   }
 }

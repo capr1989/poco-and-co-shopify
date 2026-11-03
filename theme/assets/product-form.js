@@ -48,7 +48,7 @@ if (!customElements.get('product-form')) {
 
         fetch(`${routes.cart_add_url}`, config)
           .then((response) => response.json())
-          .then((response) => {
+          .then(async (response) => {
             if (response.status) {
               publish(PUB_SUB_EVENTS.cartError, {
                 source: 'product-form',
@@ -57,6 +57,9 @@ if (!customElements.get('product-form')) {
                 message: response.message,
               });
               this.handleErrorMessage(response.description);
+              if (!this.cart && Number(response.status) === 422) {
+                await this.reconcilePageCartError(variantId, response.description || response.message);
+              }
               this.dispatchCartErrorEvent(response.description || response.message, 'INVALID');
               linesUpdateDeferred?.reject(new Error(response.description || response.message));
 
@@ -118,6 +121,38 @@ if (!customElements.get('product-form')) {
 
             CartPerformance.measureFromEvent("add:user-action", evt);
           });
+      }
+
+      // A 422 add response can still change stock-limited quantities on Shopify.
+      // Reconcile the page-cart UI from Shopify; never retry the add request.
+      async reconcilePageCartError(variantId, serverMessage) {
+        try {
+          const [cartResponse, sectionResponse] = await Promise.all([
+            fetch(`${routes.cart_url}.js`, { headers: { Accept: 'application/json' } }),
+            fetch(`${routes.cart_url}?sections=cart-icon-bubble`, { headers: { Accept: 'application/json' } }),
+          ]);
+          if (!cartResponse.ok || !sectionResponse.ok) throw new Error('Cart refresh failed');
+          const [cart, sections] = await Promise.all([cartResponse.json(), sectionResponse.json()]);
+          const html = sections['cart-icon-bubble'];
+          const bubble = document.getElementById('cart-icon-bubble');
+          const rendered = typeof html === 'string'
+            ? new DOMParser().parseFromString(html, 'text/html').querySelector('.shopify-section')
+            : null;
+          if (!Array.isArray(cart.items) || !Number.isInteger(cart.item_count) || cart.item_count < 0 || !bubble || !rendered)
+            throw new Error('Incomplete cart refresh');
+          const matching = cart.items.filter((item) => String(item.variant_id) === String(variantId));
+          if (matching.some((item) => !Number.isInteger(item.quantity) || item.quantity < 0))
+            throw new Error('Invalid cart quantity');
+          const quantity = matching.reduce((total, item) => total + item.quantity, 0);
+          const notice = (window.cartStrings.pocoCartQuantity || window.cartStrings.error).replace('[quantity]', quantity);
+          bubble.innerHTML = rendered.innerHTML;
+          this.handleErrorMessage(`${serverMessage || window.cartStrings.error} ${notice}`);
+          publish(PUB_SUB_EVENTS.cartUpdate, {
+            source: 'product-form', productVariantId: variantId, cartData: cart,
+          }).catch(() => {});
+        } catch (error) {
+          this.handleErrorMessage(`${serverMessage || window.cartStrings.error} ${(window.cartStrings.pocoRefreshError || window.cartStrings.error)}`);
+        }
       }
 
       handleErrorMessage(errorMessage = false) {

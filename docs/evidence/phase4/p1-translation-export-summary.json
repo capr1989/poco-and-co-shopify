@@ -1,0 +1,258 @@
+{
+  "types": [
+    {
+      "type": "PRODUCT",
+      "resources": 8,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ARTICLE",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "BLOG",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "MEDIA_IMAGE",
+      "resources": 9,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ARTICLE_IMAGE",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "MENU",
+      "resources": 5,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME_SETTINGS_CATEGORY",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "FILTER",
+      "resources": 2,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "EMAIL_TEMPLATE",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "DELIVERY_METHOD_DEFINITION",
+      "resources": 2,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "LINK",
+      "resources": 15,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "COLLECTION",
+      "resources": 8,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME_SETTINGS_DATA_SECTIONS",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "PAYMENT_GATEWAY",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "PAGE",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "PACKING_SLIP_TEMPLATE",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "METAOBJECT",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "SELLING_PLAN",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resources": 8,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "COLLECTION_IMAGE",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "SELLING_PLAN_GROUP",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME_APP_EMBED",
+      "resources": 0,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME_JSON_TEMPLATE",
+      "resources": 11,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "PRODUCT_OPTION_VALUE",
+      "resources": 9,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "SHOP_POLICY",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "SHOP",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME_SECTION_GROUP",
+      "resources": 2,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME_LOCALE_CONTENT",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    },
+    {
+      "type": "ONLINE_STORE_THEME",
+      "resources": 1,
+      "translationsEs": 0,
+      "translationsEn": 0,
+      "errors": [],
+      "incomplete": false
+    }
+  ],
+  "localesBefore": [
+    {
+      "locale": "en",
+      "primary": true,
+      "published": true
+    }
+  ],
+  "registeredTranslationCount": 0,
+  "privateExport": "work/p1-translations-export.private.json",
+  "coverage": "29 API resource types; global en/es plus Panama-specific translations, pagination complete. Private JSON export, not Shopify CSV.",
+  "nonDemoSourceContent": [
+    "Contact page",
+    "News blog",
+    "Shopify privacy policy template"
+  ],
+  "primaryChanged": false,
+  "marketCoverage": {
+    "market": "Panama",
+    "types": 29,
+    "registeredTranslations": 0,
+    "paginationComplete": true
+  }
+}

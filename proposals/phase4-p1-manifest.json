@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_ONLY_NOT_AUTHORIZED_FOR_UPLOAD",
+  "status": "DEPLOYED_AFTER_AUTHORIZATION_ACCEPTED_RUNTIME_COUNTER_FAILED",
   "sourceCommit": "d60cc00bc09e6bdf3e4e6ee802f3b410ec5cafa2",
   "files": [
     {

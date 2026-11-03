@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import vm from 'node:vm';
-const source=await fs.readFile('work/p1-candidate/theme/assets/product-form.js','utf8');
+const source=await fs.readFile(process.env.P1_PRODUCT_FORM_PATH||'theme/assets/product-form.js','utf8');
 const es=JSON.parse(await fs.readFile('work/p1-candidate/theme/locales/es.json','utf8'));
 function harness({cart={item_count:4,items:[{variant_id:7,quantity:3},{variant_id:8,quantity:1}]},section='<div class="shopify-section"><span>4</span></div>',sectionOk=true,fail=false,status=422,dialog=false}={}){
   const calls=[],messages=[],events=[],bubble={innerHTML:'OLD'};let Class,resolveDone;
@@ -15,7 +15,7 @@ function harness({cart={item_count:4,items:[{variant_id:7,quantity:3},{variant_i
     FormData:class{constructor(form){this.data=new Map([['id','7'],['quantity','4']]);}get(k){return this.data.get(k)}append(k,v){this.data.set(k,v)}},
     fetchConfig:()=>({method:'POST',headers:{}}),PUB_SUB_EVENTS:{cartError:'error',cartUpdate:'update'},publish:(name,data)=>{events.push({name,data});return Promise.resolve()},
     CartPerformance:{createStartingMarker:()=>0,measureFromMarker:()=>{},measureFromEvent:()=>{},measure:(name,fn)=>fn()},console:{error:()=>{}},
-    fetch:async(url,config={})=>{calls.push({url,method:config.method||'GET'});if(config.method==='POST')return response(status?{status,description:'SERVER STOCK MESSAGE'}:{id:7,key:'item',sections:{}});if(fail)throw Error('offline');if(url.endsWith('.js'))return response(cart);return{ok:sectionOk,json:async()=>({'cart-icon-bubble':section})}}};
+    fetch:async(url,config={})=>{calls.push({url,method:config.method||'GET'});if(config.method==='POST')return response(status?{status,description:'SERVER STOCK MESSAGE'}:{id:7,key:'item',sections:{}});if(fail)throw Error('offline');if(/\.(js|json)$/.test(url))return response(cart);return{ok:sectionOk,json:async()=>({'cart-icon-bubble':section})}}};
   vm.runInNewContext(source,globals);
   const form=Object.create(Class.prototype);let rendered=0;
   Object.assign(form,{form:{},cart:dialog?{getSectionsToRender:()=>[{id:'cart-icon-bubble'}],setActiveElement:()=>{},renderContents:()=>rendered++,classList:{contains:()=>false}}:null,
@@ -24,7 +24,7 @@ function harness({cart={item_count:4,items:[{variant_id:7,quantity:3},{variant_i
   return {form,globals,calls,messages,events,bubble,done,get rendered(){return rendered}};
 }
 const submit=async h=>{h.form.onSubmitHandler({preventDefault(){}});await h.done;};
-test('422 reconciles actual cart and native header without retrying the add',{timeout:1500},async()=>{const h=harness();await submit(h);assert.equal(h.calls.filter(c=>c.method==='POST').length,1);assert.deepEqual(h.calls.filter(c=>c.method==='GET').map(c=>c.url),['/es/cart.js','/es/cart?sections=cart-icon-bubble']);assert.equal(h.bubble.innerHTML,'<span>4</span>');assert.match(h.messages.at(-1),/3 unidades/);assert.ok(h.events.some(e=>e.name==='update'&&e.data.cartData.item_count===4));});
+test('422 reconciles actual cart and native header without retrying the add',{timeout:1500},async()=>{const h=harness();await submit(h);assert.equal(h.calls.filter(c=>c.method==='POST').length,1);assert.equal(h.calls.filter(c=>c.method==='GET').length,2);assert.match(h.calls[1].url,/^\/es\/cart\.(js|json)$/);assert.equal(h.calls[2].url,'/es/cart?sections=cart-icon-bubble');assert.equal(h.bubble.innerHTML,'<span>4</span>');assert.match(h.messages.at(-1),/3 unidades/);assert.ok(h.events.some(e=>e.name==='update'&&e.data.cartData.item_count===4));});
 test('message states current variant quantity rather than claiming all were newly added',async()=>{const h=harness({cart:{item_count:3,items:[{variant_id:7,quantity:1},{variant_id:7,quantity:2}]}});await submit(h);assert.match(h.messages.at(-1),/Ahora tienes 3/);assert.doesNotMatch(h.messages.at(-1),/añadieron 3/);});
 test('no available stock reports zero and uses server-rendered total',async()=>{const h=harness({cart:{item_count:1,items:[{variant_id:8,quantity:1}]},section:'<div class="shopify-section"><span>1</span></div>'});await submit(h);assert.match(h.messages.at(-1),/0 unidades/);assert.equal(h.bubble.innerHTML,'<span>1</span>');});
 test('network failure retains server message and asks buyer to verify cart',async()=>{const h=harness({fail:true});await submit(h);assert.equal(h.bubble.innerHTML,'OLD');assert.match(h.messages.at(-1),/SERVER STOCK MESSAGE/);assert.match(h.messages.at(-1),/No pudimos confirmar/);});

@@ -77,3 +77,13 @@ T001/T002 permanecen pendientes al 0 %.
 | F4-10 | Español de tienda y contador tras adición parcial | P1: investigación y parche local preparados; autorización pendiente | Español compartido requiere aprobación; parche nativo local, nueve pruebas aprobadas; docs/phase4-p1-proposal.md |
 
 Sign in with Shop permanece igual. Google OAuth pospuesto. T001/T002 PENDIENTES0%.
+
+## Actualización P1: despliegue y prueba real
+
+| ID | Trabajo | Estado | Evidencia / siguiente paso |
+|---|---|---|---|
+| F4-11 | Cinco archivos P1 revisados | Aceptados por Shopify, contador FALLA en runtime | Solicitud 4/stock3 añade3 pero contador obsoleto; corrección mínima local .json requiere aprobación o reversión JS |
+| F4-12 | Español adicional y respaldo | Completado; inglés sigue principal | 29 tipos API exportados; /es probado; confirmar cambio principal sigue sin autorización |
+| F4-13 | Theme Check contemporáneo | 2 errores upstream /9 advertencias;0 issues nuevos | applicable_disclosures desconocido también en upstream; no ocultar errores |
+
+Detalle: docs/phase4-p1-deployment-results.md. T001/T002 PENDIENTES 0 %.

@@ -536,6 +536,10 @@
       "unverified": "Confirm delivery conditions before purchasing.",
       "mixed": "These items have different delivery conditions. Review each item’s information.",
       "pending": "Delivery for one or more items needs confirmation."
+    },
+    "cart": {
+      "variant_quantity": "Cart updated. You now have [quantity] units of this variant in your cart. Review the quantity before continuing.",
+      "refresh_error": "We could not confirm your cart. Open it to check the quantities."
     }
   }
 }

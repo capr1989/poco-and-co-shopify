@@ -1,0 +1,126 @@
+{
+  "changedFiles": [
+    {
+      "file": "assets/OFL-Manrope.txt",
+      "status": "added",
+      "bytes": 4387
+    },
+    {
+      "file": "assets/poco-favicon.svg",
+      "status": "added",
+      "bytes": 597
+    },
+    {
+      "file": "assets/poco-logo-horizontal.svg",
+      "status": "added",
+      "bytes": 8226
+    },
+    {
+      "file": "assets/poco.css",
+      "status": "added",
+      "bytes": 770
+    },
+    {
+      "file": "assets/product-form.js",
+      "status": "modified",
+      "bytes": 9900
+    },
+    {
+      "file": "config/settings_data.json",
+      "status": "modified",
+      "bytes": 12637
+    },
+    {
+      "file": "config/settings_schema.json",
+      "status": "modified",
+      "bytes": 40948
+    },
+    {
+      "file": "layout/theme.liquid",
+      "status": "modified",
+      "bytes": 23071
+    },
+    {
+      "file": "locales/en.default.json",
+      "status": "modified",
+      "bytes": 20065
+    },
+    {
+      "file": "locales/es.json",
+      "status": "modified",
+      "bytes": 22717
+    },
+    {
+      "file": "sections/footer-group.json",
+      "status": "modified",
+      "bytes": 1007
+    },
+    {
+      "file": "sections/header-group.json",
+      "status": "modified",
+      "bytes": 792
+    },
+    {
+      "file": "sections/header.liquid",
+      "status": "modified",
+      "bytes": 24822
+    },
+    {
+      "file": "sections/main-cart-items.liquid",
+      "status": "modified",
+      "bytes": 26062
+    },
+    {
+      "file": "sections/main-product.liquid",
+      "status": "modified",
+      "bytes": 102549
+    },
+    {
+      "file": "sections/poco-search.liquid",
+      "status": "added",
+      "bytes": 794
+    },
+    {
+      "file": "snippets/cart-drawer.liquid",
+      "status": "modified",
+      "bytes": 31066
+    },
+    {
+      "file": "snippets/poco-cart-delivery.liquid",
+      "status": "added",
+      "bytes": 1598
+    },
+    {
+      "file": "snippets/poco-delivery.liquid",
+      "status": "added",
+      "bytes": 1010
+    },
+    {
+      "file": "snippets/poco-logo.liquid",
+      "status": "added",
+      "bytes": 210
+    },
+    {
+      "file": "templates/index.json",
+      "status": "modified",
+      "bytes": 4019
+    },
+    {
+      "file": "templates/product.json",
+      "status": "modified",
+      "bytes": 2815
+    },
+    {
+      "file": "upstream.json",
+      "status": "added",
+      "bytes": 349
+    }
+  ],
+  "nativeJsUnchangedExceptReviewedProductForm": true,
+  "brandHashesMatch": true,
+  "ownCssGzipBytes": 362,
+  "addedThemeCheckIssues": 0,
+  "baselineErrors": 2,
+  "candidateErrors": 2,
+  "note": "Compare actual baseline/candidate counts above. Static validation is not live Shopify validation."
+}

@@ -1,0 +1,65 @@
+TAP version 13
+# Local VM tests execute candidate ProductForm with mocked network/DOM, not Shopify runtime.
+# Subtest: 422 reconciles actual cart and native header without retrying the add
+ok 1 - 422 reconciles actual cart and native header without retrying the add
+  ---
+  duration_ms: 2.569684
+  type: 'test'
+  ...
+# Subtest: message states current variant quantity rather than claiming all were newly added
+ok 2 - message states current variant quantity rather than claiming all were newly added
+  ---
+  duration_ms: 1.008304
+  type: 'test'
+  ...
+# Subtest: no available stock reports zero and uses server-rendered total
+ok 3 - no available stock reports zero and uses server-rendered total
+  ---
+  duration_ms: 0.698908
+  type: 'test'
+  ...
+# Subtest: network failure retains server message and asks buyer to verify cart
+ok 4 - network failure retains server message and asks buyer to verify cart
+  ---
+  duration_ms: 1.315407
+  type: 'test'
+  ...
+# Subtest: missing section and HTTP failure do not invent a count
+ok 5 - missing section and HTTP failure do not invent a count
+  ---
+  duration_ms: 2.35265
+  type: 'test'
+  ...
+# Subtest: successful page add retains native redirect with no extra requests
+ok 6 - successful page add retains native redirect with no extra requests
+  ---
+  duration_ms: 0.701464
+  type: 'test'
+  ...
+# Subtest: non-422 errors retain native behavior
+ok 7 - non-422 errors retain native behavior
+  ---
+  duration_ms: 0.604415
+  type: 'test'
+  ...
+# Subtest: native notification success and error are untouched by page-mode patch
+ok 8 - native notification success and error are untouched by page-mode patch
+  ---
+  duration_ms: 1.323619
+  type: 'test'
+  ...
+# Subtest: cached layout without new translations still refreshes server count safely
+ok 9 - cached layout without new translations still refreshes server count safely
+  ---
+  duration_ms: 0.931405
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 95.94844
