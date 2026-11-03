@@ -5,10 +5,15 @@
 {%- liquid
   assign delivery = product.metafields.custom
   assign now_epoch = 'now' | date: '%s' | plus: 0
+  assign verified_at = delivery.delivery_verified_at.value | date: '%s' | plus: 0
+  assign group_valid = false
+  if delivery.delivery_group.value == 'local' or delivery.delivery_group.value == 'external'
+    assign group_valid = true
+  endif
   assign valid_until = delivery.delivery_valid_until.value | date: '%s' | plus: 0
 -%}
 <div class="poco-delivery">
-  {%- if delivery.delivery_verified.value == true and delivery.delivery_message.value != blank and delivery.delivery_group.value != blank and valid_until > now_epoch -%}
+  {%- if delivery.delivery_verified.value == true and delivery.delivery_message.value != blank and group_valid and verified_at > 0 and verified_at <= now_epoch and valid_until > verified_at and valid_until > now_epoch -%}
     {{ delivery.delivery_message.value | escape | newline_to_br }}
   {%- else -%}
     {{ 'poco.delivery.unverified' | t }}

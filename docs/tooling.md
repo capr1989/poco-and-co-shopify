@@ -39,3 +39,8 @@ No hay Shopify renderizado, ni URL accesible autorizada para PSI, ni datos CrUX.
 
 ## Validador de la skill
 Se intentó validate.mjs --api liquid con theme-path y lista de archivos modificados. El paquete de la skill carece de @shopify/theme-check-common y falla antes de validar; ver shopify-validator.txt. No se alteró la instalación del plugin ni Windows. La validación independiente CLI sí se ejecutó y pasó con advertencias.
+
+## Actualización Fase 3
+Compose tools ahora utiliza poco-shopify-tools:phase3; mantiene Dockerfile y restricciones. Se añadió resvg-js 2.6.2 únicamente para convertir ilustraciones ficticias a PNG compatibles con carga posterior; sin scripts de instalación, sin cambiar assets originales de marca. Generación usa proyecto read-only y solo data/fixtures/images como salida writable.
+Theme Check, paquete y pruebas locales siguen sin tienda/credenciales. El intento de paquete directamente sobre fuente read-only falló EROFS; scripts/package-theme.mjs lo resuelve copiando a /tmp y empaquetando allí, sin relajar permisos. El ZIP temporal no se sube.
+La auditoría MCP de lectura autorizada no crea sesión CLI. Los datos reales se conservan en work/ ignorado. Los nuevos tests se ejecutan con node --test tests/delivery.test.mjs tests/contrast.test.mjs tests/phase3.test.mjs. El guard acepta como argumento el JSON Theme Check actual de esta fase.

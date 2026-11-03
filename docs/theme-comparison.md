@@ -60,3 +60,6 @@ Dawn permite cubrir navegación, filtros, variantes y carrito con sus componente
 Esta es una decisión de mantenibilidad y ajuste funcional, apoyada en análisis de código; **no demuestra que Dawn tenga mejor LCP/INP**. En ambos hacen falta cambios equivalentes de identidad, entrega y búsqueda visible. No se inventan horas de esfuerzo ni puntuaciones.
 Riesgos: parches en header/producto/carrito requieren revisión al actualizar; reglas de entrega deben ser mantenidas por socios; baseline conserva advertencias upstream; actualizaciones del validador/documentación pueden cambiar diagnósticos.
 La recomendación se reabre si pruebas móviles equivalentes o pruebas de administración muestran una ventaja material de Horizon. Metodología y presupuestos en performance.md; plan concreto en shopify-implementation-plan.md.
+
+## Decisión de Fase 3
+Los fundadores aprobaron Dawn 16.1.1 como base principal de desarrollo/pruebas. Horizon permanece alternativa; no se desarrolla otra tienda completa ni se afirma victoria de rendimiento sin mediciones. La presencia de un Horizon publicado en una tienda auditada no valida su versión, configuración o rendimiento contra este candidato.

@@ -37,3 +37,20 @@ Historial anterior íntegro en history/backlog-phase1.md. T001/T002 sin cambios.
 | F2-08 | Validación interactiva real/benchmark | Sin autorización de conexión | Dominio tienda de desarrollo, acceso y subida no publicada requieren aprobación |
 | F2-09 | Revisión de socios/elección final | Pendiente | No declarar tema definitivo por análisis estático |
 | F2-10 | Sincronización remota de la fase | No realizada | Repositorio actualmente público; cambios permanecen locales |
+
+## Fase 3 · preparación e investigación
+Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado para continuar desarrollo/pruebas; no ganador de rendimiento demostrado. T001/T002 sin cambios.
+
+| ID | Trabajo | Estado | Evidencia / dependencia |
+|---|---|---|---|
+| F3-01 | Integridad, empaquetado y revisión Dawn | Ejecutado localmente | Archivos upstream presentes, ZIP en /tmp y Theme Check actual |
+| F3-02 | Ocho productos ficticios y PNG rotulados | Preparados y validados | data/fixtures/, sin cargas remotas |
+| F3-03 | Fechas/grupos de entrega y controles operativos | Implementado/documentado | Liquid endurecido; revisión local distingue agotado de compra |
+| F3-04 | QA local | 15 tests aprobados | Fixtures LiquidJS/reloj fijo, contraste y guard de integridad |
+| F3-05 | Rendimiento válido | Diagnóstico HTTP local ejecutado; CWV no medidos | Tres corridas de 14 rutas enumeradas, no waterfall/browser |
+| F3-06 | Navegador aislado Lighthouse/axe | Pendiente de aprobación/infraestructura | Política Docker conservada; lanzamiento nativo rechazado por auto-review |
+| F3-07 | Auditoría MCP de tiendas | Una tienda consultada solo lectura | Trial y no partnerDevelopment; detalles privados en work/ |
+| F3-08 | Dev store gratuita nueva | Propuesta solicitada, creación NO aprobada | Poco Co QA, basic, PA, sin demo-data; comando en connection-plan |
+| F3-09 | Conectar CLI y subir Dawn no publicado | No autorizado | Después de crear/aprobar tienda y dominio exacto |
+| F3-10 | Configurar Admin y probar runtime real | Pendiente | Tema/productos/filtros/carrito/idioma y prueba humana |
+| F3-11 | Commit y push de rama | Autorizado por brief, pendiente de cierre | Revisión de secretos; no merge a main |

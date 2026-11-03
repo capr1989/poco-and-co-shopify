@@ -1,0 +1,79 @@
+{
+  "review_time": "2026-11-02T18:00:00Z",
+  "fictitious": true,
+  "no_shopify_connection": true,
+  "results": [
+    {
+      "id": "test-organizador",
+      "eligible_for_controlled_purchase_test": true,
+      "eligible_for_catalog_preview": true,
+      "reasons": [],
+      "action": "REVIEW_THEN_AUTHORIZE_TEST_PUBLICATION",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-soporte-movil",
+      "eligible_for_controlled_purchase_test": true,
+      "eligible_for_catalog_preview": true,
+      "reasons": [],
+      "action": "REVIEW_THEN_AUTHORIZE_TEST_PUBLICATION",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-collar",
+      "eligible_for_controlled_purchase_test": true,
+      "eligible_for_catalog_preview": true,
+      "reasons": [],
+      "action": "REVIEW_THEN_AUTHORIZE_TEST_PUBLICATION",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-bolsa-viaje",
+      "eligible_for_controlled_purchase_test": true,
+      "eligible_for_catalog_preview": true,
+      "reasons": [],
+      "action": "REVIEW_THEN_AUTHORIZE_TEST_PUBLICATION",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-dispensador",
+      "eligible_for_controlled_purchase_test": false,
+      "eligible_for_catalog_preview": true,
+      "reasons": [
+        "no_planned_stock"
+      ],
+      "action": "REVIEW_SHOW_SOLD_OUT_ZERO_STOCK",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-soporte-auto",
+      "eligible_for_controlled_purchase_test": true,
+      "eligible_for_catalog_preview": true,
+      "reasons": [],
+      "action": "REVIEW_THEN_AUTHORIZE_TEST_PUBLICATION",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-bandeja",
+      "eligible_for_controlled_purchase_test": false,
+      "eligible_for_catalog_preview": false,
+      "reasons": [
+        "delivery_not_verified",
+        "verification_date_invalid",
+        "delivery_expired_or_invalid"
+      ],
+      "action": "KEEP_DRAFT_UNPUBLISHED_ZERO_STOCK",
+      "enforcement": "offline review only; no Shopify writes"
+    },
+    {
+      "id": "test-estuche",
+      "eligible_for_controlled_purchase_test": false,
+      "eligible_for_catalog_preview": false,
+      "reasons": [
+        "delivery_expired_or_invalid"
+      ],
+      "action": "KEEP_DRAFT_UNPUBLISHED_ZERO_STOCK",
+      "enforcement": "offline review only; no Shopify writes"
+    }
+  ]
+}

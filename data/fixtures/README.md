@@ -1,0 +1,7 @@
+# Datos ficticios de Fase 3
+products.json es un conjunto de **configuración**, no un payload directo Admin API ni un CSV de importación validado contra una tienda. Su estado inicial es seguro: ocho Draft, nueve variantes, sin canales y stock cero. planned_test_quantity describe escenarios posteriores que requieren aprobación.
+Tipos/definiciones en metafield-definitions.json; crear definiciones, escribir valores y después verificar lectura. Valores null de fechas indican campo sin rellenar: no escribir el texto "null" en Shopify.
+Fecha de referencia fija 2026-11-02T18:00:00Z para pruebas reproducibles. No reusar vigencia simulada como verificación real en otro día. catalog-readiness acepta un reloj de revisión explícito y nunca cambia Shopify.
+Los productos 7/8 cubren pendiente/vencido; producto 5 agotado; collar tiene dos variantes con plazo común. cart-scenarios.json describe ventanas distintas, cambio de cantidad y eliminación, pero no ejecuta solicitudes de carrito.
+PNG 600×600 con rótulo FICTICIO, hashes y fuente en image-manifest.json. Son ilustraciones de muestra, sin proveedor, stock, plazo ni precio comercial confirmado. Cargar archivos manualmente desde Admin o mecanismo aprobado; no convertir rutas locales en URLs inventadas ni alojarlos públicamente.
+Generación reproducible en contenedor con scripts/render-fixture-images.mjs, proyecto read-only y solo la carpeta destino de imágenes writable, red none y renderer 2.6.2. No se modifica el repositorio de branding.

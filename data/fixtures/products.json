@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "fictitious": true,
+  "reference_time": "2026-11-02T18:00:00Z",
+  "currency": "USD",
+  "instructions": "NO UPLOAD AUTHORIZED. Configuration fixtures only. All initial products DRAFT, unlisted, tracked inventory 0 and overselling denied. Planned stock applies only after separate authorization and readiness review.",
+  "products": [
+    {
+      "id": "test-organizador",
+      "title": "[PRUEBA FICTICIA] Organizador de escritorio",
+      "department": "Hogar",
+      "price": 18,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-organizador.png",
+        "alt": "Ilustración FICTICIA de Organizador de escritorio",
+        "source_path": "prototype/assets/product-1.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-001-1",
+          "option": "Default Title",
+          "planned_test_quantity": 6,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "local",
+        "delivery_message": "2–3 días (FICTICIO)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "test-soporte-movil",
+      "title": "[PRUEBA FICTICIA] Soporte para teléfono",
+      "department": "Tecnología",
+      "price": 15,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-soporte-movil.png",
+        "alt": "Ilustración FICTICIA de Soporte para teléfono",
+        "source_path": "prototype/assets/product-2.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-002-1",
+          "option": "Default Title",
+          "planned_test_quantity": 8,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "local",
+        "delivery_message": "2–3 días (FICTICIO)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "test-collar",
+      "title": "[PRUEBA FICTICIA] Collar geométrico",
+      "department": "Joyería",
+      "price": 24,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-collar.png",
+        "alt": "Ilustración FICTICIA de Collar geométrico",
+        "source_path": "prototype/assets/product-3.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-003-1",
+          "option": "Dorado",
+          "planned_test_quantity": 4,
+          "shared_product_delivery": true
+        },
+        {
+          "sku": "TEST-POCO-003-2",
+          "option": "Plateado",
+          "planned_test_quantity": 4,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "local",
+        "delivery_message": "2–3 días (FICTICIO)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "test-bolsa-viaje",
+      "title": "[PRUEBA FICTICIA] Bolsa organizadora de viaje",
+      "department": "Viajes",
+      "price": 22,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-bolsa-viaje.png",
+        "alt": "Ilustración FICTICIA de Bolsa organizadora de viaje",
+        "source_path": "prototype/assets/product-4.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-004-1",
+          "option": "Default Title",
+          "planned_test_quantity": 5,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "external",
+        "delivery_message": "10–15 días (FICTICIO)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "test-dispensador",
+      "title": "[PRUEBA FICTICIA] Dispensador para mascotas",
+      "department": "Mascotas",
+      "price": 12,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-dispensador.png",
+        "alt": "Ilustración FICTICIA de Dispensador para mascotas",
+        "source_path": "prototype/assets/product-5.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-005-1",
+          "option": "Default Title",
+          "planned_test_quantity": 0,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "local",
+        "delivery_message": "2–3 días (FICTICIO)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "test-soporte-auto",
+      "title": "[PRUEBA FICTICIA] Soporte para automóvil",
+      "department": "Automóvil",
+      "price": 19,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-soporte-auto.png",
+        "alt": "Ilustración FICTICIA de Soporte para automóvil",
+        "source_path": "prototype/assets/product-6.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-006-1",
+          "option": "Default Title",
+          "planned_test_quantity": 7,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "external",
+        "delivery_message": "10–15 días (FICTICIO)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "test-bandeja",
+      "title": "[PRUEBA FICTICIA] Bandeja para accesorios",
+      "department": "Hogar",
+      "price": 16,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-bandeja.png",
+        "alt": "Ilustración FICTICIA de Bandeja para accesorios",
+        "source_path": "prototype/assets/product-7.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-007-1",
+          "option": "Default Title",
+          "planned_test_quantity": 5,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "local",
+        "delivery_message": "Pendiente de verificación (FICTICIO)",
+        "delivery_verified": false,
+        "delivery_verified_at": null,
+        "delivery_valid_until": null
+      }
+    },
+    {
+      "id": "test-estuche",
+      "title": "[PRUEBA FICTICIA] Estuche de cables",
+      "department": "Tecnología",
+      "price": 14,
+      "price_is_fictitious": true,
+      "description": "Producto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.",
+      "image": {
+        "local_path": "data/fixtures/images/ficticio-test-estuche.png",
+        "alt": "Ilustración FICTICIA de Estuche de cables",
+        "source_path": "prototype/assets/product-8.svg"
+      },
+      "initial_shopify": {
+        "status": "DRAFT",
+        "publish_online_store": false,
+        "inventory_quantity": 0,
+        "inventory_tracked": true,
+        "inventory_policy": "DENY"
+      },
+      "variants": [
+        {
+          "sku": "TEST-POCO-008-1",
+          "option": "Default Title",
+          "planned_test_quantity": 3,
+          "shared_product_delivery": true
+        }
+      ],
+      "metafields": {
+        "delivery_group": "local",
+        "delivery_message": "5–7 días (FICTICIO; verificación vencida)",
+        "delivery_verified": true,
+        "delivery_verified_at": "2026-11-01T12:00:00Z",
+        "delivery_valid_until": "2026-11-02T17:00:00Z"
+      }
+    }
+  ]
+}

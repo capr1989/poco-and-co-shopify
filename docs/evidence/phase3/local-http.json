@@ -1,0 +1,369 @@
+{
+  "kind": "explicit local HTTP diagnostic requests",
+  "target": "prototype only, NOT Shopify",
+  "environment": "Node 22 inside prototype container; loopback; no browser, no CPU/network throttling",
+  "limitations": [
+    "request list was explicitly enumerated, not a browser waterfall",
+    "does not measure mobile performance, LCP, CLS, INP, TBT or Lighthouse score",
+    "elapsed HTTP timing on loopback is not real user performance"
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "requests": 14,
+      "total_body_bytes": 186566,
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "body_bytes": 2901,
+          "elapsed_ms": 126.226,
+          "content_type": "text/html; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/app.js",
+          "status": 200,
+          "body_bytes": 5134,
+          "elapsed_ms": 121.76,
+          "content_type": "text/javascript; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/styles.css",
+          "status": 200,
+          "body_bytes": 2740,
+          "elapsed_ms": 45.475,
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/Manrope.ttf",
+          "status": 200,
+          "body_bytes": 164700,
+          "elapsed_ms": 61.301,
+          "content_type": "font/ttf",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/logo-horizontal.svg",
+          "status": 200,
+          "body_bytes": 8226,
+          "elapsed_ms": 55.774,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/favicon.svg",
+          "status": 200,
+          "body_bytes": 597,
+          "elapsed_ms": 77.258,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-1.svg",
+          "status": 200,
+          "body_bytes": 276,
+          "elapsed_ms": 68.394,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-2.svg",
+          "status": 200,
+          "body_bytes": 278,
+          "elapsed_ms": 74.326,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-3.svg",
+          "status": 200,
+          "body_bytes": 276,
+          "elapsed_ms": 33.842,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-4.svg",
+          "status": 200,
+          "body_bytes": 286,
+          "elapsed_ms": 59.949,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-5.svg",
+          "status": 200,
+          "body_bytes": 278,
+          "elapsed_ms": 72.614,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-6.svg",
+          "status": 200,
+          "body_bytes": 296,
+          "elapsed_ms": 63.545,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-7.svg",
+          "status": 200,
+          "body_bytes": 299,
+          "elapsed_ms": 57.372,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-8.svg",
+          "status": 200,
+          "body_bytes": 279,
+          "elapsed_ms": 77.855,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "requests": 14,
+      "total_body_bytes": 186566,
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "body_bytes": 2901,
+          "elapsed_ms": 49.434,
+          "content_type": "text/html; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/app.js",
+          "status": 200,
+          "body_bytes": 5134,
+          "elapsed_ms": 45.178,
+          "content_type": "text/javascript; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/styles.css",
+          "status": 200,
+          "body_bytes": 2740,
+          "elapsed_ms": 47.798,
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/Manrope.ttf",
+          "status": 200,
+          "body_bytes": 164700,
+          "elapsed_ms": 95.622,
+          "content_type": "font/ttf",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/logo-horizontal.svg",
+          "status": 200,
+          "body_bytes": 8226,
+          "elapsed_ms": 77.592,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/favicon.svg",
+          "status": 200,
+          "body_bytes": 597,
+          "elapsed_ms": 72.727,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-1.svg",
+          "status": 200,
+          "body_bytes": 276,
+          "elapsed_ms": 76.082,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-2.svg",
+          "status": 200,
+          "body_bytes": 278,
+          "elapsed_ms": 79.019,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-3.svg",
+          "status": 200,
+          "body_bytes": 276,
+          "elapsed_ms": 65.365,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-4.svg",
+          "status": 200,
+          "body_bytes": 286,
+          "elapsed_ms": 58.343,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-5.svg",
+          "status": 200,
+          "body_bytes": 278,
+          "elapsed_ms": 62.723,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-6.svg",
+          "status": 200,
+          "body_bytes": 296,
+          "elapsed_ms": 49.315,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-7.svg",
+          "status": 200,
+          "body_bytes": 299,
+          "elapsed_ms": 30.119,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-8.svg",
+          "status": 200,
+          "body_bytes": 279,
+          "elapsed_ms": 68.559,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "requests": 14,
+      "total_body_bytes": 186566,
+      "resources": [
+        {
+          "path": "/",
+          "status": 200,
+          "body_bytes": 2901,
+          "elapsed_ms": 51.088,
+          "content_type": "text/html; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/app.js",
+          "status": 200,
+          "body_bytes": 5134,
+          "elapsed_ms": 43.639,
+          "content_type": "text/javascript; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/styles.css",
+          "status": 200,
+          "body_bytes": 2740,
+          "elapsed_ms": 50.759,
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/Manrope.ttf",
+          "status": 200,
+          "body_bytes": 164700,
+          "elapsed_ms": 82.326,
+          "content_type": "font/ttf",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/logo-horizontal.svg",
+          "status": 200,
+          "body_bytes": 8226,
+          "elapsed_ms": 64.498,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/favicon.svg",
+          "status": 200,
+          "body_bytes": 597,
+          "elapsed_ms": 54.579,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-1.svg",
+          "status": 200,
+          "body_bytes": 276,
+          "elapsed_ms": 100.047,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-2.svg",
+          "status": 200,
+          "body_bytes": 278,
+          "elapsed_ms": 76.486,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-3.svg",
+          "status": 200,
+          "body_bytes": 276,
+          "elapsed_ms": 83.617,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-4.svg",
+          "status": 200,
+          "body_bytes": 286,
+          "elapsed_ms": 55.63,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-5.svg",
+          "status": 200,
+          "body_bytes": 278,
+          "elapsed_ms": 72.951,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-6.svg",
+          "status": 200,
+          "body_bytes": 296,
+          "elapsed_ms": 63.372,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-7.svg",
+          "status": 200,
+          "body_bytes": 299,
+          "elapsed_ms": 74.946,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        },
+        {
+          "path": "/assets/product-8.svg",
+          "status": 200,
+          "body_bytes": 279,
+          "elapsed_ms": 68.694,
+          "content_type": "image/svg+xml",
+          "content_encoding": "identity"
+        }
+      ]
+    }
+  ]
+}

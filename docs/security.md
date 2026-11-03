@@ -9,3 +9,6 @@ Recuperación: docker compose down conserva archivos; reconstruir sin borrar dat
 
 Fase 2: imagen de herramientas separada con npm ci --ignore-scripts, versiones exactas y lock. Runtime estático sin red en Compose, uid1000, filesystem/proyecto solo lectura, sin capacidades ni puertos. Theme Check con documentación actualizada se ejecutó aparte con red saliente a documentación pública; sin tienda ni credenciales. npm audit consulta registro sin montar proyecto. No se desactivó sandbox, seccomp o no-new-privileges para Chrome.
 GitHub muestra actualmente el repositorio público, confirmado mediante conector y API pública. No se modifica visibilidad ni se publica esta rama; cambios de fase permanecen locales.
+
+Fase 3: lectura MCP autorizada, sin mutaciones, renombrados o creación de tiendas. Metadatos privados de tienda no se suben a GitHub. Consulta GraphQL mínima de conteos/configuración sin detalles de clientes/pedidos. Configuración de autorización mantiene escritura/creación deshabilitadas.
+La revisión automática rechazó lanzar Chrome con perfil separado (blocked by policy). No se intentó otra vía de lanzamiento ni se alteró seguridad; se documenta una VM restringida para aprobación. Paquete del tema se genera en /tmp; no se da escritura a la fuente.

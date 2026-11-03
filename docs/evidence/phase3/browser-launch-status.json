@@ -1,0 +1,7 @@
+{
+  "action": "Launch preinstalled Chrome with a separate task-specific profile and default sandbox",
+  "status": "NOT_EXECUTED",
+  "blocker": "Automatic approval review rejected the launch: blocked by policy",
+  "response": "No alternate launch path attempted; no sandbox, Docker or Windows security settings changed",
+  "alternative": "Proposed isolated browser VM requires separate approval; no browser metrics claimed"
+}

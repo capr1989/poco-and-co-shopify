@@ -1,0 +1,42 @@
+{
+  "status": "PROPOSED_NOT_CREATED",
+  "owner_type": "PRODUCT",
+  "namespace": "custom",
+  "definitions": [
+    {
+      "key": "delivery_group",
+      "type": "single_line_text_field",
+      "allowed_values": [
+        "local",
+        "external"
+      ],
+      "storefront_read": true
+    },
+    {
+      "key": "delivery_message",
+      "type": "multi_line_text_field",
+      "storefront_read": true
+    },
+    {
+      "key": "delivery_verified",
+      "type": "boolean",
+      "storefront_read": true
+    },
+    {
+      "key": "delivery_verified_at",
+      "type": "date_time",
+      "storefront_read": true
+    },
+    {
+      "key": "delivery_valid_until",
+      "type": "date_time",
+      "storefront_read": true
+    }
+  ],
+  "order": [
+    "create merchant-owned definitions in Admin after authorization",
+    "write fictitious values for draft products",
+    "read product.metafields.custom.key.value in theme"
+  ],
+  "source": "https://shopify.dev/docs/apps/build/metafields/list-of-data-types"
+}

@@ -1,0 +1,96 @@
+{
+  "fictitious": true,
+  "reference_time": "2026-11-02T18:00:00Z",
+  "scenarios": [
+    {
+      "id": "local-only",
+      "items": [
+        {
+          "product": "test-organizador",
+          "variant": 0,
+          "quantity": 1
+        }
+      ],
+      "expected": "No mixed warning"
+    },
+    {
+      "id": "mixed",
+      "items": [
+        {
+          "product": "test-organizador",
+          "variant": 0,
+          "quantity": 1
+        },
+        {
+          "product": "test-bolsa-viaje",
+          "variant": 0,
+          "quantity": 1
+        }
+      ],
+      "expected": "Different delivery windows warning"
+    },
+    {
+      "id": "same-group-different-window",
+      "items": [
+        {
+          "product": "test-organizador",
+          "variant": 0,
+          "quantity": 1
+        },
+        {
+          "product": "test-soporte-movil",
+          "variant": 0,
+          "quantity": 1
+        }
+      ],
+      "override_for_local_test": {
+        "test-soporte-movil": {
+          "delivery_message": "4–6 días (FICTICIO)"
+        }
+      },
+      "expected": "Mixed warning despite same group; override is local fixture only"
+    },
+    {
+      "id": "pending",
+      "items": [
+        {
+          "product": "test-bandeja",
+          "variant": 0,
+          "quantity": 1
+        }
+      ],
+      "expected": "Unverified fallback; hold publication"
+    },
+    {
+      "id": "expired",
+      "items": [
+        {
+          "product": "test-estuche",
+          "variant": 0,
+          "quantity": 1
+        }
+      ],
+      "expected": "Expired fallback; hold publication"
+    },
+    {
+      "id": "variant",
+      "items": [
+        {
+          "product": "test-collar",
+          "variant": 1,
+          "quantity": 2
+        }
+      ],
+      "expected": "Plateado and product delivery retained"
+    },
+    {
+      "id": "quantity-remove",
+      "steps": [
+        "mixed cart",
+        "increase local quantity",
+        "remove external item"
+      ],
+      "expected": "Totals change; mixed notice disappears after external removal"
+    }
+  ]
+}

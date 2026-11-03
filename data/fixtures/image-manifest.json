@@ -1,0 +1,94 @@
+{
+  "fictitious": true,
+  "renderer": "@resvg/resvg-js 2.6.2",
+  "files": [
+    {
+      "product": "test-organizador",
+      "file": "data/fixtures/images/ficticio-test-organizador.png",
+      "source": "prototype/assets/product-1.svg",
+      "source_sha256": "16d6eebd936cc85058bb5374c33342bfb0b8b88b063fecf5d8d24209f0bbfac5",
+      "bytes": 8867,
+      "sha256": "ded1256b2bdab52b05c0d6a5f6a51085becbee193ade8dab66a56a1950badf9b",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-soporte-movil",
+      "file": "data/fixtures/images/ficticio-test-soporte-movil.png",
+      "source": "prototype/assets/product-2.svg",
+      "source_sha256": "0c78db6469c2a15540fc09f102a5d8280af642a2c6ea0d53e445f0f0abee3b7b",
+      "bytes": 8705,
+      "sha256": "3f001269800bcc438252af897ee7bcec9259d89e2ed92c95a9dbae65ca2e108b",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-collar",
+      "file": "data/fixtures/images/ficticio-test-collar.png",
+      "source": "prototype/assets/product-3.svg",
+      "source_sha256": "b46853982a8bb58aff28784620737e2cd9e405284443a4e241fc536828dab325",
+      "bytes": 12733,
+      "sha256": "00c7ede44a279a63d90cbfb7cd86e70d0b96e022d1ddf03f2ed81c0cc4794e77",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-bolsa-viaje",
+      "file": "data/fixtures/images/ficticio-test-bolsa-viaje.png",
+      "source": "prototype/assets/product-4.svg",
+      "source_sha256": "3970b79acb86af4b3bb1170e5053835228d2acdaaa5d6f483842eb825122ce65",
+      "bytes": 8997,
+      "sha256": "3149c1a8d41e18f0c217f3614e9ac4d31bbffacd84ec7c3e8458781958ae588a",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-dispensador",
+      "file": "data/fixtures/images/ficticio-test-dispensador.png",
+      "source": "prototype/assets/product-5.svg",
+      "source_sha256": "e0b722fc8e38a916d4277eca93b0b17dfdd612f35a51a5d225b658e7867c119a",
+      "bytes": 13591,
+      "sha256": "6ad4e7ba118d022a64326ad634ae390136832b0e27cd23d1fddb53497c2a3e1d",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-soporte-auto",
+      "file": "data/fixtures/images/ficticio-test-soporte-auto.png",
+      "source": "prototype/assets/product-6.svg",
+      "source_sha256": "83198cf507f8f28598cdd4ce60d4522ee2fd0eb526af6957d32c5945b68f9323",
+      "bytes": 8333,
+      "sha256": "e9d15f22ddcc0fbdb231e00efefdad97e81621150d10b7007caec0bc9221162d",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-bandeja",
+      "file": "data/fixtures/images/ficticio-test-bandeja.png",
+      "source": "prototype/assets/product-7.svg",
+      "source_sha256": "c563abe90214e552ad65da923e73eb745037e808e97dfcd3b8e9b835c38d9a7e",
+      "bytes": 12568,
+      "sha256": "595371af4dd277f9eea7a8d15c7e8a7fc1256ab93d5c8ff95a588d188c330e41",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    },
+    {
+      "product": "test-estuche",
+      "file": "data/fixtures/images/ficticio-test-estuche.png",
+      "source": "prototype/assets/product-8.svg",
+      "source_sha256": "f5be028ee69b4d2336cb5f3f4c9c56b3801cc266de1a985ddbc11494d94b3fc7",
+      "bytes": 9662,
+      "sha256": "73d6d0a9f362b7306f09a5f0faf0921ddba4a1a93a93d531250ca10ee16d2baa",
+      "width": 600,
+      "height": 600,
+      "label": "FICTICIO"
+    }
+  ]
+}

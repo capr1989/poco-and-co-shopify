@@ -1,7 +1,7 @@
 name: poco-shopify-tools
 services:
   tools:
-    image: poco-shopify-tools:phase2
+    image: poco-shopify-tools:phase3
     build:
       context: .
       dockerfile: tools/Dockerfile

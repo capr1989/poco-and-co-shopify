@@ -19,3 +19,8 @@ Repositorio: https://github.com/capr1989/poco-and-co-shopify . Su visibilidad ac
 ## Fase 2 preparada en rama local
 Rama phase2/theme-evaluation. Candidato técnico provisional Dawn 16.1.1 en theme/, sin conexión Shopify. Prototipo conservado. Comparación con Horizon 4.3.0 por commit en docs/theme-comparison.md; plan concreto en docs/shopify-implementation-plan.md; comandos de herramientas en docs/tooling.md. Los cambios de esta fase no se han subido al remoto público.
 Theme Check válido con advertencias y seis tests locales aprobados. Sin métricas Lighthouse/PSI ni validación de storefront Shopify.
+
+## Fase 3: preparada para autorización
+Rama phase3/shopify-validation desde 33748a7. Dawn aprobado como base principal de pruebas/desarrollo. Readiness, plan de conexión, matriz funcional, resultados, guía Admin y controles en docs/phase3-readiness.md, shopify-connection-plan.md, functional-test-plan.md, performance-results.md, admin-setup-guide.md y operations-controls.md.
+Ocho fixtures Draft y ocho PNG FICTICIO; no cargados. MCP usado solo para auditoría de lectura; no autenticación CLI ni mutaciones. Se propone dev store gratuita nueva, todavía sin aprobación final. No se cambió la tienda existente.
+15 tests locales, Theme Check y empaquetado ejecutados. Sin score Lighthouse/CWV; ver limitaciones de navegador y propuesta VM. Datos reales de la tienda auditada solo en work/ ignorado, nunca en esta rama pública. Push autorizado para Fase 3, sin merge.

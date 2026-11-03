@@ -1,0 +1,23 @@
+{
+  "id": "store:create:dev",
+  "flags": {
+    "json": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "option"
+    },
+    "plan": {
+      "type": "option",
+      "options": [
+        "basic",
+        "grow",
+        "advanced",
+        "plus"
+      ]
+    },
+    "country": {
+      "type": "option"
+    }
+  }
+}

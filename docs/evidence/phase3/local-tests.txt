@@ -1,0 +1,106 @@
+TAP version 13
+# 192C46/F1F4F2: 12.73:1
+# FFFFFF/2855D9: 6.19:1
+# 192C46/B8CEC7: 8.52:1
+# FFFFFF/192C46: 14.09:1
+# Subtest: brand text and action color pairs meet WCAG AA normal text contrast
+ok 1 - brand text and action color pairs meet WCAG AA normal text contrast
+  ---
+  duration_ms: 4.267652
+  type: 'test'
+  ...
+# Fixture renderer is LiquidJS, not Shopify Liquid or a live cart API.
+# Subtest: missing, unverified, expired or incomplete delivery never publishes a promise
+ok 2 - missing, unverified, expired or incomplete delivery never publishes a promise
+  ---
+  duration_ms: 150.700164
+  type: 'test'
+  ...
+# Subtest: verified delivery text is HTML escaped
+ok 3 - verified delivery text is HTML escaped
+  ---
+  duration_ms: 19.354556
+  type: 'test'
+  ...
+# Subtest: different windows in the same supply group still warn
+ok 4 - different windows in the same supply group still warn
+  ---
+  duration_ms: 22.338827
+  type: 'test'
+  ...
+# Subtest: different supply groups warn and equal windows do not
+ok 5 - different supply groups warn and equal windows do not
+  ---
+  duration_ms: 45.241466
+  type: 'test'
+  ...
+# Subtest: removing the external item removes mixed warning; unknown delivery stays explicit
+ok 6 - removing the external item removes mixed warning; unknown delivery stays explicit
+  ---
+  duration_ms: 36.063649
+  type: 'test'
+  ...
+# All fixture renders are LiquidJS with a fixed test clock; not Shopify APIs, real variant changes or AJAX execution.
+# Subtest: eight clearly fictitious products cover the six required departments with local images
+ok 7 - eight clearly fictitious products cover the six required departments with local images
+  ---
+  duration_ms: 169.971587
+  type: 'test'
+  ...
+# Subtest: initial configuration never publishes or stocks any fixture
+ok 8 - initial configuration never publishes or stocks any fixture
+  ---
+  duration_ms: 16.440453
+  type: 'test'
+  ...
+# Subtest: readiness review excludes sold out, pending and expired products at reference time
+ok 9 - readiness review excludes sold out, pending and expired products at reference time
+  ---
+  duration_ms: 1.944917
+  type: 'test'
+  ...
+# Subtest: expiration boundary, future verification and different variant conditions stay on hold
+ok 10 - expiration boundary, future verification and different variant conditions stay on hold
+  ---
+  duration_ms: 6.681891
+  type: 'test'
+  ...
+# Subtest: fixture delivery renders valid text and suppresses pending/expired promises
+ok 11 - fixture delivery renders valid text and suppresses pending/expired promises
+  ---
+  duration_ms: 101.886554
+  type: 'test'
+  ...
+# Subtest: quantity changes do not erase mixed notice, removing external line does
+ok 12 - quantity changes do not erase mixed notice, removing external line does
+  ---
+  duration_ms: 78.200195
+  type: 'test'
+  ...
+# Subtest: same group with differing verified windows still warns
+ok 13 - same group with differing verified windows still warns
+  ---
+  duration_ms: 13.80547
+  type: 'test'
+  ...
+# Subtest: variants intentionally share a product delivery promise; no per-variant promise invented
+ok 14 - variants intentionally share a product delivery promise; no per-variant promise invented
+  ---
+  duration_ms: 21.981848
+  type: 'test'
+  ...
+# Subtest: missing, malformed and future verification dates never display a delivery promise
+ok 15 - missing, malformed and future verification dates never display a delivery promise
+  ---
+  duration_ms: 30.177128
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1465.811619

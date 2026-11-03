@@ -1,0 +1,44 @@
+{
+  "source_baseline": "33748a7",
+  "branch": "phase3/shopify-validation",
+  "local_tests": {
+    "passed": 15,
+    "failed": 0,
+    "scope": "fixture contracts, LiquidJS delivery cases, contrast; NOT Shopify execution"
+  },
+  "theme_check": {
+    "errors": 0,
+    "warnings": 9,
+    "documentation": "public live reference, no store access"
+  },
+  "package": {
+    "files": 362,
+    "bytes": 1200792,
+    "sha256": "f1b2519f12672bbaefb0694092a0d592e7bf6ef3fb2ba4b84f4885b05c6f96c8",
+    "ephemeral": true,
+    "uploaded": false
+  },
+  "prototype_http": {
+    "runs": 3,
+    "explicit_requests_per_run": 14,
+    "body_bytes_per_run": 186566,
+    "browser": false,
+    "mobile": false
+  },
+  "shopify": {
+    "mcp_read_only_audit": true,
+    "stores_created": 0,
+    "renames": 0,
+    "themes_uploaded": 0,
+    "catalog_uploaded": false,
+    "store_details_in_git": false,
+    "cli_authenticated": false
+  },
+  "browser": {
+    "lighthouse_metrics": false,
+    "launch_status": "auto-review rejection; no bypass",
+    "isolated_vm_proposed": true
+  },
+  "t001": "PENDIENTE 0 %",
+  "t002": "PENDIENTE 0 %"
+}
