@@ -1,0 +1,31 @@
+{
+  "status": "LOCAL_ONLY_NOT_AUTHORIZED_FOR_UPLOAD",
+  "sourceCommit": "d60cc00bc09e6bdf3e4e6ee802f3b410ec5cafa2",
+  "files": [
+    {
+      "file": "assets/product-form.js",
+      "sourceSha256": "aac169636e4bea2fe681b2263bc83126c816976cb434a8409a0b3c3dc1b4dd7f",
+      "candidateSha256": "f5c7139765aa39338673179d483dfedf909b83902a61cd4926b16c219a3ee116"
+    },
+    {
+      "file": "layout/theme.liquid",
+      "sourceSha256": "8528f9e6753f6113f52e43fb4f26e1cf13b8da81d6f4ff338f700f67ec42b065",
+      "candidateSha256": "f9365addc56087154618944edb82155ca448ada7ccf1d18e0b9222eec2b65b8d"
+    },
+    {
+      "file": "locales/en.default.json",
+      "sourceSha256": "ae721502d2383d6ac69f497a77b8a1a5ba2740bfc0207e6289c14eb6d8caa1e9",
+      "candidateSha256": "b8b11eaa19cffed6ce4b2bf39ada54ef8d14f386cc58626100c20dbb1ce846d0"
+    },
+    {
+      "file": "locales/es.json",
+      "sourceSha256": "ea721e21f81ff7e4ce5937132ef415f5718fe9895c8523651736bb07470bb84d",
+      "candidateSha256": "8ac60098514d6a8bb9ae0eaea073179857c9c13a5a93a98650566816a89fbb92"
+    },
+    {
+      "file": "templates/product.json",
+      "sourceSha256": "2bd3fc4d2ea4fe67ff3bcbd9e94d04e66bac63708b9527a9f95af958868a3673",
+      "candidateSha256": "91398c652f1d50d504b457d88bad9d231f04531da7f6ba2ea92aa902d5a4640f"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_LOCAL_PROPOSAL_ONLY",
+  "changedFiles": [
+    "assets/product-form.js",
+    "layout/theme.liquid",
+    "locales/en.default.json",
+    "locales/es.json",
+    "templates/product.json"
+  ],
+  "addedFiles": 0,
+  "removedFiles": 0,
+  "otherNativeJsUnchanged": true,
+  "remoteApplied": false
+}

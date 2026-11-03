@@ -1,0 +1,426 @@
+{
+  "date": "2026-11-03",
+  "sourceCommit": "d60cc00bc09e6bdf3e4e6ee802f3b410ec5cafa2",
+  "authorizedFiles": [
+    {
+      "file": "assets/poco.css",
+      "oldMd5": "95778d258569a11db9bcb8f00cfe8014",
+      "newMd5": "565193748cf3b16a6c24c32e336f2af8",
+      "contentMatchesProposal": true
+    },
+    {
+      "file": "sections/header-group.json",
+      "oldMd5": "04dcaf4c6176c54d9067212e61de4cdf",
+      "newMd5": "74aafe647daadc6bc319c8c49a08caf6",
+      "contentMatchesProposal": true
+    },
+    {
+      "file": "templates/index.json",
+      "oldMd5": "89cd191e8aabe35f5c29146ea4f7d77b",
+      "newMd5": "fed804723aa61059dd78dfdd922a6c8c",
+      "contentMatchesProposal": true
+    },
+    {
+      "file": "sections/poco-search.liquid",
+      "oldMd5": "f0ba793fee2cae4b9208edbe0589deac",
+      "newMd5": "73402267e48784597da99c29cda64c46",
+      "contentMatchesProposal": true
+    }
+  ],
+  "uploadedOnlyAuthorizedFiles": true,
+  "remoteBackup": "work/phase4-ux-upload-before.private.json",
+  "privateAfter": "work/phase4-ux-upload-after.private.json",
+  "themeRole": "UNPUBLISHED",
+  "passwordEnabled": true,
+  "horizonMetadataAndSampleHashesUnchanged": true,
+  "horizonFullFileHashesRepeated": false,
+  "measurements": {
+    "before": [
+      {
+        "button": {
+          "bottom": 190.6999969482422,
+          "height": 48,
+          "top": 142.6999969482422,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 756.7000122070312,
+          "height": 26,
+          "top": 730.7000122070312,
+          "width": 266
+        },
+        "documentWidth": 320,
+        "header": {
+          "bottom": 66.70000457763672,
+          "height": 66.70000457763672,
+          "top": 0,
+          "width": 320
+        },
+        "input": {
+          "bottom": 190.6999969482422,
+          "height": 48,
+          "top": 142.6999969482422,
+          "width": 160
+        },
+        "intro": {
+          "bottom": 703.6999969482422,
+          "height": 497,
+          "top": 206.6999969482422,
+          "width": 320
+        },
+        "logo": {
+          "bottom": 48.39999961853027,
+          "height": 30.899999618530273,
+          "top": 17.5,
+          "width": 85
+        },
+        "search": {
+          "bottom": 206.70000457763672,
+          "height": 140,
+          "top": 66.70000457763672,
+          "width": 320
+        },
+        "viewport": 320
+      },
+      {
+        "button": {
+          "bottom": 178.25,
+          "height": 48,
+          "top": 130.25,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 678.25,
+          "height": 26,
+          "top": 652.25,
+          "width": 266
+        },
+        "documentWidth": 360,
+        "header": {
+          "bottom": 81.25,
+          "height": 81.25,
+          "top": 0,
+          "width": 360
+        },
+        "input": {
+          "bottom": 178.25,
+          "height": 48,
+          "top": 130.25,
+          "width": 200
+        },
+        "intro": {
+          "bottom": 625.25,
+          "height": 431,
+          "top": 194.25,
+          "width": 360
+        },
+        "logo": {
+          "bottom": 62.95000076293945,
+          "height": 45.45000076293945,
+          "top": 17.5,
+          "width": 125
+        },
+        "search": {
+          "bottom": 194.25,
+          "height": 113,
+          "top": 81.25,
+          "width": 360
+        },
+        "viewport": 360
+      },
+      {
+        "button": {
+          "bottom": 189.3000030517578,
+          "height": 48,
+          "top": 141.3000030517578,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 650.2999877929688,
+          "height": 26,
+          "top": 624.2999877929688,
+          "width": 266
+        },
+        "documentWidth": 390,
+        "header": {
+          "bottom": 92.3000030517578,
+          "height": 92.3000030517578,
+          "top": 0,
+          "width": 390.3999938964844
+        },
+        "input": {
+          "bottom": 189.3000030517578,
+          "height": 48,
+          "top": 141.3000030517578,
+          "width": 230.40000915527344
+        },
+        "intro": {
+          "bottom": 597.3000030517578,
+          "height": 392,
+          "top": 205.3000030517578,
+          "width": 390.3999938964844
+        },
+        "logo": {
+          "bottom": 74,
+          "height": 56.5,
+          "top": 17.5,
+          "width": 155.40000915527344
+        },
+        "search": {
+          "bottom": 205.3000030517578,
+          "height": 113,
+          "top": 92.3000030517578,
+          "width": 390.3999938964844
+        },
+        "viewport": 390
+      }
+    ],
+    "after": [
+      {
+        "button": {
+          "bottom": 178.6999969482422,
+          "height": 48,
+          "top": 130.6999969482422,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 716.7000122070312,
+          "height": 26,
+          "top": 690.7000122070312,
+          "width": 266
+        },
+        "documentWidth": 320,
+        "header": {
+          "bottom": 58.70000076293945,
+          "height": 58.70000076293945,
+          "top": 0,
+          "width": 320
+        },
+        "input": {
+          "bottom": 178.6999969482422,
+          "height": 48,
+          "top": 130.6999969482422,
+          "width": 160
+        },
+        "intro": {
+          "bottom": 663.6999969482422,
+          "height": 473,
+          "top": 190.6999969482422,
+          "width": 320
+        },
+        "logo": {
+          "bottom": 44.39999961853027,
+          "height": 30.899999618530273,
+          "top": 13.5,
+          "width": 85
+        },
+        "search": {
+          "bottom": 190.70000076293945,
+          "height": 132,
+          "top": 58.70000076293945,
+          "width": 320
+        },
+        "viewport": 320
+      },
+      {
+        "button": {
+          "bottom": 166.25,
+          "height": 48,
+          "top": 118.25,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 638.25,
+          "height": 26,
+          "top": 612.25,
+          "width": 266
+        },
+        "documentWidth": 360,
+        "header": {
+          "bottom": 73.25,
+          "height": 73.25,
+          "top": 0,
+          "width": 360
+        },
+        "input": {
+          "bottom": 166.25,
+          "height": 48,
+          "top": 118.25,
+          "width": 200
+        },
+        "intro": {
+          "bottom": 585.25,
+          "height": 407,
+          "top": 178.25,
+          "width": 360
+        },
+        "logo": {
+          "bottom": 58.95000076293945,
+          "height": 45.45000076293945,
+          "top": 13.5,
+          "width": 125
+        },
+        "search": {
+          "bottom": 178.25,
+          "height": 105,
+          "top": 73.25,
+          "width": 360
+        },
+        "viewport": 360
+      },
+      {
+        "button": {
+          "bottom": 177.3000030517578,
+          "height": 48,
+          "top": 129.3000030517578,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 610.2999877929688,
+          "height": 26,
+          "top": 584.2999877929688,
+          "width": 266
+        },
+        "documentWidth": 390,
+        "header": {
+          "bottom": 84.30000305175781,
+          "height": 84.30000305175781,
+          "top": 0,
+          "width": 390.3999938964844
+        },
+        "input": {
+          "bottom": 177.3000030517578,
+          "height": 48,
+          "top": 129.3000030517578,
+          "width": 230.40000915527344
+        },
+        "intro": {
+          "bottom": 557.3000030517578,
+          "height": 368,
+          "top": 189.3000030517578,
+          "width": 390.3999938964844
+        },
+        "logo": {
+          "bottom": 70,
+          "height": 56.5,
+          "top": 13.5,
+          "width": 155.40000915527344
+        },
+        "search": {
+          "bottom": 189.3000030517578,
+          "height": 105,
+          "top": 84.30000305175781,
+          "width": 390.3999938964844
+        },
+        "viewport": 390
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "viewport": 320,
+      "introBefore": 497,
+      "introAfter": 473,
+      "departmentsTopBefore": 730.7000122070312,
+      "departmentsTopAfter": 690.7000122070312,
+      "departmentsEarlier": 40,
+      "logoSizeUnchanged": true,
+      "inputAndButtonHeight": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 360,
+      "introBefore": 431,
+      "introAfter": 407,
+      "departmentsTopBefore": 652.25,
+      "departmentsTopAfter": 612.25,
+      "departmentsEarlier": 40,
+      "logoSizeUnchanged": true,
+      "inputAndButtonHeight": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 390,
+      "introBefore": 392,
+      "introAfter": 368,
+      "departmentsTopBefore": 624.2999877929688,
+      "departmentsTopAfter": 584.2999877929688,
+      "departmentsEarlier": 40,
+      "logoSizeUnchanged": true,
+      "inputAndButtonHeight": true,
+      "horizontalOverflow": false
+    }
+  ],
+  "checks": {
+    "search": "collar returned1; absent term returned0; custom search section absent from results; native search input visible1 excluding closed header modal",
+    "shopSignIn": "Sign in with Shop button present; no sign-in submitted",
+    "navigation": "Six desktop department links present",
+    "cart": "Original organizer quantity1 totalUSD18 visible",
+    "themeCheck": {
+      "errors": 0,
+      "warnings": 9
+    }
+  },
+  "p1RemoteApplied": false,
+  "localeAudit": {
+    "shopLocales": [
+      {
+        "locale": "en",
+        "primary": true,
+        "published": true
+      }
+    ],
+    "themes": [
+      {
+        "name": "Horizon",
+        "hasEs": true,
+        "enStringKeys": 311,
+        "esStringKeys": 318,
+        "missingInEs": [],
+        "esCore": {
+          "soldOut": "Agotado"
+        },
+        "hashes": [
+          {
+            "filename": "locales/en.default.json",
+            "checksumMd5": "b10ade59cefa70dbfdfae9a483bbc62b"
+          },
+          {
+            "filename": "locales/es.json",
+            "checksumMd5": "dc04b076c745501ee72d45b69a82fc21"
+          }
+        ]
+      },
+      {
+        "name": "Poco Co QA - Dawn 16.1.1",
+        "hasEs": true,
+        "enStringKeys": 387,
+        "esStringKeys": 399,
+        "missingInEs": [],
+        "esCore": {
+          "search": "Búsqueda",
+          "cart": "Tu carrito",
+          "soldOut": "Agotado",
+          "delivery": "Consulta las condiciones de entrega antes de comprar."
+        },
+        "hashes": [
+          {
+            "filename": "locales/en.default.json",
+            "checksumMd5": "f0911fa9fa9db7216bb92db227aa4c7c"
+          },
+          {
+            "filename": "locales/es.json",
+            "checksumMd5": "e2e2a46de3d0632899ed7d8b50fa0c05"
+          }
+        ]
+      }
+    ]
+  },
+  "markets": [
+    {
+      "name": "Panama",
+      "status": "ACTIVE",
+      "customWebPresences": 0
+    }
+  ]
+}

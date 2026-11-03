@@ -1,0 +1,127 @@
+diff --git a/theme/assets/product-form.js b/theme/assets/product-form.js
+index ac22efe..5183be8 100644
+--- a/theme/assets/product-form.js
++++ b/theme/assets/product-form.js
+@@ -48,7 +48,7 @@ if (!customElements.get('product-form')) {
+ 
+         fetch(`${routes.cart_add_url}`, config)
+           .then((response) => response.json())
+-          .then((response) => {
++          .then(async (response) => {
+             if (response.status) {
+               publish(PUB_SUB_EVENTS.cartError, {
+                 source: 'product-form',
+@@ -57,6 +57,9 @@ if (!customElements.get('product-form')) {
+                 message: response.message,
+               });
+               this.handleErrorMessage(response.description);
++              if (!this.cart && Number(response.status) === 422) {
++                await this.reconcilePageCartError(variantId, response.description || response.message);
++              }
+               this.dispatchCartErrorEvent(response.description || response.message, 'INVALID');
+               linesUpdateDeferred?.reject(new Error(response.description || response.message));
+ 
+@@ -120,6 +123,38 @@ if (!customElements.get('product-form')) {
+           });
+       }
+ 
++      // A 422 add response can still change stock-limited quantities on Shopify.
++      // Reconcile the page-cart UI from Shopify; never retry the add request.
++      async reconcilePageCartError(variantId, serverMessage) {
++        try {
++          const [cartResponse, sectionResponse] = await Promise.all([
++            fetch(`${routes.cart_url}.js`, { headers: { Accept: 'application/json' } }),
++            fetch(`${routes.cart_url}?sections=cart-icon-bubble`, { headers: { Accept: 'application/json' } }),
++          ]);
++          if (!cartResponse.ok || !sectionResponse.ok) throw new Error('Cart refresh failed');
++          const [cart, sections] = await Promise.all([cartResponse.json(), sectionResponse.json()]);
++          const html = sections['cart-icon-bubble'];
++          const bubble = document.getElementById('cart-icon-bubble');
++          const rendered = typeof html === 'string'
++            ? new DOMParser().parseFromString(html, 'text/html').querySelector('.shopify-section')
++            : null;
++          if (!Array.isArray(cart.items) || !Number.isInteger(cart.item_count) || cart.item_count < 0 || !bubble || !rendered)
++            throw new Error('Incomplete cart refresh');
++          const matching = cart.items.filter((item) => String(item.variant_id) === String(variantId));
++          if (matching.some((item) => !Number.isInteger(item.quantity) || item.quantity < 0))
++            throw new Error('Invalid cart quantity');
++          const quantity = matching.reduce((total, item) => total + item.quantity, 0);
++          const notice = (window.cartStrings.pocoCartQuantity || window.cartStrings.error).replace('[quantity]', quantity);
++          bubble.innerHTML = rendered.innerHTML;
++          this.handleErrorMessage(`${serverMessage || window.cartStrings.error} ${notice}`);
++          publish(PUB_SUB_EVENTS.cartUpdate, {
++            source: 'product-form', productVariantId: variantId, cartData: cart,
++          }).catch(() => {});
++        } catch (error) {
++          this.handleErrorMessage(`${serverMessage || window.cartStrings.error} ${(window.cartStrings.pocoRefreshError || window.cartStrings.error)}`);
++        }
++      }
++
+       handleErrorMessage(errorMessage = false) {
+         if (this.hideErrors) return;
+ 
+diff --git a/theme/layout/theme.liquid b/theme/layout/theme.liquid
+index bbe1b8d..0aff301 100644
+--- a/theme/layout/theme.liquid
++++ b/theme/layout/theme.liquid
+@@ -363,6 +363,8 @@
+       };
+ 
+       window.cartStrings = {
++        pocoCartQuantity: {{ 'poco.cart.variant_quantity' | t | json }},
++        pocoRefreshError: {{ 'poco.cart.refresh_error' | t | json }},
+         error: `{{ 'sections.cart.cart_error' | t }}`,
+         quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+       };
+diff --git a/theme/locales/en.default.json b/theme/locales/en.default.json
+index 52d0d04..ad944de 100644
+--- a/theme/locales/en.default.json
++++ b/theme/locales/en.default.json
+@@ -536,6 +536,10 @@
+       "unverified": "Confirm delivery conditions before purchasing.",
+       "mixed": "These items have different delivery conditions. Review each item’s information.",
+       "pending": "Delivery for one or more items needs confirmation."
++    },
++    "cart": {
++      "variant_quantity": "Cart updated. You now have [quantity] units of this variant in your cart. Review the quantity before continuing.",
++      "refresh_error": "We could not confirm your cart. Open it to check the quantities."
+     }
+   }
+ }
+diff --git a/theme/locales/es.json b/theme/locales/es.json
+index 1486878..89d18d7 100644
+--- a/theme/locales/es.json
++++ b/theme/locales/es.json
+@@ -548,6 +548,10 @@
+       "unverified": "Consulta las condiciones de entrega antes de comprar.",
+       "mixed": "Estos productos tienen condiciones de entrega diferentes. Revisa la información de cada artículo.",
+       "pending": "La entrega de uno o más artículos requiere confirmación."
++    },
++    "cart": {
++      "variant_quantity": "Carrito actualizado. Ahora tienes [quantity] unidades de esta variante en el carrito. Revisa la cantidad antes de continuar.",
++      "refresh_error": "No pudimos confirmar el carrito. Ábrelo para revisar las cantidades."
+     }
+   }
+ }
+diff --git a/theme/templates/product.json b/theme/templates/product.json
+index dc1a25f..3ff3178 100644
+--- a/theme/templates/product.json
++++ b/theme/templates/product.json
+@@ -39,7 +39,7 @@
+         "share": {
+           "type": "share",
+           "settings": {
+-            "share_label": "Share"
++            "share_label": "Compartir"
+           }
+         },
+         "poco_delivery": {
+@@ -93,7 +93,7 @@
+     "related-products": {
+       "type": "related-products",
+       "settings": {
+-        "heading": "You may also like",
++        "heading": "También te puede interesar",
+         "heading_size": "h2",
+         "products_to_show": 4,
+         "columns_desktop": 4,

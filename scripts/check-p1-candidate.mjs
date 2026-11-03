@@ -1,0 +1,7 @@
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+const manifest=JSON.parse(await fs.readFile('proposals/phase4-p1-manifest.json','utf8'));
+const hash=data=>createHash('sha256').update(data.toString().replaceAll('\r\n','\n')).digest('hex');
+async function walk(dir,prefix=''){const out=[];for(const entry of await fs.readdir(dir,{withFileTypes:true})){const relative=path.posix.join(prefix,entry.name);if(entry.isDirectory())out.push(...await walk(path.join(dir,entry.name),relative));else out.push(relative);}return out;}
+const source=await walk('theme'),candidate=await walk('work/p1-candidate/theme');assert.deepEqual(candidate.sort(),source.sort(),'Candidate added or removed files');const changes=[];
+for(const file of source){const a=await fs.readFile(path.join('theme',file)),b=await fs.readFile(path.join('work/p1-candidate/theme',file));if(hash(a)!==hash(b)){const entry=manifest.files.find(e=>e.file===file);assert.ok(entry,'Unexpected candidate change: '+file);assert.equal(hash(a),entry.sourceSha256);assert.equal(hash(b),entry.candidateSha256);changes.push(file);}}
+assert.deepEqual(changes.sort(),manifest.files.map(e=>e.file).sort());console.log(JSON.stringify({status:'EXACT_LOCAL_PROPOSAL_ONLY',changedFiles:changes,addedFiles:0,removedFiles:0,otherNativeJsUnchanged:true,remoteApplied:false},null,2));

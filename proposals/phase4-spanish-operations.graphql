@@ -1,0 +1,14 @@
+# BORRADOR NO EJECUTADO. Requiere aprobación y exportación previa de traducciones.
+# No establece idioma principal; ese paso se presenta como operación Admin separada.
+mutation PrepareEnableSpanish {
+  shopLocaleEnable(locale: "es") {
+    shopLocale { locale primary published }
+    userErrors { field message }
+  }
+}
+mutation PreparePublishSpanish {
+  shopLocaleUpdate(locale: "es", shopLocale: {published: true}) {
+    shopLocale { locale primary published }
+    userErrors { field message }
+  }
+}

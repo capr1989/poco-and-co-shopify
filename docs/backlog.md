@@ -72,8 +72,8 @@ T001/T002 permanecen pendientes al 0 %.
 | F4-06 | Mejoras UX tras revisión | Pendiente de iteración/revisión del usuario | Español completo, altura móvil, títulos demo y entrega en agotados; diseño no aprobado |
 
 | F4-07 | Auditoría UX ampliada | Ejecutada con límites documentados | Precio/orden, filtros móvil, teclado variante, entrega pendiente/vencida, límite stock y carrito; docs/phase4-ux-audit.md |
-| F4-08 | Propuesta visual compacta y búsqueda sin duplicación | Local validada; NO SUBIDA | Cuatro archivos; Theme Check0errores/9advertencias; requiere aprobación antes de cualquier escritura remota |
+| F4-08 | Propuesta visual compacta y búsqueda sin duplicación | Subida autorizada completada | Cuatro archivos aceptados; Theme Check 0 errores/9 advertencias; docs/phase4-ux-upload-results.md |
 | F4-09 | Lighthouse sin relajar Docker | Investigación documentada, métricas pendientes | DevTools autenticado exploratorio/VM aislada propuesta; docs/lighthouse-safe-validation.md |
-| F4-10 | Español de tienda y contador tras adición parcial | P1, pendientes de autorización/implementación | Soloen publicado; stock se limita, contador obsoleto hasta navegación; sin parche JS improvisado |
+| F4-10 | Español de tienda y contador tras adición parcial | P1: investigación y parche local preparados; autorización pendiente | Español compartido requiere aprobación; parche nativo local, nueve pruebas aprobadas; docs/phase4-p1-proposal.md |
 
 Sign in with Shop permanece igual. Google OAuth pospuesto. T001/T002 PENDIENTES0%.

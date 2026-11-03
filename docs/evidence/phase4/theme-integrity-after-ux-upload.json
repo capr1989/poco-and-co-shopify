@@ -1,0 +1,121 @@
+{
+  "changedFiles": [
+    {
+      "file": "assets/OFL-Manrope.txt",
+      "status": "added",
+      "bytes": 4387
+    },
+    {
+      "file": "assets/poco-favicon.svg",
+      "status": "added",
+      "bytes": 597
+    },
+    {
+      "file": "assets/poco-logo-horizontal.svg",
+      "status": "added",
+      "bytes": 8226
+    },
+    {
+      "file": "assets/poco.css",
+      "status": "added",
+      "bytes": 770
+    },
+    {
+      "file": "config/settings_data.json",
+      "status": "modified",
+      "bytes": 12637
+    },
+    {
+      "file": "config/settings_schema.json",
+      "status": "modified",
+      "bytes": 40948
+    },
+    {
+      "file": "layout/theme.liquid",
+      "status": "modified",
+      "bytes": 23332
+    },
+    {
+      "file": "locales/en.default.json",
+      "status": "modified",
+      "bytes": 19812
+    },
+    {
+      "file": "locales/es.json",
+      "status": "modified",
+      "bytes": 22447
+    },
+    {
+      "file": "sections/footer-group.json",
+      "status": "modified",
+      "bytes": 1007
+    },
+    {
+      "file": "sections/header-group.json",
+      "status": "modified",
+      "bytes": 792
+    },
+    {
+      "file": "sections/header.liquid",
+      "status": "modified",
+      "bytes": 24822
+    },
+    {
+      "file": "sections/main-cart-items.liquid",
+      "status": "modified",
+      "bytes": 26062
+    },
+    {
+      "file": "sections/main-product.liquid",
+      "status": "modified",
+      "bytes": 102549
+    },
+    {
+      "file": "sections/poco-search.liquid",
+      "status": "added",
+      "bytes": 794
+    },
+    {
+      "file": "snippets/cart-drawer.liquid",
+      "status": "modified",
+      "bytes": 31066
+    },
+    {
+      "file": "snippets/poco-cart-delivery.liquid",
+      "status": "added",
+      "bytes": 1598
+    },
+    {
+      "file": "snippets/poco-delivery.liquid",
+      "status": "added",
+      "bytes": 1010
+    },
+    {
+      "file": "snippets/poco-logo.liquid",
+      "status": "added",
+      "bytes": 210
+    },
+    {
+      "file": "templates/index.json",
+      "status": "modified",
+      "bytes": 4019
+    },
+    {
+      "file": "templates/product.json",
+      "status": "modified",
+      "bytes": 2801
+    },
+    {
+      "file": "upstream.json",
+      "status": "added",
+      "bytes": 349
+    }
+  ],
+  "nativeJsUnchanged": true,
+  "brandHashesMatch": true,
+  "ownCssGzipBytes": 362,
+  "addedThemeCheckIssues": 0,
+  "baselineErrors": 0,
+  "candidateErrors": 0,
+  "note": "Compare actual baseline/candidate counts above. Static validation is not live Shopify validation."
+}

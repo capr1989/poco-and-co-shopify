@@ -1,0 +1,12 @@
+{
+  "status": "LOCAL_CANDIDATE_PREPARED",
+  "directory": "work/p1-candidate/theme",
+  "files": [
+    "assets/product-form.js",
+    "layout/theme.liquid",
+    "locales/en.default.json",
+    "locales/es.json",
+    "templates/product.json"
+  ],
+  "remoteWrites": 0
+}

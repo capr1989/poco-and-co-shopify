@@ -1,0 +1,13 @@
+{
+  "nativeFile": "assets/product-form.js",
+  "beforeBytes": 7744,
+  "candidateBytes": 9900,
+  "beforeGzip": 2013,
+  "candidateGzip": 2692,
+  "normalSuccessExtraRequests": 0,
+  "extraAddRequests": 0,
+  "newDependencies": 0,
+  "remoteApplied": false,
+  "pageMode422DirectReadRequests": 2,
+  "nativeSubscriberRequests": "cartUpdate can trigger Dawn quantity-rule refresh; total network cost requires approved runtime measurement"
+}

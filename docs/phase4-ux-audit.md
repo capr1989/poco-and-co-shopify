@@ -78,3 +78,7 @@ Los cuatro archivos están en el checkout, pero NO en Shopify. No ejecutar theme
 Evidencia anterior: runtime-ux-verification.json. Evidencia ampliada sanitizada: extended-ux-audit.json. Capturas actuales en evidence/phase4/screenshots/phase4-*.jpg. Datos originales privados en work/phase4-extended-audit.private.json y phase4-readonly-audit-state.private.json, excluidos de Git.
 
 Pendientes: flujo de teclado/foco/Escape completo, lector/axe, sesiones independientes, teléfonos físicos iOS/Android, Lighthouse/PSI y throttling. Investigación segura de rendimiento: lighthouse-safe-validation.md. Diseño definitivo pendiente de revisión del usuario. T001/T002 PENDIENTES0%.
+
+## Actualización: subida UX autorizada
+
+Los cuatro archivos de la propuesta fueron aceptados por Shopify el 2026-11-03 desde d60cc00. Dawn sigue sin publicar. Resultados, mediciones y capturas en [phase4-ux-upload-results.md](phase4-ux-upload-results.md). Los P1 de idioma/contador tienen propuesta local independiente, sin autorización de subida ni cambios globales: [phase4-p1-proposal.md](phase4-p1-proposal.md).
