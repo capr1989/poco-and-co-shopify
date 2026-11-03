@@ -56,3 +56,15 @@ Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado p
 | F3-11 | Commit y push de rama | Ejecutado y verificado | Implementación fef452f enviada a phase3/shopify-validation tras revisión de secretos; sin merge |
 
 | F3-12 | Reparar dos archivos rechazados del nuevo borrador | Completado tras aprobación | Shopify success; Dawn unpublished, Horizon live; runtime pendiente |
+
+## Fase 4 · validación visual y UX
+
+| ID | Trabajo | Estado | Evidencia / dependencia |
+|---|---|---|---|
+| F4-01 | Confirmar conexión QA y roles de temas | Pendiente de reautenticación MCP | No escribir en tienda previa; docs/phase4-visual-ux.md |
+| F4-02 | Ocho productos/nueve variantes/imágenes/stock ficticio | Autorizado, pendiente | Fixtures existentes; sin pedidos ni pagos |
+| F4-03 | Cinco definiciones de entrega y valores | Autorizado, pendiente | Merchant-owned custom; comprobar lectura |
+| F4-04 | Seis departamentos, menú, filtros y colección destacada | Autorizado, pendiente | Dawn no publicado; filtros según capacidad disponible |
+| F4-05 | QA visual móvil/escritorio y funciones | Pendiente de catálogo y acceso | Capturas/pruebas reales; no inventar métricas |
+
+T001/T002 permanecen pendientes al 0 %.
