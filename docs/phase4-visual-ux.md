@@ -81,3 +81,9 @@ Evidencia: evidence/phase4/runtime-ux-verification.json y screenshots/ (portada 
 Verificación final Admin: contraseña true, Dawn UNPUBLISHED, Horizon MAIN con updatedAt sin cambios. No hubo escrituras de tema/Admin/catálogo durante esta revisión; los hashes completos de Horizon se verificaron en la configuración anterior. Sin checkout, pedidos ni pagos. No hay mediciones nuevas de rendimiento.
 
 Pendientes: rango de precios/ordenación; drawer de filtros móvil; entrega pendiente/vencida real; límites de stock/persistencia del carrito; auditoría completa de teclado/lector/axe; dispositivos reales; Lighthouse/PSI/CWV y CPU/red limitadas. T001/T002 pendientes al0%.
+
+### Ajuste solicitado: altura de búsqueda
+
+El usuario solicitó igualar botón y campo. Se modificó únicamente assets/poco.css en el borrador Dawn: input block con border-box/height48px y botón height48px/align-self:flex-end. El label permanece sobre el campo, sin estirar el botón. Shopify aceptó el único asset sin userErrors.
+
+Verificación real por getBoundingClientRect: escritorio1536px, campo/botón48px, top179.325/bottom227.325; móvil390px, ambos48px, top141.3/bottom189.3. Capturas: screenshots/poco-search-height-desktop.jpg y poco-search-height-mobile.jpg. Se restauró viewport. Sin JS nuevo, publicación ni otros cambios Shopify.
