@@ -1,5 +1,5 @@
 # Entrega local de Fase 3
-Rama phase3/shopify-validation desde 33748a7; preparada para push autorizado, sin merge.
+Rama phase3/shopify-validation desde 33748a7; implementación fef452f subida y verificada en GitHub, sin merge. La entrega final puede incluir un commit posterior solo de documentación.
 Dawn aprobado como base de desarrollo. Tema íntegro, JS nativo intacto y mensajes de entrega más estrictos; prototipo conservado.
 15 tests locales aprobados; Theme Check 0 errores/9 advertencias; ZIP de CLI local válido; auditoría npm 0 conocidas. Son pruebas estáticas/fixtures, no pruebas de Shopify.
 Ocho productos ficticios y nueve variantes, ocho PNG FICTICIO y cinco definiciones propuestas; todos Draft/no publicados/stock cero inicialmente. Controles de publicación/inventario documentados, sin afirmar que Liquid bloquea checkout.

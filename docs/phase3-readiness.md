@@ -31,3 +31,6 @@ Creación de tienda gratuita tiene autorización de principio, pero requiere pre
 ## Siguiente paso
 Revisar y aprobar la propuesta concreta de dev store gratuita nueva llamada Poco Co QA, capacidades Basic y país PA, sin demo-data. Después, presentar dominio literal, acceso y comandos exactos de conexión/carga; no publicar tema ni productos por defecto. Ver shopify-connection-plan.md.
 No cuentas nuevas, cargos, pagos, dominios, borrados, pedidos reales ni merge a main. Push de esta rama autorizado por brief de Fase 3 tras revisar secretos. T001/T002 se mantienen PENDIENTES 0 %.
+
+## Entrega GitHub
+La implementación fef452f se subió a phase3/shopify-validation y se verificó contra el remoto, tras revisar secretos y exclusión del registro privado. No se hizo merge a main. Rama: https://github.com/capr1989/poco-and-co-shopify/tree/phase3/shopify-validation . La aprobación de creación de dev store sigue pendiente.
