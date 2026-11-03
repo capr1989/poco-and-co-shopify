@@ -51,6 +51,8 @@ Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado p
 | F3-06 | Navegador aislado Lighthouse/axe | Pendiente de aprobación/infraestructura | Política Docker conservada; lanzamiento nativo rechazado por auto-review |
 | F3-07 | Auditoría MCP de tiendas | Una tienda consultada solo lectura | Trial y no partnerDevelopment; detalles privados en work/ |
 | F3-08 | Dev store gratuita nueva | Creada tras autorización explícita | Poco Co QA, tipo dev, basic, PA, sin demo-data; dominio en registro privado y chat |
-| F3-09 | Conectar CLI y subir Dawn no publicado | No autorizado | Después de crear/aprobar tienda y dominio exacto |
+| F3-09 | Conectar CLI y subir Dawn no publicado | Subida parcial; nuevo borrador UNPUBLISHED | Dos archivos rechazados; corrección local validada, reparación remota requiere aprobación; docs/theme-upload-results.md |
 | F3-10 | Configurar Admin y probar runtime real | Pendiente | Tema/productos/filtros/carrito/idioma y prueba humana |
 | F3-11 | Commit y push de rama | Ejecutado y verificado | Implementación fef452f enviada a phase3/shopify-validation tras revisión de secretos; sin merge |
+
+| F3-12 | Reparar dos archivos rechazados del nuevo borrador | Pendiente de aprobación explícita | Nombre corregido localmente a 13 caracteres; no reintentar creación ni publicar |

@@ -1,0 +1,33 @@
+{
+  "source_commit": "5ed12f52d0cad002e30ff8c9c7c53b9eb032bb2f",
+  "dawn_version": "16.1.1",
+  "cli_version": "5.0.0",
+  "status": "PARTIAL_UPLOAD",
+  "new_theme_created": true,
+  "new_theme_role": "UNPUBLISHED",
+  "existing_theme_id_not_reused": true,
+  "published_theme_metadata_unchanged": true,
+  "published_theme_file_hashes_compared": false,
+  "private_record": "work/theme-upload-verification.private.json (excluded from Git)",
+  "issues": [
+    {
+      "file": "sections/main-product.liquid",
+      "message": "Invalid block 'poco_delivery': name es demasiado largo (máximo 25 caracteres)."
+    },
+    {
+      "file": "templates/product.json",
+      "message": "El tipo de sección 'main-product' no hace referencia a una sección de archivo existente"
+    }
+  ],
+  "local_repair": {
+    "before": "Poco: información de entrega",
+    "before_characters": 28,
+    "after": "Poco: entrega",
+    "after_characters": 13,
+    "remote_applied": false,
+    "requires_separate_approval": true
+  },
+  "catalog_uploaded": false,
+  "admin_settings_changed": false,
+  "password_changed": false
+}

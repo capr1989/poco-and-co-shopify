@@ -1,5 +1,5 @@
 {
-  "status": "DEV_STORE_CREATED_WAITING_FOR_THEME_UPLOAD_APPROVAL",
+  "status": "NEW_THEME_UNPUBLISHED_PARTIAL_UPLOAD_WAITING_FOR_REPAIR_APPROVAL",
   "selected_for_writes": null,
   "create_store": false,
   "authenticate_cli": true,
@@ -7,7 +7,7 @@
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "The one authorized free dev-store creation has completed in the user-selected organization. No theme/resource uploads, catalog writes, renaming, payments, domains or paid apps authorized. The exact domain and verification details are recorded privately and communicated to the user. Do not repeat store creation.",
+  "note": "The one authorized --unpublished creation created a distinct unpublished theme. Server rejected the custom block label length and dependent product template. Local label fix prepared and validated; updating that now-existing theme requires explicit new approval under the user condition. No catalog/Admin/password changes.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -23,5 +23,29 @@
     "assigned_domain_location": "work/dev-store-created.private.json (excluded from public Git)"
   },
   "creation_completed": true,
-  "creation_authorization_consumed": true
+  "creation_authorization_consumed": true,
+  "theme_upload": {
+    "authorized_on": "2026-11-03",
+    "authorized_once": true,
+    "name": "Poco Co QA - Dawn 16.1.1",
+    "target": "Exact user-approved domain in work/dev-store-created.private.json",
+    "mode": "CREATE_NEW_UNPUBLISHED_ONLY",
+    "source_commit": "5ed12f52d0cad002e30ff8c9c7c53b9eb032bb2f",
+    "forbidden": [
+      "publish",
+      "live",
+      "allow-live",
+      "existing-theme overwrite",
+      "catalog writes",
+      "admin configuration changes"
+    ],
+    "status": "COMPLETED_PARTIALLY_SERVER_REJECTED_TWO_FILES",
+    "authorization_consumed": true,
+    "new_theme_record": "work/theme-upload-verification.private.json (excluded from public Git)",
+    "repair_authorized": false,
+    "repair_files": [
+      "sections/main-product.liquid",
+      "templates/product.json"
+    ]
+  }
 }
