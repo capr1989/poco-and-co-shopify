@@ -34,3 +34,7 @@ No cuentas nuevas, cargos, pagos, dominios, borrados, pedidos reales ni merge a 
 
 ## Entrega GitHub
 La implementación fef452f se subió a phase3/shopify-validation y se verificó contra el remoto, tras revisar secretos y exclusión del registro privado. No se hizo merge a main. Rama: https://github.com/capr1989/poco-and-co-shopify/tree/phase3/shopify-validation . La aprobación de creación de dev store sigue pendiente.
+
+## Actualización · 3 de noviembre de 2026
+El usuario autorizó la creación y eligió su organización. Poco Co QA fue creada sin demo-data y verificada por CLI de tipo dev y capacidades basic, país PA. No hubo contratación comercial ni cambios en la tienda anterior. El dominio literal está en work/dev-store-created.private.json y se comunicó al usuario; no se publica aquí. La autorización puntual de creación quedó consumida.
+Sigue prohibida la carga de Dawn, productos u otros recursos hasta una autorización siguiente con dominio y comandos exactos. La sesión CLI de creación se cerró y el contenedor temporal fue eliminado, sin guardar sus credenciales en Windows/Git. T001/T002 permanecen pendientes al 0 %.

@@ -50,7 +50,7 @@ Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado p
 | F3-05 | Rendimiento válido | Diagnóstico HTTP local ejecutado; CWV no medidos | Tres corridas de 14 rutas enumeradas, no waterfall/browser |
 | F3-06 | Navegador aislado Lighthouse/axe | Pendiente de aprobación/infraestructura | Política Docker conservada; lanzamiento nativo rechazado por auto-review |
 | F3-07 | Auditoría MCP de tiendas | Una tienda consultada solo lectura | Trial y no partnerDevelopment; detalles privados en work/ |
-| F3-08 | Dev store gratuita nueva | Propuesta solicitada, creación NO aprobada | Poco Co QA, basic, PA, sin demo-data; comando en connection-plan |
+| F3-08 | Dev store gratuita nueva | Creada tras autorización explícita | Poco Co QA, tipo dev, basic, PA, sin demo-data; dominio en registro privado y chat |
 | F3-09 | Conectar CLI y subir Dawn no publicado | No autorizado | Después de crear/aprobar tienda y dominio exacto |
 | F3-10 | Configurar Admin y probar runtime real | Pendiente | Tema/productos/filtros/carrito/idioma y prueba humana |
 | F3-11 | Commit y push de rama | Ejecutado y verificado | Implementación fef452f enviada a phase3/shopify-validation tras revisión de secretos; sin merge |

@@ -1,13 +1,13 @@
 {
-  "status": "READ_ONLY_MCP_AUDIT_AUTHORIZED",
+  "status": "DEV_STORE_CREATED_WAITING_FOR_THEME_UPLOAD_APPROVAL",
   "selected_for_writes": null,
   "create_store": false,
-  "authenticate_cli": false,
+  "authenticate_cli": true,
   "upload_theme": false,
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "User authorized investigation of accessible stores via MCP. Existing-store modifications or free dev store creation require separate approval with chosen target and exact operations. Live audit details retained only in ignored work/.",
+  "note": "The one authorized free dev-store creation has completed in the user-selected organization. No theme/resource uploads, catalog writes, renaming, payments, domains or paid apps authorized. The exact domain and verification details are recorded privately and communicated to the user. Do not repeat store creation.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -16,7 +16,12 @@
     "country": "PA",
     "automatic_demo_data": false,
     "command": "shopify store create dev --name \"Poco Co QA\" --plan basic --country PA --json",
-    "approved": false,
-    "assigned_domain": null
-  }
+    "approved": true,
+    "assigned_domain": null,
+    "approved_on": "2026-11-03",
+    "result": "CREATED_AND_LISTED_AS_DEV_BASIC",
+    "assigned_domain_location": "work/dev-store-created.private.json (excluded from public Git)"
+  },
+  "creation_completed": true,
+  "creation_authorization_consumed": true
 }
