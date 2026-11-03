@@ -1,0 +1,332 @@
+{
+  "product_count": 8,
+  "lighthouse": null,
+  "inventory_total": 42,
+  "remote_source_commit": "be34756abeff05f14a55e06bac99e2d043eddb72",
+  "google_oauth": "POSTPONED",
+  "payments_changed": false,
+  "local_proposal": {
+    "files": [
+      "assets/poco.css",
+      "sections/header-group.json",
+      "templates/index.json",
+      "sections/poco-search.liquid"
+    ],
+    "theme_check_warnings": 9,
+    "own_css_gzip_bytes": 362,
+    "skill_validator": "BLOCKED_MISSING_THEME_CHECK_COMMON",
+    "theme_check_errors": 0,
+    "uploaded": false,
+    "native_js_unchanged": true,
+    "approval_required": true,
+    "new_dependencies": 0
+  },
+  "date": "2026-11-03",
+  "field_cwv": null,
+  "pagespeed": null,
+  "password_enabled": true,
+  "orders_created": 0,
+  "observations": [
+    {
+      "test": "desktop-branding",
+      "observed": {
+        "body": {
+          "background": "rgb(241, 244, 242)",
+          "color": "rgba(25, 44, 70, 0.75)",
+          "font": "Manrope, sans-serif",
+          "fontSize": "16px",
+          "height": 2153.112548828125,
+          "lineHeight": "28.8px",
+          "top": 0,
+          "width": 1536
+        },
+        "documentWidth": 1536,
+        "heading": {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 44, 70)",
+          "font": "Manrope, sans-serif",
+          "fontSize": "40px",
+          "height": 104,
+          "lineHeight": "52px",
+          "top": 323.32501220703125,
+          "width": 780
+        },
+        "images": [
+          {
+            "alt": "Ilustración FICTICIA de organizador de escritorio; producto de demostración",
+            "complete": true,
+            "height": 177,
+            "loading": "lazy",
+            "width": 177
+          },
+          {
+            "alt": "Ilustración FICTICIA de Soporte para teléfono; producto de demostración",
+            "complete": true,
+            "height": 177,
+            "loading": "lazy",
+            "width": 177
+          },
+          {
+            "alt": "Ilustración FICTICIA de Collar geométrico; producto de demostración",
+            "complete": true,
+            "height": 177,
+            "loading": "lazy",
+            "width": 177
+          },
+          {
+            "alt": "Ilustración FICTICIA de Bolsa organizadora de viaje; producto de demostración",
+            "complete": true,
+            "height": 177,
+            "loading": "lazy",
+            "width": 177
+          },
+          {
+            "alt": "Ilustración FICTICIA de Dispensador para mascotas; producto de demostración",
+            "complete": true,
+            "height": 177,
+            "loading": "lazy",
+            "width": 177
+          },
+          {
+            "alt": "Ilustración FICTICIA de Soporte para automóvil; producto de demostración",
+            "complete": true,
+            "height": 177,
+            "loading": "lazy",
+            "width": 177
+          }
+        ],
+        "logo": {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 44, 70)",
+          "font": "Manrope, sans-serif",
+          "fontSize": "14px",
+          "height": 72.7249984741211,
+          "lineHeight": "0px",
+          "top": 27.5,
+          "width": 200
+        },
+        "search": {
+          "background": "rgb(241, 244, 242)",
+          "color": "rgb(25, 44, 70)",
+          "font": "Manrope, sans-serif",
+          "fontSize": "16px",
+          "height": 48,
+          "lineHeight": "28.8px",
+          "top": 179.3249969482422,
+          "width": 970
+        },
+        "searchButton": {
+          "background": "rgb(40, 85, 217)",
+          "color": "rgb(255, 255, 255)",
+          "font": "Manrope, sans-serif",
+          "fontSize": "15px",
+          "height": 48,
+          "lineHeight": "18px",
+          "top": 179.3249969482422,
+          "width": 122
+        },
+        "viewport": 1536
+      }
+    },
+    {
+      "test": "price-max-18",
+      "observed": {
+        "products": [
+          "\n                \n                  [PRUEBA FICTICIA] Organizador de escritorio\n                \n              ",
+          "[PRUEBA FICTICIA] Organizador de escritorio",
+          "\n                \n                  [PRUEBA FICTICIA] Soporte para teléfono\n                \n              ",
+          "[PRUEBA FICTICIA] Soporte para teléfono",
+          "\n                \n                  [PRUEBA FICTICIA] Dispensador para mascotas\n                \n              ",
+          "[PRUEBA FICTICIA] Dispensador para mascotas",
+          "\n                \n                  [PRUEBA FICTICIA] Bandeja para accesorios\n                \n              ",
+          "[PRUEBA FICTICIA] Bandeja para accesorios",
+          "\n                \n                  [PRUEBA FICTICIA] Estuche de cables\n                \n              ",
+          "[PRUEBA FICTICIA] Estuche de cables"
+        ],
+        "text": "Collection:\nExplora Poco & Co.\n\nDemostración Poco & Co. Productos, precios y existencias ficticios. No se realizan ventas reales.\n\nFilter:\nAvailability\nPrice\nThe highest price is $24.00\nReset\n$\nFrom\n$\nTo\n$0.00 - $18.00\nRemove filter\nRemove all\nSort by:\nFeatured\nMost relevant\nBest selling\nAlphabetically, A-Z\nAlphabetically, Z-A\nPrice, low to high\nPrice, high to low\nDate, old to new\nDate, new to old\n5 of 8 products\n[PRUEBA FICTICIA] Organizador de escritorio\nRegular price\n$18.00 USD\n[PRUEBA FICTICIA] Soporte para teléfono\nRegular price\n$15.00 USD\nSold out\n[PRUEBA FICTICIA] Dispensador para mascotas\nRegular price\n$12.00 USD\n[PRUEBA FICTICIA] Bandeja para accesorios\nRegular price\n$16.00 USD\n[PRUEBA FICTICIA] Estuche de cables\nRegular price\n$14.00 USD"
+      }
+    },
+    {
+      "test": "price-sort",
+      "observed": {
+        "count": "5 of 8 products\n",
+        "items": [
+          {
+            "price": "Regular price\n$12.00 USD",
+            "title": "[PRUEBA FICTICIA] Dispensador para mascotas"
+          },
+          {
+            "price": "Regular price\n$14.00 USD",
+            "title": "[PRUEBA FICTICIA] Estuche de cables"
+          },
+          {
+            "price": "Regular price\n$15.00 USD",
+            "title": "[PRUEBA FICTICIA] Soporte para teléfono"
+          },
+          {
+            "price": "Regular price\n$16.00 USD",
+            "title": "[PRUEBA FICTICIA] Bandeja para accesorios"
+          },
+          {
+            "price": "Regular price\n$18.00 USD",
+            "title": "[PRUEBA FICTICIA] Organizador de escritorio"
+          }
+        ]
+      }
+    },
+    {
+      "test": "mobile-price-and-stock",
+      "observed": {
+        "count": "4 of 8 products",
+        "horizontalOverflow": false,
+        "main": "Collection:\nExplora Poco & Co.\n\nDemostración Poco & Co. Productos, precios y existencias ficticios. No se realizan ventas reales.\n\nFilter and sort\nFilter and sort\n\n4 of 8 products\n\nAvailability\nIn stock (4)\nIn stock (4 products)\nOut of stock (1)\nOut of stock (1 products)\nClear\nApply\nAvailability: In stock\nRemove filter\n$0.00 - $18.00\nRemove filter\nRemove all\n4 of 8 products\n[PRUEBA FICTICIA] Estuche de cables\nRegular price\n$14.00 USD\n[PRUEBA FICTICIA] Soporte para teléfono\nRegular price\n$15.00 USD\n[PRUEBA FICTICIA] Bandeja para accesorios\nRegular price\n$16.00 USD\n[PRUEBA FICTICIA] Organizador de escritorio\nRegular price\n$18.00 USD"
+      }
+    },
+    {
+      "test": "delivery-pending",
+      "observed": {
+        "addDisabled": false,
+        "message": "Confirm delivery conditions before purchasing."
+      }
+    },
+    {
+      "test": "delivery-expired",
+      "observed": {
+        "mainImage": null,
+        "message": "Confirm delivery conditions before purchasing."
+      }
+    },
+    {
+      "test": "stock-limit-request-four-of-three",
+      "observed": {
+        "cartCount": "Cart\n1\n1 item",
+        "main": "Skip to product information\nOpen media 1 in modal\n\nPOCO & CO. DEMO\n\n[PRUEBA FICTICIA] Estuche de cables\nRegular price\n$14.00 USD\n\nLow stock\n\nConfirm delivery conditions before purchasing.\nQuantity\nQuantity\nDecrease quantity for [PRUEBA FICTICIA] Estuche de cables\nIncrease quantity for [PRUEBA FICTICIA] Estuche de cables\nOnly 3 items were added to your cart due to availability.\nAdd to cart\nBuy it now\n\nProducto de prueba. No está a la venta. Precio, stock, imágenes y plazos ficticios.\n\nShare\nYou may also like\n[PRUEBA FICTICIA] Collar geométrico\nRegular price\n$24.00 USD\n[PRUEBA FICTICIA] Soporte para automóvil\nRegular price\n$19.00 USD\n[PRUEBA FICTICIA] Bolsa organizadora de viaje\nRegular price\n$22.00 USD\n[PRUEBA FICTICIA] Bandeja para accesorios\nRegular price\n$16.00 USD"
+      }
+    },
+    {
+      "test": "stock-server-cap-and-delivery-cart",
+      "observed": {
+        "lines": [
+          {
+            "label": "Quantity for [PRUEBA FICTICIA] Estuche de cables",
+            "quantity": "3"
+          },
+          {
+            "label": "Quantity for [PRUEBA FICTICIA] Organizador de escritorio",
+            "quantity": "1"
+          }
+        ],
+        "main": "Your cart\nContinue shopping\n\nDelivery for one or more items needs confirmation.\n\nYour cart\nPRODUCT\nTOTAL\nConfirm delivery conditions before purchasing.\n[PRUEBA FICTICIA] Estuche de cables\n$14.00\n$42.00\nQuantity\nDecrease quantity for [PRUEBA FICTICIA] Estuche de cables\nIncrease quantity for [PRUEBA FICTICIA] Estuche de cables\n2–3 días (FICTICIO)\n[PRUEBA FICTICIA] Organizador de escritorio\n$18.00\n$18.00\nQuantity\nDecrease quantity for [PRUEBA FICTICIA] Organizador de escritorio\nIncrease quantity for [PRUEBA FICTICIA] Organizador de escritorio\n\nLoading...\n\nEstimated total\n\n$60.00 USD\n\nTaxes, discounts and shipping calculated at checkout.\nCheck out"
+      }
+    },
+    {
+      "test": "cart-reload-persistence",
+      "observed": {
+        "badge": "Cart\n1\n1 item",
+        "main": "Your cart\nContinue shopping\nYour cart\nPRODUCT\nTOTAL\n2–3 días (FICTICIO)\n[PRUEBA FICTICIA] Organizador de escritorio\n$18.00\n$18.00\nQuantity\nDecrease quantity for [PRUEBA FICTICIA] Organizador de escritorio\nIncrease quantity for [PRUEBA FICTICIA] Organizador de escritorio\n\nLoading...\n\nEstimated total\n\n$18.00 USD\n\nTaxes, discounts and shipping calculated at checkout.\nCheck out"
+      }
+    },
+    {
+      "test": "search-empty",
+      "observed": "Search results\nSearch\n\nNo results found for “zzpocoausente”. Check the spelling or use a different word or phrase."
+    },
+    {
+      "test": "search-recover-collar",
+      "observed": {
+        "main": "Search results\nSearch\nFilter and sort\n1 result\n[PRUEBA FICTICIA] Collar geométrico\nRegular price\n$24.00 USD",
+        "searchForms": 4
+      }
+    },
+    {
+      "test": "mobile-keyboard-variant",
+      "observed": {
+        "overflow": false,
+        "price": "Regular price\n$24.00 USD",
+        "primaryImageLoading": null,
+        "selected": [
+          "Plateado"
+        ]
+      }
+    },
+    {
+      "test": "mobile-variant-add",
+      "observed": "Plateado quantity1 plus original organizer1, totalUSD42."
+    },
+    {
+      "test": "cart-restored",
+      "observed": {
+        "badge": "Cart\n1\n1 item",
+        "text": "Your cart\nContinue shopping\nYour cart\nPRODUCT\nTOTAL\n2–3 días (FICTICIO)\n[PRUEBA FICTICIA] Organizador de escritorio\n$18.00\n$18.00\nQuantity\nDecrease quantity for [PRUEBA FICTICIA] Organizador de escritorio\nIncrease quantity for [PRUEBA FICTICIA] Organizador de escritorio\n\nNew estimated total: $18.00 USD\n\nLoading...\n\nEstimated total\n\n$18.00 USD\n\nTaxes, discounts and shipping calculated at checkout.\nCheck out"
+      }
+    },
+    {
+      "test": "mobile-branding-360",
+      "observed": {
+        "button": {
+          "bottom": 178.25,
+          "height": 48,
+          "top": 130.25,
+          "width": 122
+        },
+        "departments": {
+          "bottom": 678.25,
+          "height": 26,
+          "top": 652.25,
+          "width": 266
+        },
+        "docWidth": 360,
+        "heading": {
+          "bottom": 379.25,
+          "height": 117,
+          "top": 262.25,
+          "width": 290
+        },
+        "logo": {
+          "bottom": 62.95000076293945,
+          "height": 45.45000076293945,
+          "top": 17.5,
+          "width": 125
+        },
+        "search": {
+          "bottom": 178.25,
+          "height": 48,
+          "top": 130.25,
+          "width": 200
+        },
+        "viewport": 360
+      }
+    },
+    {
+      "test": "narrow-320",
+      "observed": {
+        "buttonWidth": 122,
+        "docWidth": 320,
+        "inputWidth": 160,
+        "searchWidth": 290,
+        "viewport": 320
+      }
+    },
+    {
+      "test": "mobile-filter-close-reset",
+      "observed": {
+        "cards": 8,
+        "main": "Collection:\nExplora Poco & Co.\n\nDemostración Poco & Co. Productos, precios y existencias ficticios. No se realizan ventas reales.\n\nFilter and sort\n8 products\n[PRUEBA FICTICIA] Organizador de escritorio\nRegular price\n$18.00 USD\n[PRUEBA FICTICIA] Soporte para teléfono\nRegular price\n$15.00 USD\n[PRUEBA FICTICIA] Collar geométrico\nRegular price\n$24.00 USD\n[PRUEBA FICTICIA] Bolsa organizadora de viaje\nRegular price\n$22.00 USD\nSold out\n[PRUEBA FICTICIA] Dispensador para mascotas\nRegular price\n$12.00 USD\n[PRUEBA FICTICIA] Soporte para automóvil\nRegular price\n$19.00 USD\n[PRUEBA FICTICIA] Bandeja para accesorios\nRegular price\n$16.00 USD\n[PRUEBA FICTICIA] Estuche de cables\nRegular price\n$14.00 USD",
+        "open": false
+      },
+      "note": "Preview toolbar overlay interfered with click; Apply via keyboard then toolbar hidden (UI only). Reset restored catalog."
+    }
+  ],
+  "remote_admin_state_unchanged": true,
+  "sign_in_with_shop": "UNCHANGED",
+  "shop_locales": [
+    {
+      "locale": "en",
+      "published": true,
+      "primary": true
+    }
+  ],
+  "horizon_role": "MAIN",
+  "method": "Real existing Chrome session; responsive viewport, not physical devices or throttled performance test",
+  "dawn_role": "UNPUBLISHED",
+  "mobile_filter_close_reset": "PASS; preview toolbar overlay hidden in UI only; final eight products and drawer closed"
+}

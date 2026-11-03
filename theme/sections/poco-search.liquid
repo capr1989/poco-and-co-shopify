@@ -1,3 +1,4 @@
+{%- unless request.page_type == 'search' -%}
 <section class="poco-search page-width" aria-labelledby="PocoSearchLabel-{{ section.id }}">
   <form action="{{ routes.search_url }}" method="get" role="search">
     <div style="flex:1">
@@ -8,6 +9,7 @@
     <button class="button" type="submit">{{ 'general.search.search' | t }}</button>
   </form>
 </section>
+{%- endunless -%}
 {% schema %}
 {"name":"Poco: búsqueda visible","settings":[],"presets":[{"name":"Poco: búsqueda visible"}]}
 {% endschema %}

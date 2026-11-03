@@ -1,5 +1,5 @@
 {
-  "status": "PHASE4_RUNTIME_UX_REVIEW_PARTIAL_COMPLETED",
+  "status": "PHASE4_AUDIT_COMPLETE_LOCAL_PROPOSAL_AWAITING_APPROVAL",
   "selected_for_writes": null,
   "create_store": false,
   "authenticate_cli": true,
@@ -7,7 +7,7 @@
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "Phase4 demo configured; real partial UX tests and screenshots completed. No publish, password change, orders or payments. Improvements recorded for review; no blanket further writes.",
+  "note": "Latest instruction is read-only remote audit and reversible demo cart tests. Additional visual changes only local; explicit approval required before theme upload. Shop sign-in unchanged; Google OAuth postponed.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -65,6 +65,16 @@
     "scope": "QA_ONLY",
     "payments": false,
     "runtime_tested": true,
-    "runtime_scope": "Partial real Chrome UX tests; see runtime-ux-verification.json; no performance metrics or design approval"
+    "runtime_scope": "Partial real Chrome UX tests; see runtime-ux-verification.json; no performance metrics or design approval",
+    "local_proposal": {
+      "approved": false,
+      "files": [
+        "assets/poco.css",
+        "sections/header-group.json",
+        "templates/index.json",
+        "sections/poco-search.liquid"
+      ],
+      "remote_applied": false
+    }
   }
 }

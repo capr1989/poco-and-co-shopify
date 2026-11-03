@@ -70,3 +70,10 @@ Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado p
 T001/T002 permanecen pendientes al 0 %.
 
 | F4-06 | Mejoras UX tras revisión | Pendiente de iteración/revisión del usuario | Español completo, altura móvil, títulos demo y entrega en agotados; diseño no aprobado |
+
+| F4-07 | Auditoría UX ampliada | Ejecutada con límites documentados | Precio/orden, filtros móvil, teclado variante, entrega pendiente/vencida, límite stock y carrito; docs/phase4-ux-audit.md |
+| F4-08 | Propuesta visual compacta y búsqueda sin duplicación | Local validada; NO SUBIDA | Cuatro archivos; Theme Check0errores/9advertencias; requiere aprobación antes de cualquier escritura remota |
+| F4-09 | Lighthouse sin relajar Docker | Investigación documentada, métricas pendientes | DevTools autenticado exploratorio/VM aislada propuesta; docs/lighthouse-safe-validation.md |
+| F4-10 | Español de tienda y contador tras adición parcial | P1, pendientes de autorización/implementación | Soloen publicado; stock se limita, contador obsoleto hasta navegación; sin parche JS improvisado |
+
+Sign in with Shop permanece igual. Google OAuth pospuesto. T001/T002 PENDIENTES0%.
