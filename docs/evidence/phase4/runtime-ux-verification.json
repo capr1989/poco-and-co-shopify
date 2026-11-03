@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-03",
+  "sourceCommit": "3d2fb27aeeb1ad053a420fa5982a286c2a674428",
+  "environment": "Existing Chrome session through computer-use; desktop viewport and 390x844 responsive override. No CPU/network throttling; not a physical phone.",
+  "tests": [
+    {
+      "id": "VIEW-01",
+      "result": "PASS",
+      "observed": "Dawn preview: brand logo, eight products, six departments; preview bar Draft/password protected."
+    },
+    {
+      "id": "SEARCH-01",
+      "result": "PASS",
+      "observed": "Visible search for collar returned one product at USD24."
+    },
+    {
+      "id": "FILTER-01",
+      "result": "PASS",
+      "observed": "Availability exposed 7 in stock / 1 out of stock. Out-of-stock selection returned dispenser, 1 of8. Visible Reset restored8."
+    },
+    {
+      "id": "VARIANT-01",
+      "result": "PASS",
+      "observed": "Plateado selected through visible pill; variant URL changed and cart line showed Plateado."
+    },
+    {
+      "id": "CART-01",
+      "result": "PASS",
+      "observed": "Existing organizer1 USD18 plus collar Plateado1 USD24 =USD42. Collar quantity2 yielded USD66. Collar removed."
+    },
+    {
+      "id": "CART-02",
+      "result": "PASS",
+      "observed": "Organizer(local2–3days)+bag(external10–15days)=USD40; mixed delivery notice visible. Removing bag restored organizer1/USD18 and removed notice."
+    },
+    {
+      "id": "MOBILE-01",
+      "result": "PASS_LIMITED",
+      "observed": "390x844 home screenshot; no horizontal overflow at home: innerWidth390/documentWidth375. Menu opened six departments; Mascotas navigated correctly."
+    },
+    {
+      "id": "SOLDOUT-01",
+      "result": "PASS",
+      "observed": "Dispenser displayed Sold out/Out of stock and disabled purchase buttons."
+    }
+  ],
+  "issues": [
+    {
+      "id": "UX-01",
+      "severity": "high",
+      "finding": "Native search/cart/filter/availability controls and mixed-delivery notice render in English while demo content is Spanish.",
+      "recommendation": "Complete Spanish locale setup and verify all native/custom messages."
+    },
+    {
+      "id": "UX-02",
+      "severity": "medium",
+      "finding": "Mobile search button and introductory block occupy much of initial viewport; departments begin near bottom.",
+      "recommendation": "Reduce intro/search vertical space while preserving tap areas and readable text."
+    },
+    {
+      "id": "UX-03",
+      "severity": "medium",
+      "finding": "Product title demo prefix wraps to multiple lines on product page.",
+      "recommendation": "Keep clear demo identification; consider a separate visible demo badge and shorter title in a later design iteration."
+    },
+    {
+      "id": "UX-04",
+      "severity": "medium",
+      "finding": "Sold-out dispenser still shows a delivery window, alongside Out of stock.",
+      "recommendation": "Clarify/suppress delivery estimate for unavailable products."
+    },
+    {
+      "id": "UX-05",
+      "severity": "low",
+      "finding": "Buy it now and account affordances remain visible in a demo with no checkout validation.",
+      "recommendation": "Review whether to hide accelerated purchase/account entry for the visual review."
+    }
+  ],
+  "pending": [
+    "Price range and sorting interactions",
+    "Filter drawer interaction on mobile",
+    "Delivery pending/expired scenarios in real storefront",
+    "Cart stock-limit error and persistence across new sessions",
+    "Full keyboard/screen-reader/axe audit",
+    "Physical iOS/Android testing",
+    "Lighthouse, PSI, INP/LCP/CLS, CPU/network throttling"
+  ],
+  "final": {
+    "passwordEnabled": true,
+    "dawnRole": "UNPUBLISHED",
+    "horizonRole": "MAIN",
+    "horizonUpdatedAtUnchanged": true,
+    "noThemeWritesThisRun": true,
+    "noOrdersOrPayments": true,
+    "cartRestoredToOriginalOrganizer": true
+  },
+  "screenshots": [
+    "poco-home-desktop.jpg",
+    "poco-home-mobile.jpg",
+    "poco-menu-mobile.jpg",
+    "poco-cart-desktop.jpg",
+    "poco-search-desktop.jpg"
+  ]
+}

@@ -59,3 +59,25 @@ Chrome abrió la vista previa y mostró la contraseña. Se solicitó al usuario 
 Evaluar en 390 px y escritorio: logo y búsqueda visibles, jerarquía de portada, tamaño de tarjetas, menú de departamentos, precios y estados de variantes/agotado, foco y áreas táctiles. Las ilustraciones rotuladas y títulos [PRUEBA FICTICIA] se conservan para identificar la demo; las fotos comerciales reales son una etapa futura. Revisar idioma de los controles nativos y legibilidad de títulos largos; no declarar problemas visuales confirmados sin observar la página.
 
 Diseño definitivo pendiente de evaluación del usuario. T001/T002 siguen pendientes al 0 %. No publicación, pagos, pedidos, dominios ni eliminación de contraseña.
+
+## Validación real de navegación y UX — 2026-11-03
+
+Tras el acceso del usuario se abrió la vista previa de Dawn en Chrome existente. No se guardaron credenciales ni se modificó la protección. Se realizó una revisión de escritorio y una emulación de viewport 390×844, no una prueba en teléfono físico ni con CPU/red limitadas. La captura móvil de portada no mostró desbordamiento horizontal (innerWidth 390, documentWidth 375).
+
+Resultados reales:
+
+- Portada con identidad A, ocho productos y seis departamentos visibles.
+- Búsqueda «collar»: un resultado, USD24.
+- Filtro nativo de disponibilidad: siete disponibles/un agotado; seleccionar agotados muestra solo dispensador (1 de8); Reset devuelve8. Precio presente, sin probar aún su interacción ni ordenación.
+- Collar: selección visible Plateado, URL de variante actualizada y variante correcta en carrito. El control automatizado de radio requirió pulsar la píldora visible; eso no demuestra un fallo para usuarios.
+- Carrito: organizador original1×18 + collar Plateado1×24 =42; aumentar collar a2 produce66. Se eliminó collar.
+- Carrito mixto: organizador2–3días + bolsa10–15días, total40, aviso de condiciones distintas visible. Retirar bolsa devuelve organizador1/total18 y elimina aviso. Se conservó el artículo original del usuario.
+- Menú móvil abre los seis departamentos y navega a Mascotas. Dispensador muestra agotado y compra deshabilitada.
+
+Problemas observados y recomendaciones: completar español en búsqueda, filtros, carrito, stock y aviso mixto; reducir altura de búsqueda/introducción móvil para mostrar departamentos antes; mejorar títulos de demostración largos manteniendo identificación inequívoca; aclarar la ventana de entrega que aún aparece junto a agotado; revisar compra acelerada/cuenta durante demo. No se aplicaron cambios de diseño en esta revisión ni se aprobó el diseño definitivo.
+
+Evidencia: evidence/phase4/runtime-ux-verification.json y screenshots/ (portada escritorio/móvil, menú móvil, búsqueda y carrito mixto). La captura de ficha móvil completa no se obtuvo por tiempo de espera del navegador; no se presenta como realizada. Se restauró viewport normal y se dejó abierta la portada de Dawn. Las capturas se guardaron en el repositorio; la carpeta outputs de este chat no permitió crear archivos, sin cambiar controles de Windows.
+
+Verificación final Admin: contraseña true, Dawn UNPUBLISHED, Horizon MAIN con updatedAt sin cambios. No hubo escrituras de tema/Admin/catálogo durante esta revisión; los hashes completos de Horizon se verificaron en la configuración anterior. Sin checkout, pedidos ni pagos. No hay mediciones nuevas de rendimiento.
+
+Pendientes: rango de precios/ordenación; drawer de filtros móvil; entrega pendiente/vencida real; límites de stock/persistencia del carrito; auditoría completa de teclado/lector/axe; dispositivos reales; Lighthouse/PSI/CWV y CPU/red limitadas. T001/T002 pendientes al0%.

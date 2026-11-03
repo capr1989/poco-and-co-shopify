@@ -1,5 +1,5 @@
 {
-  "status": "PHASE4_DEMO_CONFIGURED_RUNTIME_PENDING",
+  "status": "PHASE4_RUNTIME_UX_REVIEW_PARTIAL_COMPLETED",
   "selected_for_writes": null,
   "create_store": false,
   "authenticate_cli": true,
@@ -7,7 +7,7 @@
   "upload_catalog": false,
   "rename_store": false,
   "approved_write_commands": [],
-  "note": "Phase 4 explicitly authorized only QA demo catalog, delivery definitions, collections, own menu, native filters and Dawn featured collection. Configuration completed; runtime preview access pending. Never publish Dawn or remove password; no orders/payments/paid services.",
+  "note": "Phase4 demo configured; real partial UX tests and screenshots completed. No publish, password change, orders or payments. Improvements recorded for review; no blanket further writes.",
   "preferred_next_option": "PROPOSE_NEW_FREE_DEV_STORE",
   "proposed_creation": {
     "name": "Poco Co QA",
@@ -64,6 +64,7 @@
     ],
     "scope": "QA_ONLY",
     "payments": false,
-    "runtime_tested": false
+    "runtime_tested": true,
+    "runtime_scope": "Partial real Chrome UX tests; see runtime-ux-verification.json; no performance metrics or design approval"
   }
 }

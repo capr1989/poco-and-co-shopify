@@ -65,6 +65,8 @@ Historial íntegro anterior en history/backlog-phase2.md. Dawn 16.1.1 aprobado p
 | F4-02 | Ocho productos/nueve variantes/imágenes/stock ficticio | Configurado y verificado por Admin | Online Store QA; tracking/DENY, 42 unidades ficticias; sin pedidos/pagos |
 | F4-03 | Cinco definiciones de entrega y valores | Creados y leídos | custom; valores simulados, escenarios vigente/pendiente/vencido |
 | F4-04 | Seis departamentos, menú, filtros y colección destacada | Colecciones/menú/portada configurados; filtros runtime pendientes | Tres JSON aceptados; Theme Check 0 errores/9 advertencias |
-| F4-05 | QA visual móvil/escritorio y funciones | Pendiente de acceso a vista previa protegida | Usuario debe entrar sin compartir contraseña; no hay pruebas funcionales/capturas/CWV |
+| F4-05 | QA visual móvil/escritorio y funciones | Pruebas reales parciales ejecutadas | Búsqueda/disponibilidad/variante/carrito/menú móvil/agotado; cinco capturas; runtime-ux-verification.json; sin CWV |
 
 T001/T002 permanecen pendientes al 0 %.
+
+| F4-06 | Mejoras UX tras revisión | Pendiente de iteración/revisión del usuario | Español completo, altura móvil, títulos demo y entrega en agotados; diseño no aprobado |
