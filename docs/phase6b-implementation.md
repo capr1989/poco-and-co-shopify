@@ -38,3 +38,15 @@ Los ocho productos siguen mostrando en Shopify los marcadores `[PRUEBA FICTICIA]
 3. Subir únicamente los archivos de presentación aprobados a Dawn, sin tocar Horizon.
 4. Verificar rutas `/`, `/en/`, footer, contacto y plantilla Sobre nosotros con contraseña activa.
 5. Revertir por archivo usando el commit anterior si aparece una regresión.
+
+## Ejecución autorizada — 4 de noviembre de 2026
+
+- Tienda confirmada: `poco-co-qa.myshopify.com`; Dawn `190052991089` quedó MAIN y Horizon `190052663409` UNPUBLISHED. Panamá permaneció ACTIVE.
+- HTTP sin sesión devolvió 200 con marcador de protección por contraseña en `/` y `/en/`.
+- Checksums remotos previos registrados: `locales/en.default.json` `daa56f0349878fe926f2b50077052391`; `locales/es.json` `716eb44ddc250f506a9d59913e1a60fe`; `sections/footer-group.json` `9cbf2da3ad2a0d2212e33a239f5fbb34`; `sections/footer.liquid` `746ded47d1194f554e3674b7886874c6`; `templates/index.json` `fed804723aa61059dd78dfdd922a6c8c`. Los archivos About no existían remotamente.
+- Se subieron exclusivamente los siete archivos autorizados mediante Shopify CLI en Docker, con `--nodelete` y sin publicar/cambiar de tema.
+- Se creó la página publicada `Sobre nosotros`, handle `about`, plantilla `about`, ID `gid://shopify/Page/163508912241`, cuerpo vacío para que el contenido bilingüe provenga de la sección traducida.
+- Se actualizaron exactamente ocho productos con títulos, descripciones neutrales y vendor `Poco & Co.`; handles, variantes, SKU, precios, inventario, colecciones, metacampos e imágenes permanecieron intactos. Inventarios finales: 6, 8, 8, 5, 0, 7, 5 y 3.
+- La descripción SEO global no se modificó: el Admin GraphQL 2026-10 disponible no expone una mutación compatible para ese campo; queda pendiente una operación oficial.
+- No se crearon pedidos, no se cambiaron pagos, mercados, idiomas ni Horizon. Reversión: restaurar los archivos con los checksums anteriores y reaplicar los valores de producto originales documentados, siempre con autorización.
+- Pendiente: revisión visual manual de footer/About, búsqueda, carrito y rutas es/en; Lighthouse solo cuando se autorice. T001/T002 siguen al 0%.
