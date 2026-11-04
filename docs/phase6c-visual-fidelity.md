@@ -62,3 +62,33 @@ Dawn aplica `.page-width` con `max-width` y padding responsive. El hero tenía c
 - Theme Check: no disponible en la imagen Docker existente.
 - No se realizó renderizado de navegador; no se afirma fidelidad visual comprobada.
 - Shopify remoto no fue modificado.
+
+
+## Revisión integral estática de fidelidad — 4 de noviembre de 2026
+
+| Elemento | Diseño esperado | Dawn local | Diferencia verificada | Corrección | Estado |
+| --- | --- | --- | --- | --- | --- |
+| Barra superior | 32 px, tinta, texto centrado espaciado | Sección Poco dedicada | Altura dependía de métrica de fuente | Conservada; CSS aislado de tinta/centrado | Estática |
+| Header y navegación | Logo, cuenta y carrito; segunda fila para navegación | Componentes Dawn funcionales y búsqueda Poco separada | Dawn mantiene su estructura semántica; no se reordenó mediante posiciones frágiles | Ninguna estructural sin cambiar componentes nativos | Manual pendiente |
+| Búsqueda | Campo horizontal centrado, fondo marfil e icono | Formulario Poco con label y botón textual | Jerarquía visual distinta a SVG | Label visible pasa a accesible; campo/ícono se ajustan con CSS aislado | Estática |
+| Hero | Dos columnas equilibradas, centradas y alineadas verticalmente | Hero Poco con colección dinámica | Mínimos intrínsecos podían forzar grid y móvil | `minmax(0,…)`, hijos con `min-width:0`, alineación vertical y clamp móvil | Estática |
+| Destacados | Tres tarjetas/columnas, título exacto | Colección nativa dinámica | Antes configuraba ocho/cuatro | Ya corregido a 3/3; las imágenes/precios siguen dinámicos | Estática |
+| Departamentos | Seis tarjetas después de destacados | Collection list nativa | Ninguna de orden tras Fase 6C | Se conserva tras destacados | Estática |
+| Footer | Bloque sobrio de identidad y menú | Footer Poco existente | No hay footer equivalente en SVG de la primera pantalla | Sin cambio fuera de referencia | Manual pendiente |
+| Responsive | 320/360/390/768/1440 sin overflow | Breakpoint propio y Dawn | No hay render autorizado para verificar píxeles finales | Se eliminaron mínimos de grid y se limitó título/imagen | Manual pendiente |
+
+### Archivos modificados en esta revisión
+- `theme/assets/poco.css`
+- `theme/sections/poco-search.liquid`
+- `docs/phase6c-visual-fidelity.md`
+
+### Limitaciones pendientes
+- La composición del header de Dawn conserva sus componentes nativos y por tanto no replica píxel a píxel la fila única del SVG; reestructurarla requeriría modificar `header.liquid`, fuera del ajuste mínimo seguro sin renderización.
+- Las ilustraciones de producto siguen integradas en los SVG de interfaz, por lo que no se extrajeron como assets aislados.
+- La comparación visual final requiere revisión manual autorizada; no se afirma coincidencia idéntica sin ella.
+
+### Plan mínimo reversible de despliegue
+1. Revisar este commit y comprobar manualmente la rama contra la referencia.
+2. Ejecutar Theme Check en un entorno que lo incluya.
+3. Subir únicamente `assets/poco.css` y `sections/poco-search.liquid` a Dawn con `--nodelete`; no cambiar productos ni configuraciones.
+4. Revertir ambos archivos desde el commit previo si aparece una regresión.

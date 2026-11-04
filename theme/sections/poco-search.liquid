@@ -1,12 +1,14 @@
 {%- unless request.page_type == 'search' -%}
 <section class="poco-search page-width" aria-labelledby="PocoSearchLabel-{{ section.id }}">
   <form action="{{ routes.search_url }}" method="get" role="search">
-    <div style="flex:1">
-      <label id="PocoSearchLabel-{{ section.id }}" for="PocoSearch-{{ section.id }}">{{ 'poco.search.label' | t }}</label>
+    <div class="poco-search__field">
+      <label class="visually-hidden" id="PocoSearchLabel-{{ section.id }}" for="PocoSearch-{{ section.id }}">{{ 'poco.search.label' | t }}</label>
       <input id="PocoSearch-{{ section.id }}" type="search" name="q" value="{{ search.terms | escape }}" style="width:100%">
       <input type="hidden" name="type" value="product">
     </div>
-    <button class="button" type="submit">{{ 'general.search.search' | t }}</button>
+    <button class="poco-search__button" type="submit" aria-label="{{ 'general.search.search' | t }}">
+      {% render 'icon-search' %}
+    </button>
   </form>
 </section>
 {%- endunless -%}
