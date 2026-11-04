@@ -1,0 +1,7 @@
+<div class="poco-topline color-{{ section.settings.color_scheme }} gradient">
+  <div class="poco-topline__inner page-width">{{ section.settings.text | escape }}</div>
+</div>
+
+{% schema %}
+{"name":"Poco: mensaje superior","settings":[{"type":"text","id":"text","label":"Texto","default":"UNA SELECCIÓN PARA TU DÍA A DÍA"},{"type":"color_scheme","id":"color_scheme","label":"t:sections.all.colors.label","default":"scheme-3"}],"presets":[{"name":"Poco: mensaje superior"}]}
+{% endschema %}

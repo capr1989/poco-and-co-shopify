@@ -1,9 +1,22 @@
 {
   "sections": {
+    "poco_hero": {
+      "type": "poco-home-hero",
+      "settings": {
+        "eyebrow": "POCO & CO. / SELECCIÓN 01",
+        "heading": "Lo útil.\nLo tuyo.",
+        "subheading": "Para casa, para salir, para acompañarte.",
+        "button_label": "Explorar la selección",
+        "collection": "poco-demo-destacados",
+        "visual_label": "Pequeñas soluciones. Más posibilidades.",
+        "caption": "Pequeñas soluciones. Más posibilidades.",
+        "color_scheme": "scheme-2"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Encuentra tu próximo favorito",
+        "title": "Tres formas de mejorar tu día",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -139,7 +152,7 @@
     }
   },
   "order": [
-    "intro",
+    "poco_hero",
     "departments",
     "featured_collection"
   ]

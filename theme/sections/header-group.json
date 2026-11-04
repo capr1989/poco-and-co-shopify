@@ -2,6 +2,13 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "poco_topline": {
+      "type": "poco-topline",
+      "settings": {
+        "text": "UNA SELECCIÓN PARA TU DÍA A DÍA",
+        "color_scheme": "scheme-3"
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -26,6 +33,7 @@
     }
   },
   "order": [
+    "poco_topline",
     "header",
     "poco_search"
   ]

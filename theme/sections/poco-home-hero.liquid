@@ -1,0 +1,24 @@
+{%- liquid
+  assign hero_collection = section.settings.collection
+  assign hero_image = hero_collection.image
+  if hero_image == blank and hero_collection.products.first.featured_image != blank
+    assign hero_image = hero_collection.products.first.featured_image
+  endif
+-%}
+<section class="poco-home-hero page-width color-{{ section.settings.color_scheme }} gradient">
+  <div class="poco-home-hero__copy">
+    <p class="poco-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    <h1>{{ section.settings.heading | escape | newline_to_br }}</h1>
+    <p class="poco-home-hero__subheading">{{ section.settings.subheading | escape }}</p>
+    {%- if hero_collection != blank -%}<a class="button poco-home-hero__button" href="{{ hero_collection.url }}">{{ section.settings.button_label | escape }}</a>{%- endif -%}
+  </div>
+  <div class="poco-home-hero__visual">
+    {%- if hero_image != blank -%}
+      {{ hero_image | image_url: width: 1200 | image_tag: loading: 'eager', widths: '480, 720, 960, 1200', sizes: '(min-width: 990px) 50vw, 100vw', alt: hero_image.alt | default: section.settings.heading }}
+    {%- else -%}<div class="poco-home-hero__placeholder" aria-label="{{ section.settings.visual_label | escape }}"><span>{{ section.settings.visual_label | escape }}</span></div>{%- endif -%}
+    <p class="poco-home-hero__caption">{{ section.settings.caption | escape }}</p>
+  </div>
+</section>
+{% schema %}
+{"name":"Poco: hero de portada","settings":[{"type":"text","id":"eyebrow","label":"Etiqueta","default":"POCO & CO. / SELECCIÓN 01"},{"type":"textarea","id":"heading","label":"Título","default":"Lo útil.\nLo tuyo."},{"type":"text","id":"subheading","label":"Subtítulo","default":"Para casa, para salir, para acompañarte."},{"type":"text","id":"button_label","label":"Botón","default":"Explorar la selección"},{"type":"collection","id":"collection","label":"Colección del botón"},{"type":"text","id":"visual_label","label":"Texto alternativo visual","default":"Pequeñas soluciones. Más posibilidades."},{"type":"text","id":"caption","label":"Texto inferior","default":"Pequeñas soluciones. Más posibilidades."},{"type":"color_scheme","id":"color_scheme","label":"t:sections.all.colors.label","default":"scheme-2"}],"presets":[{"name":"Poco: hero de portada"}]}
+{% endschema %}
