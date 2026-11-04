@@ -1,34 +1,28 @@
 # Poco & Co. — Fase 6C: fidelidad visual de portada
 
-## Recursos encontrados
-- Se encontró el prototipo original en `capr1989/poco-and-co-brand/presentation/`, con `index.html`, `styles.css`, `script.js` y `data.js`.
-- La referencia confirma Manrope, `#192C46`, `#F1F4F2`, `#2855D9` y la composición editorial de la captura.
-- No se encontraron ilustraciones de productos reutilizables en el repositorio de marca. Se mantiene un espacio visual seguro que usa la imagen de colección/producto de Shopify cuando existe y un panel neutro cuando no.
+## Recursos originales inspeccionados
+- Se inspeccionó `poco-and-co-brand/concepts/concept-a/applications/shopify-desktop.svg` (1440×1080), `shopify-mobile.svg` (390×844), `product-card.svg`, `logo-primary.svg`, `logo-horizontal.svg`, `brand-guide.md` y el prototipo de `presentation/`.
+- Los SVG desktop/mobile son composiciones monolíticas: contienen texto, controles y primitivas vectoriales mezcladas. No se identificó un grupo aislado y seguro de ilustración de producto que pudiera extraerse sin copiar interfaz; por eso no se añadió un SVG engañoso o estático.
+- Se confirmó Manrope y la paleta `#192C46`, `#F1F4F2`, `#2855D9`, `#B8CEC7`.
 
-## Cambios locales
-- `theme/sections/poco-topline.liquid`: barra superior con “UNA SELECCIÓN PARA TU DÍA A DÍA”.
-- `theme/sections/poco-home-hero.liquid`: hero responsive de dos columnas, copy aprobado, enlace nativo a colección y prioridad eager solo para la imagen principal.
-- `theme/sections/header-group.json`: incorpora la barra superior antes del header existente; no duplica búsqueda, carrito ni menú.
-- `theme/templates/index.json`: coloca el hero y cambia el encabezado de la colección destacada a “Tres formas de mejorar tu día”.
-- `theme/assets/poco.css`: estilos de tinta, marfil, azul grisáceo, espaciado, botón y adaptación móvil.
+## Cambios realizados
+- Se mantuvieron y mejoraron `poco-topline.liquid` y `poco-home-hero.liquid`. El hero usa la imagen dinámica de colección/producto cuando existe y mantiene un panel neutro accesible si no existe un asset.
+- `templates/index.json`: orden corregido a Hero → Productos destacados → Departamentos.
+- Destacados corregidos a `products_to_show: 3` y `columns_desktop: 3`; título exacto “Tres formas de mejorar tu día”.
+- No se reactivó el selector de idiomas ni se duplicaron búsqueda, carrito o navegación.
 
-## Diferencias conocidas
-- La captura usa ilustraciones editoriales específicas que no están disponibles como assets originales; no se inventaron ni descargaron imágenes de terceros.
-- El logo, búsqueda, cuenta, carrito y menú siguen siendo los componentes nativos de Dawn.
-- La fidelidad visual final requiere comparación en navegador; esta etapa no despliega ni ejecuta Computer Use/Lighthouse.
+## Validación
+- JSON válido mediante `ConvertFrom-Json`.
+- `git diff --check` sin errores.
+- Theme Check no disponible en la imagen Docker existente; documentado sin repetir instalaciones fallidas.
+- No se ejecutó navegador ni Lighthouse; la fidelidad visual final queda pendiente de comparación manual.
 
-## Validación local
-- JSON de todos los archivos del tema: válido mediante `ConvertFrom-Json`.
-- `git diff --check`: sin errores.
-- Theme Check no pudo ejecutarse porque la imagen Docker disponible no incluye el binario `shopify`/`theme-check`; debe repetirse en el entorno de herramientas habitual.
-- No se modificaron productos, inventario, idiomas, Markets, Horizon ni Shopify Admin.
-
-## Plan mínimo de despliegue
-1. Revisar la rama y aprobar los archivos modificados.
-2. Ejecutar Theme Check en el entorno habitual.
-3. Subir solo los archivos de esta rama a Dawn `190052991089` con `--nodelete`, sin publicar ni tocar Horizon.
-4. Validar manualmente escritorio y 320/360/390 px con la contraseña activa.
+## Archivos para despliegue posterior
+- `theme/sections/poco-topline.liquid`
+- `theme/sections/poco-home-hero.liquid`
+- `theme/sections/header-group.json`
+- `theme/templates/index.json`
+- `theme/assets/poco.css`
 
 ## Reversión
-Revertir el commit de esta rama o restaurar individualmente los cinco archivos modificados desde `phase6/presentation-ready`.
-
+Revertir el commit de esta rama o restaurar los archivos anteriores de `phase6/presentation-ready`. Shopify remoto no fue modificado.
