@@ -1,0 +1,25 @@
+<section class="poco-about page-width color-{{ section.settings.color_scheme }} gradient">
+  <div class="poco-about__content">
+    <h1>{{ 'poco.about.heading' | t }}</h1>
+    <p>{{ 'poco.about.text' | t }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Poco: sobre nosotros",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Poco: sobre nosotros"
+    }
+  ]
+}
+{% endschema %}

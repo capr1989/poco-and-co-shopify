@@ -34,7 +34,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Ideas prácticas para tu día a día, en un solo lugar.</p><p>Catálogo ficticio para evaluar el diseño. No se realizan ventas reales.</p>"
+            "text": "<p>Ideas prácticas para tu día a día, en un solo lugar.</p><p>En buena compañía para descubrir lo que encaja contigo.</p>"
           }
         },
         "caption": {
@@ -42,7 +42,7 @@
           "settings": {
             "text_size": "small",
             "text_style": "caption-with-letter-spacing",
-            "caption": "POCO & CO. · DEMOSTRACIÓN PRIVADA"
+            "caption": "POCO & CO. · EN BUENA COMPAÑÍA"
           }
         },
         "heading": {

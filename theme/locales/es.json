@@ -541,6 +541,13 @@
     }
   },
   "poco": {
+    "footer": {
+      "copyright": "Poco & Co."
+    },
+    "about": {
+      "heading": "En buena compañía",
+      "text": "Poco & Co. reúne una selección práctica de productos para acompañar la vida cotidiana, con una mirada sencilla y cercana."
+    },
     "search": {
       "label": "¿Qué estás buscando?"
     },

@@ -5,16 +5,24 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "demo": {
+        "brand": {
           "type": "text",
           "settings": {
-            "subtext": "<p>Tienda privada de demostración. Productos, precios, inventario y entregas ficticios. No se realizan ventas reales.</p>",
-            "heading": "Poco & Co. · Demo"
+            "subtext": "<p>Una selección práctica para la vida cotidiana, pensada para compartir buenos hallazgos.</p>",
+            "heading": "Poco & Co. · En buena compañía"
+          }
+        },
+        "explore": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Explorar",
+            "menu": "poco-demo-menu"
           }
         }
       },
       "block_order": [
-        "demo"
+        "brand",
+        "explore"
       ],
       "settings": {
         "color_scheme": "scheme-3",
@@ -23,9 +31,9 @@
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
-        "enable_language_selector": false,
+        "enable_language_selector": true,
         "payment_enable": false,
-        "show_policy": true,
+        "show_policy": false,
         "margin_top": 0,
         "padding_top": 36,
         "padding_bottom": 36

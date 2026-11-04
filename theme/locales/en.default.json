@@ -529,6 +529,13 @@
     }
   },
   "poco": {
+    "footer": {
+      "copyright": "Poco & Co."
+    },
+    "about": {
+      "heading": "Good company for everyday discoveries",
+      "text": "Poco & Co. brings together a practical selection for everyday life, with a simple and thoughtful point of view."
+    },
     "search": {
       "label": "What are you looking for?"
     },
