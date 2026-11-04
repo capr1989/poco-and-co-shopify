@@ -1,0 +1,12 @@
+{
+  "status": "DEPLOYED_TO_UNPUBLISHED_DAWN_AWAITING_REAL_RUNTIME_VALIDATION",
+  "file": "assets/product-form.js",
+  "sourceSha256": "f5c7139765aa39338673179d483dfedf909b83902a61cd4926b16c219a3ee116",
+  "candidateSha256": "773a71ea50dd228f29af6e8e02d50ddd78351ad175363ea6e3be040d198d4709",
+  "change": "Remove JSON Accept header only from section rendering GET; preserve official cart.js and POST",
+  "remoteApplied": true,
+  "remoteThemeId": "190052991089",
+  "deployedAt": "2026-11-04T14:47:51Z",
+  "remoteMutation": "themeFilesUpsert",
+  "remoteUserErrors": []
+}

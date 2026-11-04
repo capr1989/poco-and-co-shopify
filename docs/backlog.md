@@ -87,3 +87,5 @@ Sign in with Shop permanece igual. Google OAuth pospuesto. T001/T002 PENDIENTES0
 | F4-13 | Theme Check contemporáneo | 2 errores upstream /9 advertencias;0 issues nuevos | applicable_disclosures desconocido también en upstream; no ocultar errores |
 
 Detalle: docs/phase4-p1-deployment-results.md. T001/T002 PENDIENTES 0 %.
+
+| F4-14 | Diagnóstico de cabecera Accept en GET de secciones | Causa sustentada por upstream y reproducción local; confirmación HTTP pareada pendiente | Parche mínimo local de una línea,16 pruebas aprobadas; docs/phase4-p1-section-diagnosis.md. No subir sin autorización. |

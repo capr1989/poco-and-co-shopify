@@ -88,7 +88,9 @@
       "spanish_primary": false,
       "primary_change_authorized": false,
       "english_primary": true,
-      "backup_location": "work/p1-deployment-before.private.json; work/p1-translations-export.private.json; work/p1-market-translations-export.private.json"
+      "backup_location": "work/p1-deployment-before.private.json; work/p1-translations-export.private.json; work/p1-market-translations-export.private.json",
+      "endpoint_change_declined": true,
+      "next_scope": "READ_ONLY_DIAGNOSTICS_AND_LOCAL_TESTS_ONLY"
     }
   }
 }
