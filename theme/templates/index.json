@@ -41,54 +41,6 @@
         "padding_bottom": 36
       }
     },
-    "intro": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ideas prácticas para tu día a día, en un solo lugar.</p><p>En buena compañía para descubrir lo que encaja contigo.</p>"
-          }
-        },
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "text_size": "small",
-            "text_style": "caption-with-letter-spacing",
-            "caption": "POCO & CO. · EN BUENA COMPAÑÍA"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading_size": "h1",
-            "heading": "Pequeños hallazgos. Grandes favoritos."
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_link": "shopify://collections/poco-demo-destacados",
-            "button_label": "Explorar productos",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "settings": {
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "color_scheme": "scheme-1",
-        "content_alignment": "center",
-        "desktop_content_position": "center",
-        "full_width": true
-      },
-      "block_order": [
-        "caption",
-        "heading",
-        "text",
-        "button"
-      ]
-    },
     "departments": {
       "type": "collection-list",
       "blocks": {

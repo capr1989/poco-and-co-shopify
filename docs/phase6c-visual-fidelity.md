@@ -26,3 +26,18 @@
 
 ## Reversión
 Revertir el commit de esta rama o restaurar los archivos anteriores de `phase6/presentation-ready`. Shopify remoto no fue modificado.
+
+
+## Despliegue controlado a Dawn — 4 de noviembre de 2026
+
+- Tienda verificada: `poco-co-qa.myshopify.com`. Dawn `190052991089` permaneció `MAIN`; Horizon `190052663409` permaneció `UNPUBLISHED`.
+- Checksums remotos previos registrados para reversión: `assets/poco.css` `565193748cf3b16a6c24c32e336f2af8`, `sections/header-group.json` `74aafe647daadc6bc319c8c49a08caf6`, `templates/index.json` `e29e05751825e4a5bf0a609e58a1bf80`; los dos archivos Liquid no existían en el tema remoto.
+- JSON local validado y `git diff --check` sin errores. Theme Check no estaba disponible en la imagen Docker existente.
+- Se subieron únicamente `sections/poco-topline.liquid`, `sections/poco-home-hero.liquid`, `sections/header-group.json`, `templates/index.json` y `assets/poco.css` con Shopify CLI Docker, `--nodelete` y sin cambiar Horizon.
+- El primer intento rechazó temporalmente `templates/index.json` porque conservaba un bloque `intro` fuera de `order`; se corrigió localmente eliminando ese bloque no utilizado y se subió de nuevo solo `templates/index.json`. Resultado final exitoso.
+- Verificación remota: barra superior, hero, orden hero → destacados → departamentos, 3 productos/3 columnas y selector de idiomas desactivado están presentes en los archivos remotos.
+- Panamá continúa `ACTIVE`; el dominio principal sigue siendo `poco-co-qa.myshopify.com`. Las rutas `/` y `/en/` devolvieron HTTP 403 sin sesión, consistente con la protección por contraseña activa.
+- No se modificaron productos, inventario, idiomas, Markets, pagos, políticas ni Horizon. La apariencia idéntica a la maqueta queda pendiente de revisión manual en navegador.
+
+### Reversión
+Restaurar los tres archivos existentes con los checksums previos y eliminar los dos archivos nuevos mediante una operación aprobada separadamente; no se ejecutó ninguna eliminación durante el despliegue.
