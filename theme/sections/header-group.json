@@ -10,31 +10,19 @@
       }
     },
     "header": {
-      "type": "header",
+      "type": "poco-header",
       "settings": {
         "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
-        "logo_position": "middle-left",
         "menu": "poco-demo-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "none",
-        "show_line_separator": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 12,
-        "padding_bottom": 12
+        "menu_label": "Departamentos",
+        "all_label": "Todo",
+        "account_label": "Mi cuenta",
+        "search_placeholder": "¿Qué estás buscando hoy?"
       }
-    },
-    "poco_search": {
-      "type": "poco-search",
-      "settings": {}
     }
   },
   "order": [
     "poco_topline",
-    "header",
-    "poco_search"
+    "header"
   ]
 }

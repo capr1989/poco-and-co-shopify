@@ -1,0 +1,42 @@
+<header class="poco-header color-{{ section.settings.color_scheme }} gradient">
+  <div class="poco-header__main page-width">
+    <a class="poco-header__brand focus-inset" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">
+      {% render 'poco-logo' %}
+    </a>
+
+    <form class="poco-header__search" action="{{ routes.search_url }}" method="get" role="search">
+      <label class="visually-hidden" for="PocoHeaderSearch-{{ section.id }}">{{ 'poco.search.label' | t }}</label>
+      <input id="PocoHeaderSearch-{{ section.id }}" type="search" name="q" placeholder="{{ section.settings.search_placeholder | escape }}">
+      <input type="hidden" name="type" value="product">
+      <button type="submit" aria-label="{{ 'general.search.search' | t }}">
+        <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+      </button>
+    </form>
+
+    <div class="poco-header__actions">
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{{ routes.account_url }}" class="poco-header__account focus-inset">{{ section.settings.account_label | escape }}</a>
+      {%- else -%}
+        <a href="{{ routes.account_login_url }}" class="poco-header__account focus-inset">{{ section.settings.account_label | escape }}</a>
+      {%- endif -%}
+      <a href="{{ routes.cart_url }}" class="poco-header__cart focus-inset" id="cart-icon-bubble">
+        <span class="svg-wrapper">
+          {%- if cart == empty -%}{{ 'icon-cart-empty.svg' | inline_asset_content }}{%- else -%}{{ 'icon-cart.svg' | inline_asset_content }}{%- endif -%}
+        </span>
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {%- if cart.item_count > 0 -%}<span class="poco-header__cart-count">{{ cart.item_count }}</span>{%- endif -%}
+      </a>
+    </div>
+  </div>
+
+  <nav class="poco-header__nav page-width" aria-label="{{ section.settings.menu_label | escape }}">
+    <a href="{{ routes.all_products_collection_url }}" class="focus-inset">{{ section.settings.all_label | escape }}</a>
+    {%- for link in section.settings.menu.links -%}
+      <a href="{{ link.url }}" class="focus-inset">{{ link.title | escape }}</a>
+    {%- endfor -%}
+  </nav>
+</header>
+
+{% schema %}
+{"name":"Poco: encabezado","settings":[{"type":"link_list","id":"menu","label":"Menú"},{"type":"text","id":"menu_label","label":"Etiqueta del menú","default":"Departamentos"},{"type":"text","id":"all_label","label":"Enlace Todos","default":"Todo"},{"type":"text","id":"account_label","label":"Cuenta","default":"Mi cuenta"},{"type":"text","id":"search_placeholder","label":"Texto de búsqueda","default":"¿Qué estás buscando hoy?"},{"type":"color_scheme","id":"color_scheme","label":"t:sections.all.colors.label","default":"scheme-1"}],"presets":[{"name":"Poco: encabezado"}]}
+{% endschema %}
