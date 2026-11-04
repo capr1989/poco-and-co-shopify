@@ -28,3 +28,17 @@
 
 ## Restricciones cumplidas
 No se modificó Shopify remoto, productos, colecciones, precios, inventario, idiomas, Markets, checkout, pagos, Horizon ni la contraseña. T001/T002 permanecen al 0%.
+
+
+## Tema de prueba no publicado — 4 de noviembre de 2026
+
+- Se duplicó Dawn MAIN `190052991089` mediante Shopify CLI sin tocarlo. Nuevo tema: `POCO QA — Phase 6D Visual`, ID `190120132721`, rol `UNPUBLISHED`.
+- Dawn permanece `MAIN`; Horizon `190052663409` permanece `UNPUBLISHED`; ninguno está procesando.
+- Se subieron exclusivamente a la copia: `sections/poco-header.liquid`, `sections/header-group.json` y `assets/poco.css`, usando `--nodelete`. `poco-search.liquid` no era dependencia del nuevo header y no se subió.
+- Shopify aceptó los tres archivos y la consulta API posterior confirmó su contenido, incluidos el formulario funcional, rutas reales, selector de idiomas desactivado y reglas visuales de Poco.
+- La solicitud HTTP de preview respondió 200 con marcador de contraseña, por lo que la protección continúa activa.
+- Vista previa real: `https://poco-co-qa.myshopify.com?preview_theme_id=190120132721`.
+- No se realizó comparación visual, búsqueda, carrito o navegación en navegador por restricción de no usar Computer Use/Cloud Browser. Esas comprobaciones quedan para revisión manual del propietario.
+
+### Reversión
+La copia se puede conservar para pruebas. Para devolverla a su estado duplicado basta restaurar los tres archivos anteriores del tema MAIN en la copia; no se requiere modificar Dawn MAIN ni Horizon.
