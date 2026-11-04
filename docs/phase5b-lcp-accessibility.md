@@ -2,7 +2,7 @@
 
 Rama: `phase5b/lcp-accessibility`  
 Base: `phase5/static-audit`  
-Estado: propuesta local; no desplegada
+Estado: desplegada exclusivamente en Dawn no publicado
 
 ## Evidencia y causa técnica
 
@@ -52,4 +52,24 @@ No se modificaron assets JavaScript, carrito, variantes, navegación, branding, 
 
 ## Recomendación
 
-Los dos cambios son técnicamente pequeños y coherentes con Dawn, pero conviene desplegarlos solo después de Theme Check y de repetir la medición Lighthouse. La autorización actual cubre preparación local y commits; no cubre subida al tema remoto.
+## Despliegue controlado
+
+Se verificó mediante Shopify Admin GraphQL que la tienda es `poco-co-qa.myshopify.com`, Dawn `190052991089` conserva `UNPUBLISHED` y Horizon `190052663409` conserva `MAIN`.
+
+Antes del cambio, Shopify devolvió estos checksums remotos:
+
+- `sections/main-product.liquid`: `cbf664880b2ad94eb80018930ef68a91`, 102549 bytes.
+- `snippets/product-thumbnail.liquid`: `822bb564d3f2000ed3ab89085ff81c65`, 7426 bytes.
+
+La reversión queda respaldada por el commit anterior de esta rama (`e03ee45`) y por esos checksums/contenidos remotos registrados en la evidencia de la operación. Para revertir, se debe restaurar exactamente la versión anterior de esos dos archivos y ejecutar otro `themeFilesUpsert` dirigido al mismo ID, sin publicar.
+
+Se subieron únicamente:
+
+- `snippets/product-thumbnail.liquid` — checksum posterior `ea01f549f6e450d2eccf2ca7df47d68f`, 7592 bytes.
+- `sections/main-product.liquid` — checksum posterior `ffe89d759f46d1efe26abc122ba55755`, 102628 bytes.
+
+La mutación `themeFilesUpsert` terminó sin `userErrors`. La consulta posterior confirmó ambos archivos y el rol `UNPUBLISHED`. Horizon permaneció `MAIN`.
+
+Theme Check Docker se ejecutó antes del despliegue: 2 errores y 9 warnings, idénticos a la línea base conocida; no aparecieron nuevos hallazgos en los dos archivos modificados. La comprobación HTTP sin navegador a `/` devolvió `403`, consistente con la protección por contraseña activa.
+
+La medición Lighthouse, la inspección de lector de pantalla, teclado y las pruebas visuales siguen pendientes de ejecución manual. No se afirma aún una mejora real de LCP ni accesibilidad.
