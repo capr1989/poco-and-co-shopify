@@ -41,3 +41,24 @@ Revertir el commit de esta rama o restaurar los archivos anteriores de `phase6/p
 
 ### Reversión
 Restaurar los tres archivos existentes con los checksums previos y eliminar los dos archivos nuevos mediante una operación aprobada separadamente; no se ejecutó ninguna eliminación durante el despliegue.
+
+
+## Corrección local del hero
+
+### Causa técnica
+
+Dawn aplica `.page-width` con `max-width` y padding responsive. El hero tenía columnas fraccionarias sin mínimos explícitos (`1.05fr .95fr`) y sus hijos conservaban el mínimo intrínseco por defecto. Eso podía forzar el grid, producir desbalance horizontal y hacer que el título grande excediera el ancho disponible en móviles. La alineación vertical tampoco estaba definida en el contenedor.
+
+### Corrección mínima
+
+- Se cambiaron las columnas a `minmax(0, 1.1fr) minmax(0, .9fr)` para permitir compresión real dentro de `.page-width`.
+- Se añadió `width: 100%`, `box-sizing: border-box`, `align-items: center` y márgenes automáticos al hero.
+- Se limitaron los hijos y la imagen a `min-width: 0`/`max-width: 100%`.
+- El breakpoint móvil usa una sola columna y un tamaño de título con `clamp(4.2rem, 15vw, 5.6rem)` para 320/360/390 px.
+- No se modificaron header, footer, productos, navegación ni comportamiento JavaScript.
+
+### Validación
+- JSON y `git diff --check`: pendientes de ejecutar tras este cambio.
+- Theme Check: no disponible en la imagen Docker existente.
+- No se realizó renderizado de navegador; no se afirma fidelidad visual comprobada.
+- Shopify remoto no fue modificado.
